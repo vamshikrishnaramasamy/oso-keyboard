@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "version": 1
+  },
+  "board": {
+    "design_settings": {
+      "defaults": {
+        "board_thickness": 1.6
+      }
+    }
+  },
+  "libraries": {
+    "pinned_footprint_libs": [],
+    "pinned_symbol_libs": []
+  },
+  "project": {
+    "files": []
+  }
+}

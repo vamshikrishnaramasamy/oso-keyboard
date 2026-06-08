@@ -1,0 +1,13 @@
+(kicad_sch
+  (version 20240108)
+  (generator "oso75-generate-kicad")
+  (generator_version "0.1")
+  (uuid "62ae0d1f-28ad-4360-0ea3-7be301b028cc")
+  (paper "A3")
+  (title_block
+    (title "OSO75 Keyboard")
+    (rev "0.1")
+    (company "OSO Keyboard")
+    (comment 1 "Source of truth lives in hardware/pcb generated netlists.")
+  )
+)

@@ -1,0 +1,20 @@
+{
+  "name": "oso-keyboard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate.mjs && node scripts/generate-kicad.mjs",
+    "validate": "node scripts/validate.mjs",
+    "viewer:assets": "node scripts/sync-viewer-assets.mjs",
+    "viewer": "npm run generate && npm run viewer:assets && vite web --host 127.0.0.1",
+    "viewer:build": "npm run generate && npm run viewer:assets && vite build web"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.1.1",
+    "vite": "^7.2.6",
+    "typescript": "^5.9.3",
+    "three": "^0.181.2"
+  },
+  "devDependencies": {}
+}

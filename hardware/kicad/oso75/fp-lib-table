@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "OSO75")(type "KiCad")(uri "${KIPRJMOD}/OSO75.pretty")(options "")(descr "OSO75 local footprints"))
+)

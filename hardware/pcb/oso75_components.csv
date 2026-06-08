@@ -1,0 +1,208 @@
+ref,value,footprint,mpn,assembly,notes
+U1,RP2040,QFN-56,RP2040,factory,Main MCU
+U2,W25Q128JVSIQ or compatible,SOIC-8 208mil,W25Q128JVSIQ,factory,16 MB QSPI flash
+U3,3.3 V LDO,SOT-23-5,AP2112K-3.3TRG1,factory,USB 5 V to 3.3 V
+U4,USB ESD array,SOT-23-6,USBLC6-2SC6 or equivalent,factory,Place by USB-C
+J1,USB-C receptacle,USB-C-16P-SMD,HRO TYPE-C-31-M-12,factory,USB 2.0 device port
+J2,SWD header,1x04 1.27mm or tag-connect,DNP header option,optional,3V3 SWDIO SWCLK GND
+Y1,12 MHz crystal,3225 crystal,12 MHz CL matched,factory,RP2040 clock
+SW_BOOT,Boot tactile switch,SMD tactile,SKRPACE010,factory,Pull QSPI_SS low while reset
+SW_RESET,Reset tactile switch,SMD tactile,SKRPACE010,factory,Pull RUN low
+D85,Status LED,0603 LED,Green 0603,factory,Driven by GP22 through R9
+R1,5.1k,0603,generic,factory,USB-C CC1 pulldown
+R2,5.1k,0603,generic,factory,USB-C CC2 pulldown
+R3,27R,0603,generic,factory,USB D+ series
+R4,27R,0603,generic,factory,USB D- series
+R5,100k,0603,generic,factory,RUN pullup
+R6,100k,0603,generic,factory,QSPI_SS pullup
+R7,100k,0603,generic,factory,VBUS sense high divider
+R8,100k,0603,generic,factory,VBUS sense low divider
+R9,1k,0603,generic,factory,Status LED current limit
+C1,10uF,0603/0805,generic X5R,factory,LDO input
+C2,10uF,0603/0805,generic X5R,factory,LDO output
+C3,1uF,0603,generic X5R,factory,RP2040 VREG_OUT
+C4,1uF,0603,generic X5R,factory,RP2040 ADC_AVDD filter
+C5,18pF,0603,match crystal CL,factory,Crystal load
+C6,18pF,0603,match crystal CL,factory,Crystal load
+C7,100nF,0603,generic X7R,factory,RP2040/flash local decoupling
+C8,100nF,0603,generic X7R,factory,RP2040/flash local decoupling
+C9,100nF,0603,generic X7R,factory,RP2040/flash local decoupling
+C10,100nF,0603,generic X7R,factory,RP2040/flash local decoupling
+C11,100nF,0603,generic X7R,factory,RP2040/flash local decoupling
+C12,100nF,0603,generic X7R,factory,RP2040/flash local decoupling
+C13,100nF,0603,generic X7R,factory,RP2040/flash local decoupling
+C14,100nF,0603,generic X7R,factory,RP2040/flash local decoupling
+C15,100nF,0603,generic X7R,factory,RP2040/flash local decoupling
+C16,100nF,0603,generic X7R,factory,RP2040/flash local decoupling
+C17,100nF,0603,generic X7R,factory,RP2040/flash local decoupling
+C18,100nF,0603,generic X7R,factory,RP2040/flash local decoupling
+C19,100nF,0603,generic X7R,factory,RP2040/flash local decoupling
+C20,100nF,0603,generic X7R,factory,RP2040/flash local decoupling
+SW1,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,Esc switch
+D1,1N4148W,SOD-123,1N4148W,factory,Esc anti-ghosting diode
+SW2,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,F1 switch
+D2,1N4148W,SOD-123,1N4148W,factory,F1 anti-ghosting diode
+SW3,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,F2 switch
+D3,1N4148W,SOD-123,1N4148W,factory,F2 anti-ghosting diode
+SW4,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,F3 switch
+D4,1N4148W,SOD-123,1N4148W,factory,F3 anti-ghosting diode
+SW5,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,F4 switch
+D5,1N4148W,SOD-123,1N4148W,factory,F4 anti-ghosting diode
+SW6,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,F5 switch
+D6,1N4148W,SOD-123,1N4148W,factory,F5 anti-ghosting diode
+SW7,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,F6 switch
+D7,1N4148W,SOD-123,1N4148W,factory,F6 anti-ghosting diode
+SW8,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,F7 switch
+D8,1N4148W,SOD-123,1N4148W,factory,F7 anti-ghosting diode
+SW9,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,F8 switch
+D9,1N4148W,SOD-123,1N4148W,factory,F8 anti-ghosting diode
+SW10,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,F9 switch
+D10,1N4148W,SOD-123,1N4148W,factory,F9 anti-ghosting diode
+SW11,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,F10 switch
+D11,1N4148W,SOD-123,1N4148W,factory,F10 anti-ghosting diode
+SW12,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,F11 switch
+D12,1N4148W,SOD-123,1N4148W,factory,F11 anti-ghosting diode
+SW13,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,F12 switch
+D13,1N4148W,SOD-123,1N4148W,factory,F12 anti-ghosting diode
+SW14,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,` switch
+D14,1N4148W,SOD-123,1N4148W,factory,` anti-ghosting diode
+SW15,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,1 switch
+D15,1N4148W,SOD-123,1N4148W,factory,1 anti-ghosting diode
+SW16,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,2 switch
+D16,1N4148W,SOD-123,1N4148W,factory,2 anti-ghosting diode
+SW17,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,3 switch
+D17,1N4148W,SOD-123,1N4148W,factory,3 anti-ghosting diode
+SW18,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,4 switch
+D18,1N4148W,SOD-123,1N4148W,factory,4 anti-ghosting diode
+SW19,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,5 switch
+D19,1N4148W,SOD-123,1N4148W,factory,5 anti-ghosting diode
+SW20,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,6 switch
+D20,1N4148W,SOD-123,1N4148W,factory,6 anti-ghosting diode
+SW21,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,7 switch
+D21,1N4148W,SOD-123,1N4148W,factory,7 anti-ghosting diode
+SW22,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,8 switch
+D22,1N4148W,SOD-123,1N4148W,factory,8 anti-ghosting diode
+SW23,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,9 switch
+D23,1N4148W,SOD-123,1N4148W,factory,9 anti-ghosting diode
+SW24,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,0 switch
+D24,1N4148W,SOD-123,1N4148W,factory,0 anti-ghosting diode
+SW25,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,- switch
+D25,1N4148W,SOD-123,1N4148W,factory,- anti-ghosting diode
+SW26,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,= switch
+D26,1N4148W,SOD-123,1N4148W,factory,= anti-ghosting diode
+SW27,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,Backspace switch
+D27,1N4148W,SOD-123,1N4148W,factory,Backspace anti-ghosting diode
+SW28,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,Tab switch
+D28,1N4148W,SOD-123,1N4148W,factory,Tab anti-ghosting diode
+SW29,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,Q switch
+D29,1N4148W,SOD-123,1N4148W,factory,Q anti-ghosting diode
+SW30,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,W switch
+D30,1N4148W,SOD-123,1N4148W,factory,W anti-ghosting diode
+SW31,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,E switch
+D31,1N4148W,SOD-123,1N4148W,factory,E anti-ghosting diode
+SW32,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,R switch
+D32,1N4148W,SOD-123,1N4148W,factory,R anti-ghosting diode
+SW33,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,T switch
+D33,1N4148W,SOD-123,1N4148W,factory,T anti-ghosting diode
+SW34,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,Y switch
+D34,1N4148W,SOD-123,1N4148W,factory,Y anti-ghosting diode
+SW35,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,U switch
+D35,1N4148W,SOD-123,1N4148W,factory,U anti-ghosting diode
+SW36,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,I switch
+D36,1N4148W,SOD-123,1N4148W,factory,I anti-ghosting diode
+SW37,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,O switch
+D37,1N4148W,SOD-123,1N4148W,factory,O anti-ghosting diode
+SW38,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,P switch
+D38,1N4148W,SOD-123,1N4148W,factory,P anti-ghosting diode
+SW39,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,[ switch
+D39,1N4148W,SOD-123,1N4148W,factory,[ anti-ghosting diode
+SW40,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,] switch
+D40,1N4148W,SOD-123,1N4148W,factory,] anti-ghosting diode
+SW41,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,\ switch
+D41,1N4148W,SOD-123,1N4148W,factory,\ anti-ghosting diode
+SW42,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,Caps switch
+D42,1N4148W,SOD-123,1N4148W,factory,Caps anti-ghosting diode
+SW43,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,A switch
+D43,1N4148W,SOD-123,1N4148W,factory,A anti-ghosting diode
+SW44,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,S switch
+D44,1N4148W,SOD-123,1N4148W,factory,S anti-ghosting diode
+SW45,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,D switch
+D45,1N4148W,SOD-123,1N4148W,factory,D anti-ghosting diode
+SW46,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,F switch
+D46,1N4148W,SOD-123,1N4148W,factory,F anti-ghosting diode
+SW47,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,G switch
+D47,1N4148W,SOD-123,1N4148W,factory,G anti-ghosting diode
+SW48,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,H switch
+D48,1N4148W,SOD-123,1N4148W,factory,H anti-ghosting diode
+SW49,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,J switch
+D49,1N4148W,SOD-123,1N4148W,factory,J anti-ghosting diode
+SW50,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,K switch
+D50,1N4148W,SOD-123,1N4148W,factory,K anti-ghosting diode
+SW51,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,L switch
+D51,1N4148W,SOD-123,1N4148W,factory,L anti-ghosting diode
+SW52,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,; switch
+D52,1N4148W,SOD-123,1N4148W,factory,; anti-ghosting diode
+SW53,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,' switch
+D53,1N4148W,SOD-123,1N4148W,factory,' anti-ghosting diode
+SW54,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,Enter switch
+D54,1N4148W,SOD-123,1N4148W,factory,Enter anti-ghosting diode
+SW55,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,LShift switch
+D55,1N4148W,SOD-123,1N4148W,factory,LShift anti-ghosting diode
+SW56,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,Z switch
+D56,1N4148W,SOD-123,1N4148W,factory,Z anti-ghosting diode
+SW57,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,X switch
+D57,1N4148W,SOD-123,1N4148W,factory,X anti-ghosting diode
+SW58,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,C switch
+D58,1N4148W,SOD-123,1N4148W,factory,C anti-ghosting diode
+SW59,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,V switch
+D59,1N4148W,SOD-123,1N4148W,factory,V anti-ghosting diode
+SW60,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,B switch
+D60,1N4148W,SOD-123,1N4148W,factory,B anti-ghosting diode
+SW61,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,N switch
+D61,1N4148W,SOD-123,1N4148W,factory,N anti-ghosting diode
+SW62,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,M switch
+D62,1N4148W,SOD-123,1N4148W,factory,M anti-ghosting diode
+SW63,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,", switch"
+D63,1N4148W,SOD-123,1N4148W,factory,", anti-ghosting diode"
+SW64,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,. switch
+D64,1N4148W,SOD-123,1N4148W,factory,. anti-ghosting diode
+SW65,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,/ switch
+D65,1N4148W,SOD-123,1N4148W,factory,/ anti-ghosting diode
+SW66,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,RShift switch
+D66,1N4148W,SOD-123,1N4148W,factory,RShift anti-ghosting diode
+SW67,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,LCtrl switch
+D67,1N4148W,SOD-123,1N4148W,factory,LCtrl anti-ghosting diode
+SW68,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,LGUI switch
+D68,1N4148W,SOD-123,1N4148W,factory,LGUI anti-ghosting diode
+SW69,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,LAlt switch
+D69,1N4148W,SOD-123,1N4148W,factory,LAlt anti-ghosting diode
+SW70,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,Space switch
+D70,1N4148W,SOD-123,1N4148W,factory,Space anti-ghosting diode
+SW71,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,RAlt switch
+D71,1N4148W,SOD-123,1N4148W,factory,RAlt anti-ghosting diode
+SW72,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,Fn switch
+D72,1N4148W,SOD-123,1N4148W,factory,Fn anti-ghosting diode
+SW73,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,RCtrl switch
+D73,1N4148W,SOD-123,1N4148W,factory,RCtrl anti-ghosting diode
+SW74,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,PrtSc switch
+D74,1N4148W,SOD-123,1N4148W,factory,PrtSc anti-ghosting diode
+SW75,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,Ins switch
+D75,1N4148W,SOD-123,1N4148W,factory,Ins anti-ghosting diode
+SW76,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,Home switch
+D76,1N4148W,SOD-123,1N4148W,factory,Home anti-ghosting diode
+SW77,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,PgUp switch
+D77,1N4148W,SOD-123,1N4148W,factory,PgUp anti-ghosting diode
+SW78,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,Del switch
+D78,1N4148W,SOD-123,1N4148W,factory,Del anti-ghosting diode
+SW79,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,End switch
+D79,1N4148W,SOD-123,1N4148W,factory,End anti-ghosting diode
+SW80,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,PgDn switch
+D80,1N4148W,SOD-123,1N4148W,factory,PgDn anti-ghosting diode
+SW81,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,Up switch
+D81,1N4148W,SOD-123,1N4148W,factory,Up anti-ghosting diode
+SW82,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,Left switch
+D82,1N4148W,SOD-123,1N4148W,factory,Left anti-ghosting diode
+SW83,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,Down switch
+D83,1N4148W,SOD-123,1N4148W,factory,Down anti-ghosting diode
+SW84,MX hotswap socket,Kailh MX hotswap,CPG151101S11,builder or factory,Right switch
+D84,1N4148W,SOD-123,1N4148W,factory,Right anti-ghosting diode

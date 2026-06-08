@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+*.stl
+!web/public/models/*.stl
+*.3mf
+*.step
+*.fcstd1
+*.kicad_prl
+hardware/cad/generated/*.csg
+web/dist/

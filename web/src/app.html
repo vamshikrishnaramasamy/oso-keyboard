@@ -1,0 +1,98 @@
+<div class="app">
+  <header class="topbar">
+    <div class="brand">
+      <div class="mark">⌨</div>
+      <div class="brand-title">OSO Keyboard</div>
+      <div class="status"><span class="status-dot"></span><span id="status-text">Starting</span></div>
+    </div>
+    <div class="topbar-actions">
+      <a class="topbar-button" href="/models/oso75_case_plate.stl" download>Download STL</a>
+      <a class="topbar-button" href="/models/oso75_case_plate.stl" target="_blank">Open model</a>
+    </div>
+  </header>
+
+  <main class="shell">
+    <aside class="sidebar">
+      <section class="section">
+        <p class="section-title">Models</p>
+        <div class="file-list">
+          <div class="file-row active"><span>oso75_case_plate.stl</span><span class="muted">STL</span></div>
+          <div class="file-row"><span>oso75_case_plate.scad</span><span class="muted">SCAD</span></div>
+          <div class="file-row"><span>oso75_placement.csv</span><span class="muted">PCB</span></div>
+        </div>
+      </section>
+      <section class="section">
+        <p class="section-title">Build Status</p>
+        <div class="build-list">
+          <div class="build-row"><span class="check">✓</span><span>Layout generated</span><span class="stage-time">84 keys</span></div>
+          <div class="build-row"><span class="check">✓</span><span>OpenSCAD parsed</span></div>
+          <div class="build-row"><span class="check">✓</span><span>STL exported</span></div>
+          <div class="build-row"><span class="check">✓</span><span>Viewer loaded</span></div>
+        </div>
+      </section>
+      <section class="section">
+        <p class="section-title">Material</p>
+        <select id="material" aria-label="Material">
+          <option value="graphite">Graphite</option>
+          <option value="aluminum">Aluminum</option>
+          <option value="resin">Dark resin</option>
+        </select>
+      </section>
+    </aside>
+
+    <section class="workspace">
+      <div class="toolbar">
+        <div class="tool-group">
+          <button class="tool-button active" data-mode="solid">Solid</button>
+          <button class="tool-button" data-mode="wire">Wire</button>
+          <button class="tool-button" data-mode="xray">X-ray</button>
+        </div>
+        <div class="tool-group">
+          <button class="tool-button" data-view="top">Top</button>
+          <button class="tool-button" data-view="front">Front</button>
+          <button class="tool-button" data-view="right">Right</button>
+          <button class="tool-button" data-view="iso">Iso</button>
+          <button class="tool-button" id="fit">Fit</button>
+          <button class="tool-button" id="reset">Reset</button>
+        </div>
+      </div>
+      <div class="viewer" id="viewer">
+        <div class="viewer-note">Orbit with mouse, scroll to zoom, drag to pan.</div>
+      </div>
+      <div class="statusbar">
+        <span>Unit: mm</span>
+        <span>Source: hardware/cad/generated/oso75_case_plate.scad</span>
+      </div>
+    </section>
+
+    <aside class="inspector">
+      <section class="section">
+        <p class="section-title">Geometry</p>
+        <div class="metric-list">
+          <div class="metric-row"><span class="metric-label">File</span><span class="metric-value" id="stat-file">-</span></div>
+          <div class="metric-row"><span class="metric-label">Bounds</span><span class="metric-value" id="stat-bounds">-</span></div>
+          <div class="metric-row"><span class="metric-label">Vertices</span><span class="metric-value" id="stat-vertices">-</span></div>
+          <div class="metric-row"><span class="metric-label">Faces</span><span class="metric-value" id="stat-faces">-</span></div>
+        </div>
+      </section>
+      <section class="section">
+        <p class="section-title">Layers</p>
+        <div class="layer-list">
+          <div class="layer-row"><span class="layer-name"><span class="layer-chip case-chip"></span>Case</span><span>visible</span></div>
+          <div class="layer-row"><span class="layer-name"><span class="layer-chip plate-chip"></span>Plate</span><span>visible</span></div>
+          <div class="layer-row"><span class="layer-name"><span class="layer-chip switch-chip"></span>Cutout depth</span><span>visible</span></div>
+        </div>
+      </section>
+      <section class="section">
+        <p class="section-title">Export</p>
+        <div class="file-list">
+          <a class="download-button" id="download-stl" download="oso75_case_plate.stl">Download current STL</a>
+          <a class="download-button" href="/models/oso75_case_plate.stl" target="_blank">Inspect raw file</a>
+        </div>
+      </section>
+      <div class="footer-note">
+        This viewer loads the generated OpenSCAD STL. Update the layout, run the generator, and restart the viewer to inspect changes.
+      </div>
+    </aside>
+  </main>
+</div>
