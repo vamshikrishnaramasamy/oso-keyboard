@@ -13,9 +13,10 @@ document.querySelector<HTMLDivElement>("#root")!.innerHTML = appHtml;
 
 type ViewMode = "solid" | "wire" | "xray";
 
-const modelUrl = "/models/oso75_case_plate.stl";
+const modelUrl = `${import.meta.env.BASE_URL}models/oso75_case_plate.stl`;
 const unitMm = layout.unit_mm;
 const switchCutoutMm = layout.switch_cutout_mm;
+const plateTopZ = 14.5 + 1.6;
 const viewer = document.querySelector<HTMLDivElement>("#viewer");
 const statusText = document.querySelector<HTMLElement>("#status-text");
 const statVertices = document.querySelector<HTMLElement>("#stat-vertices");
@@ -332,7 +333,7 @@ function loadModel() {
       box?.getSize(size);
       if (box) {
         if (cutoutOverlay) scene.remove(cutoutOverlay);
-        cutoutOverlay = makeCutoutOverlay(box.max.z + 0.35);
+        cutoutOverlay = makeCutoutOverlay(plateTopZ + 0.35);
         scene.add(cutoutOverlay);
       }
 

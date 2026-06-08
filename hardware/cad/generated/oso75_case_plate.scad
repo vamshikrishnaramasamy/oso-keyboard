@@ -5,6 +5,8 @@ plate_thickness = 1.6;
 case_wall = 4;
 case_floor = 3;
 switch_cutout = 14;
+cluster_pad = 3.6;
+plate_z = 14.5;
 board_width = 346.613;
 board_height = 137.063;
 keys = [
@@ -94,38 +96,91 @@ keys = [
   [319.088, 109.538, 19.050, 19.050, "Right"]
 ];
 
+module rounded_rect_2d(size, radius) {
+  offset(r = radius)
+    square([max(0.1, size[0] - radius * 2), max(0.1, size[1] - radius * 2)], center = true);
+}
+
 module rounded_box(size, radius) {
-  hull() {
-    translate([radius, radius, 0]) cylinder(h = size[2], r = radius);
-    translate([size[0] - radius, radius, 0]) cylinder(h = size[2], r = radius);
-    translate([radius, size[1] - radius, 0]) cylinder(h = size[2], r = radius);
-    translate([size[0] - radius, size[1] - radius, 0]) cylinder(h = size[2], r = radius);
+  linear_extrude(height = size[2])
+    translate([size[0] / 2, size[1] / 2])
+      rounded_rect_2d([size[0], size[1]], radius);
+}
+
+module key_blob_2d(k, pad = cluster_pad) {
+  translate([k[0] + 9, k[1] + 9])
+    rounded_rect_2d([k[2] + pad * 2, k[3] + pad * 2], 4);
+}
+
+module keyboard_outline_2d(pad = cluster_pad) {
+  union() {
+    for (k = keys) key_blob_2d(k, pad);
   }
 }
 
-module switch_cutouts() {
+module switch_cutouts(depth = plate_thickness + 0.3) {
   for (k = keys) {
-    translate([k[0] + 9, k[1] + 9, -0.1])
-      cube([switch_cutout, switch_cutout, plate_thickness + 0.2], center = true);
+    translate([k[0] + 9, k[1] + 9, -0.15])
+      cube([switch_cutout, switch_cutout, depth], center = true);
   }
 }
 
-module plate() {
-  difference() {
-    translate([0, 0, 0]) rounded_box([board_width, board_height, plate_thickness], 5);
-    switch_cutouts();
+module switch_wells() {
+  for (k = keys) {
+    translate([k[0] + 9, k[1] + 9, plate_thickness - 0.55])
+      linear_extrude(height = 0.75)
+        difference() {
+          rounded_rect_2d([min(k[2] - 2.2, 17.4), 17.4], 1.5);
+          square([switch_cutout, switch_cutout], center = true);
+        }
   }
+}
+
+module stabilizer_slots() {
+  for (k = keys) {
+    if (k[2] >= unit * 1.75) {
+      stab_spacing = k[2] >= unit * 5 ? 50 : 23.8;
+      for (xoff = [-stab_spacing / 2, stab_spacing / 2]) {
+        translate([k[0] + 9 + xoff, k[1] + 9, -0.2])
+          cube([6.6, 12.4, plate_thickness + 0.5], center = true);
+      }
+    }
+  }
+}
+
+module top_plate() {
+  difference() {
+    linear_extrude(height = plate_thickness)
+      keyboard_outline_2d();
+    switch_cutouts();
+    stabilizer_slots();
+  }
+  switch_wells();
 }
 
 module tray_case() {
   difference() {
-    rounded_box([board_width + case_wall * 2, board_height + case_wall * 2, 14], 8);
-    translate([case_wall, case_wall, case_floor])
-      rounded_box([board_width, board_height, 14], 5);
-    translate([board_width / 2 - 8, -0.1, 6])
-      cube([16, case_wall + 0.2, 5], center = false);
+    linear_extrude(height = 14)
+      keyboard_outline_2d(case_wall + cluster_pad);
+    translate([0, 0, case_floor])
+      linear_extrude(height = 15)
+        keyboard_outline_2d(cluster_pad + 0.6);
+    translate([board_width / 2 - 8, -3, 6])
+      cube([16, 12, 5], center = false);
   }
 }
 
-translate([case_wall, case_wall, 14.5]) plate();
-color([0.08, 0.09, 0.1, 0.35]) tray_case();
+module keycap_shadows() {
+  for (k = keys) {
+    translate([k[0] + 9, k[1] + 9, plate_z + plate_thickness + 0.45])
+      linear_extrude(height = 1.2, scale = [0.94, 0.90])
+        difference() {
+          rounded_rect_2d([max(10, k[2] - 3.8), max(10, k[3] - 4.2)], 2.2);
+          rounded_rect_2d([switch_cutout + 1.7, switch_cutout + 1.7], 1.4);
+        }
+  }
+}
+
+translate([0, 0, plate_z]) top_plate();
+tray_case();
+keycap_shadows();
