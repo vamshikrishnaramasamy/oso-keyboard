@@ -8,7 +8,7 @@
     "validate": "node scripts/validate.mjs",
     "viewer:assets": "node scripts/sync-viewer-assets.mjs",
     "viewer": "npm run generate && npm run viewer:assets && vite web --host 127.0.0.1",
-    "viewer:build": "npm run generate && npm run viewer:assets && vite build web"
+    "viewer:build": "npm run generate && npm run viewer:assets && vite build web --base /oso-keyboard/"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^5.1.1",

@@ -1,5 +1,9 @@
 # OSO Keyboard
 
+Demo: https://vamshikrishnaramasamy.github.io/oso-keyboard/
+
+Repository/README: https://github.com/vamshikrishnaramasamy/oso-keyboard
+
 OSO Keyboard is an open-source 75% mechanical keyboard project with a custom
 programmable PCB target, QMK firmware, and parametric CAD.
 
