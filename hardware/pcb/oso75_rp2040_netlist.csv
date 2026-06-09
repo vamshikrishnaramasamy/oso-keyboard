@@ -67,6 +67,20 @@ R9,1,LED_STATUS,LED current limit
 R9,2,D85_A,Status LED anode
 D85,A,D85_A,Status LED
 D85,K,GND,Status LED
+F1,1,VBUS,Module bay input power
+F1,2,VBUS_FUSED,Current-limited optional 5 V for modules
+J3,1,GND,OSO module bay ground
+J3,2,+3V3,OSO module bay 3.3 V power
+J3,3,VBUS_FUSED,OSO module bay optional 5 V power
+J3,4,I2C_SDA,OSO module bay I2C data
+J3,5,I2C_SCL,OSO module bay I2C clock
+J3,6,MOD_A,OSO module bay GPIO / encoder A
+J3,7,MOD_B,OSO module bay GPIO / encoder B
+J3,8,MOD_INT,OSO module bay interrupt or present detect
+J3,9,RESET_N,OSO module bay reset
+J3,10,GND,OSO module bay ground
+R10,1,MOD_INT,Module interrupt/present pullup
+R10,2,+3V3,Module interrupt/present pullup
 J2,1,+3V3,SWD header
 J2,2,SWDIO,SWD header
 J2,3,SWCLK,SWD header
@@ -95,7 +109,8 @@ U1,GP18,COL12,Keyboard matrix column 12
 U1,GP19,COL13,Keyboard matrix column 13
 U1,GP20,COL14,Keyboard matrix column 14
 U1,GP21,COL15,Keyboard matrix column 15
-U1,GP26,ENC_A,Optional encoder A
-U1,GP27,ENC_B,Optional encoder B
-U1,GP28,I2C_SDA,Optional OLED/header SDA
-U1,GP29,I2C_SCL,Optional OLED/header SCL
+U1,GP26,MOD_A,OSO module bay GPIO / encoder A
+U1,GP27,MOD_B,OSO module bay GPIO / encoder B
+U1,GP28,I2C_SDA,OSO module bay I2C SDA
+U1,GP29,I2C_SCL,OSO module bay I2C SCL
+U1,GP25,MOD_INT,OSO module interrupt/present detect

@@ -17,6 +17,7 @@ const modelUrl = `${import.meta.env.BASE_URL}models/oso75_case_plate.stl`;
 const unitMm = layout.unit_mm;
 const switchCutoutMm = layout.switch_cutout_mm;
 const plateTopZ = 14.5 + 1.6;
+const gadgetOffsetY = 16;
 const viewer = document.querySelector<HTMLDivElement>("#viewer");
 const statusText = document.querySelector<HTMLElement>("#status-text");
 const statVertices = document.querySelector<HTMLElement>("#stat-vertices");
@@ -247,7 +248,7 @@ function makeCutoutOverlay(z: number) {
     const w = switchCutoutMm;
     const h = switchCutoutMm;
     const cx = (key.x + ((key.w ?? 1) / 2)) * unitMm + 13;
-    const cy = (key.y + ((key.h ?? 1) / 2)) * unitMm + 13;
+    const cy = (key.y + ((key.h ?? 1) / 2)) * unitMm + 13 + gadgetOffsetY;
     const x0 = cx - w / 2;
     const x1 = cx + w / 2;
     const y0 = cy - h / 2;

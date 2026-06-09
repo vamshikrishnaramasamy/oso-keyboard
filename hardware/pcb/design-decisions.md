@@ -12,6 +12,25 @@ Reasons:
 - SMD diodes and RP2040 support components can be factory assembled.
 - Builders should only need to install switches, stabilizers, and case hardware.
 
+## Decision: Top-Left Hot-Swappable Module Bay
+
+OSO75 includes a top-left accessory bay as the signature customizable feature.
+The bay is meant for small user-created modules that can be swapped without
+redesigning the whole keyboard: a volume knob, OLED display, slider, macro
+display, sensor board, or other programmable widget.
+
+The base keyboard exposes power plus a small general-purpose interface through a
+keyed 10-contact dock. The default pinout reserves I2C for displays/sensors,
+two GPIOs for a rotary encoder, one interrupt/module-present pin, reset, 3.3 V,
+optional fused 5 V, and ground.
+
+Mechanical intent:
+
+- A visible top-left recessed pocket in the case/plate.
+- Two small retention/mounting holes for module plates or screws.
+- A 10-contact pad strip for pogo pins or a low-profile board-to-board connector.
+- Modules should be independently open-source and printable/fabbable.
+
 ## Reference Backup
 
 The YMD75v3 / 75V3 QMK hotswap PCB remains a good backup reference because it is
@@ -26,6 +45,7 @@ The first KiCad pass should include:
 - 6 x 16 COL2ROW keyboard matrix.
 - 84 MX hotswap sockets.
 - 84 SOD-123 diodes.
+- Top-left OSO module bay connector and mechanical keepout.
 - PCB-mount stabilizer holes.
 - Mounting holes aligned to the generated case.
 - Clear silkscreen labels for rows, columns, and switch positions.
@@ -35,4 +55,3 @@ The first KiCad pass should include:
 Use JLCPCB or PCBWay for the first custom PCB run. AliExpress is fine for switches,
 stabilizers, screws, and other builder-installed parts, but custom PCBs are better
 ordered from an actual PCB fab.
-

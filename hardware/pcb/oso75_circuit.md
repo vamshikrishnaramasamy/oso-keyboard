@@ -1,9 +1,9 @@
 # OSO75 Circuit Design
 
 This is the first real circuit pass for the OSO75 custom PCB. It defines the MCU
-support circuit, USB-C input, matrix wiring, diode direction, and assembly intent.
-Use the generated CSV files next to this document as the source of truth for
-schematic capture.
+support circuit, USB-C input, matrix wiring, OSO module bay, diode direction, and
+assembly intent. Use the generated CSV files next to this document as the source
+of truth for schematic capture.
 
 ## Electrical Target
 
@@ -64,6 +64,7 @@ through the switch and diode into the sensed row.
 - D+ and D- route from J1 through U4 ESD protection, then through 27R series
   resistors to RP2040 USB_DP/USB_DM.
 - VBUS feeds U3, a 3.3 V LDO such as AP2112K-3.3.
+- F1 creates a current-limited VBUS_FUSED rail for optional 5 V module loads.
 - C1 and C2 are 10uF bulk capacitors at LDO input/output.
 - R7/R8 create a 100k/100k VBUS sense divider into GP24.
 
@@ -75,8 +76,28 @@ through the switch and diode into the sensed row.
 - SW_BOOT pulls FLASH_CS_N/QSPI_SS low for UF2 bootloader entry.
 - J2 exposes 3V3, SWDIO, SWCLK, and GND for rescue/debug.
 - GP22 drives a status LED through R9.
-- GP26/GP27 are reserved for an optional encoder.
-- GP28/GP29 are reserved for optional I2C expansion.
+- GP25 routes to the OSO bay as module-present or interrupt.
+- GP26/GP27 route to the OSO bay for encoder/GPIO use.
+- GP28/GP29 route to the OSO bay for I2C OLED/sensor modules.
+
+## OSO Module Bay
+
+The top-left bay is the keyboard's swappable gadget slot. It is intended for
+small open-source modules such as volume knobs, OLED status screens, sliders,
+LED widgets, sensor boards, or macro panels.
+
+| Pin | Net | Use |
+|---:|---|---|
+| 1 | GND | Ground |
+| 2 | +3V3 | Main module power |
+| 3 | VBUS_FUSED | Optional 5 V for LEDs/modules |
+| 4 | I2C_SDA | OLED/sensor data |
+| 5 | I2C_SCL | OLED/sensor clock |
+| 6 | MOD_A | Encoder A / GPIO |
+| 7 | MOD_B | Encoder B / GPIO |
+| 8 | MOD_INT | Interrupt or module-present detect |
+| 9 | RESET_N | Optional module reset |
+| 10 | GND | Ground |
 
 ## Layout Rules
 
@@ -86,12 +107,13 @@ through the switch and diode into the sensed row.
 - Place one 100nF cap near each RP2040 supply pin group and one near U2.
 - Route rows horizontally and columns vertically where possible.
 - Put the SOD-123 diode near each hotswap socket; cathode stripe goes to the row net.
+- Keep the top-left bay clear for J3, retention holes, and module mechanical fit.
 - Use a solid ground fill on both layers, stitched around USB and MCU.
 
 ## Generated Files
 
 - `oso75_matrix_netlist.csv`: one switch/diode row per key.
-- `oso75_rp2040_netlist.csv`: MCU, USB, power, flash, crystal, buttons, and headers.
+- `oso75_rp2040_netlist.csv`: MCU, USB, power, flash, crystal, buttons, module bay, and headers.
 - `oso75_components.csv`: component list with footprints and assembly intent.
 - `oso75_placement.csv`: switch and diode coordinates from the keyboard layout.
 

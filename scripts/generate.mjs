@@ -78,7 +78,7 @@ function keycodeFor(label) {
 
 function scadString() {
   const width = (Math.max(...keys.map(k => k.x + k.w)) * unit) + 18;
-  const height = (Math.max(...keys.map(k => k.y + k.h)) * unit) + 18;
+  const height = (Math.max(...keys.map(k => k.y + k.h)) * unit) + 34;
   const keyRows = keys
     .map(k => `  [${k.cx.toFixed(3)}, ${k.cy.toFixed(3)}, ${(k.w * unit).toFixed(3)}, ${(k.h * unit).toFixed(3)}, ${JSON.stringify(k.label)}]`)
     .join(",\n");
@@ -90,6 +90,11 @@ case_wall = 4;
 case_floor = 3;
 switch_cutout = ${layout.switch_cutout_mm};
 plate_z = 14.5;
+gadget_offset_y = 16;
+gadget_x = 11;
+gadget_y = 5;
+gadget_w = 54;
+gadget_h = 25;
 board_width = ${width.toFixed(3)};
 board_height = ${height.toFixed(3)};
 keys = [
@@ -109,14 +114,14 @@ module rounded_box(size, radius) {
 
 module switch_cutouts(depth = plate_thickness + 0.3) {
   for (k = keys) {
-    translate([k[0] + 9, k[1] + 9, -0.15])
+    translate([k[0] + 9, k[1] + 9 + gadget_offset_y, -0.15])
       cube([switch_cutout, switch_cutout, depth], center = true);
   }
 }
 
 module plate_bezels() {
   for (k = keys) {
-    translate([k[0] + 9, k[1] + 9, plate_thickness - 0.2])
+    translate([k[0] + 9, k[1] + 9 + gadget_offset_y, plate_thickness - 0.2])
       linear_extrude(height = 0.45)
         difference() {
           square([min(k[2] - 2.2, 17.2), 17.2], center = true);
@@ -130,11 +135,39 @@ module stabilizer_slots() {
     if (k[2] >= unit * 1.75) {
       stab_spacing = k[2] >= unit * 5 ? 50 : 23.8;
       for (xoff = [-stab_spacing / 2, stab_spacing / 2]) {
-        translate([k[0] + 9 + xoff, k[1] + 9, -0.2])
+        translate([k[0] + 9 + xoff, k[1] + 9 + gadget_offset_y, -0.2])
           cube([6.6, 12.4, plate_thickness + 0.5], center = true);
       }
     }
   }
+}
+
+module gadget_bay_cutouts() {
+  translate([gadget_x + gadget_w / 2, gadget_y + gadget_h / 2, plate_thickness - 0.55])
+    linear_extrude(height = 0.75)
+      rounded_rect_2d([gadget_w, gadget_h], 3);
+
+  for (xoff = [6, gadget_w - 6]) {
+    translate([gadget_x + xoff, gadget_y + gadget_h / 2, -0.2])
+      cylinder(h = plate_thickness + 0.5, r = 1.8);
+  }
+}
+
+module gadget_bay_details() {
+  translate([gadget_x + gadget_w / 2, gadget_y + gadget_h / 2, plate_thickness + 0.15])
+    linear_extrude(height = 0.65)
+      difference() {
+        rounded_rect_2d([gadget_w + 2.2, gadget_h + 2.2], 3.6);
+        rounded_rect_2d([gadget_w - 2.4, gadget_h - 2.4], 2.2);
+      }
+
+  for (i = [0:9]) {
+    translate([gadget_x + 9 + i * 3.8, gadget_y + gadget_h - 5.2, plate_thickness + 0.85])
+      cube([2.2, 5.0, 0.5], center = true);
+  }
+
+  translate([gadget_x + gadget_w / 2, gadget_y + 6.5, plate_thickness + 0.9])
+    cube([31, 2.2, 0.45], center = true);
 }
 
 module usb_c_slot(width = 10.2, height = 3.8, depth = case_wall + 0.7) {
@@ -159,8 +192,10 @@ module top_plate() {
     rounded_box([board_width, board_height, plate_thickness], 5);
     switch_cutouts();
     stabilizer_slots();
+    gadget_bay_cutouts();
   }
   plate_bezels();
+  gadget_bay_details();
 }
 
 module tray_case() {
@@ -174,7 +209,7 @@ module tray_case() {
 
 module keycap_frames() {
   for (k = keys) {
-    translate([k[0] + 9 + case_wall, k[1] + 9 + case_wall, plate_z + plate_thickness + 1.45])
+    translate([k[0] + 9 + case_wall, k[1] + 9 + gadget_offset_y + case_wall, plate_z + plate_thickness + 1.45])
       difference() {
         cube([max(10, k[2] - 3.4), max(10, k[3] - 3.8), 2.2], center = true);
         cube([switch_cutout + 1.2, switch_cutout + 1.2, 2.6], center = true);
@@ -316,6 +351,8 @@ function componentCsv() {
     ["U4", "USB ESD array", "SOT-23-6", "USBLC6-2SC6 or equivalent", "factory", "Place by USB-C"],
     ["J1", "USB-C receptacle", "USB-C-16P-SMD", "HRO TYPE-C-31-M-12", "factory", "USB 2.0 device port"],
     ["J2", "SWD header", "1x04 1.27mm or tag-connect", "DNP header option", "optional", "3V3 SWDIO SWCLK GND"],
+    ["J3", "OSO module bay dock", "10 spring contacts or 2x5 mezzanine", "pogo/mezzanine TBD", "factory", "Top-left hot-swappable accessory bay"],
+    ["F1", "500mA resettable fuse", "1206 polyfuse", "generic", "factory", "Optional fused 5 V for module bay"],
     ["Y1", "12 MHz crystal", "3225 crystal", "12 MHz CL matched", "factory", "RP2040 clock"],
     ["SW_BOOT", "Boot tactile switch", "SMD tactile", "SKRPACE010", "factory", "Pull QSPI_SS low while reset"],
     ["SW_RESET", "Reset tactile switch", "SMD tactile", "SKRPACE010", "factory", "Pull RUN low"],
@@ -329,6 +366,7 @@ function componentCsv() {
     ["R7", "100k", "0603", "generic", "factory", "VBUS sense high divider"],
     ["R8", "100k", "0603", "generic", "factory", "VBUS sense low divider"],
     ["R9", "1k", "0603", "generic", "factory", "Status LED current limit"],
+    ["R10", "10k", "0603", "generic", "factory", "Module present/interrupt pullup"],
     ["C1", "10uF", "0603/0805", "generic X5R", "factory", "LDO input"],
     ["C2", "10uF", "0603/0805", "generic X5R", "factory", "LDO output"],
     ["C3", "1uF", "0603", "generic X5R", "factory", "RP2040 VREG_OUT"],
@@ -422,6 +460,20 @@ function rp2040NetlistCsv() {
     ["R9", "2", "D85_A", "Status LED anode"],
     ["D85", "A", "D85_A", "Status LED"],
     ["D85", "K", "GND", "Status LED"],
+    ["F1", "1", "VBUS", "Module bay input power"],
+    ["F1", "2", "VBUS_FUSED", "Current-limited optional 5 V for modules"],
+    ["J3", "1", "GND", "OSO module bay ground"],
+    ["J3", "2", "+3V3", "OSO module bay 3.3 V power"],
+    ["J3", "3", "VBUS_FUSED", "OSO module bay optional 5 V power"],
+    ["J3", "4", "I2C_SDA", "OSO module bay I2C data"],
+    ["J3", "5", "I2C_SCL", "OSO module bay I2C clock"],
+    ["J3", "6", "MOD_A", "OSO module bay GPIO / encoder A"],
+    ["J3", "7", "MOD_B", "OSO module bay GPIO / encoder B"],
+    ["J3", "8", "MOD_INT", "OSO module bay interrupt or present detect"],
+    ["J3", "9", "RESET_N", "OSO module bay reset"],
+    ["J3", "10", "GND", "OSO module bay ground"],
+    ["R10", "1", "MOD_INT", "Module interrupt/present pullup"],
+    ["R10", "2", "+3V3", "Module interrupt/present pullup"],
     ["J2", "1", "+3V3", "SWD header"],
     ["J2", "2", "SWDIO", "SWD header"],
     ["J2", "3", "SWCLK", "SWD header"],
@@ -434,10 +486,11 @@ function rp2040NetlistCsv() {
   const colPins = ["GP6", "GP7", "GP8", "GP9", "GP10", "GP11", "GP12", "GP13", "GP14", "GP15", "GP16", "GP17", "GP18", "GP19", "GP20", "GP21"];
   rowPins.forEach((pin, index) => rows.push(["U1", pin, `ROW${index}`, `Keyboard matrix row ${index}`]));
   colPins.forEach((pin, index) => rows.push(["U1", pin, `COL${index}`, `Keyboard matrix column ${index}`]));
-  rows.push(["U1", "GP26", "ENC_A", "Optional encoder A"]);
-  rows.push(["U1", "GP27", "ENC_B", "Optional encoder B"]);
-  rows.push(["U1", "GP28", "I2C_SDA", "Optional OLED/header SDA"]);
-  rows.push(["U1", "GP29", "I2C_SCL", "Optional OLED/header SCL"]);
+  rows.push(["U1", "GP26", "MOD_A", "OSO module bay GPIO / encoder A"]);
+  rows.push(["U1", "GP27", "MOD_B", "OSO module bay GPIO / encoder B"]);
+  rows.push(["U1", "GP28", "I2C_SDA", "OSO module bay I2C SDA"]);
+  rows.push(["U1", "GP29", "I2C_SCL", "OSO module bay I2C SCL"]);
+  rows.push(["U1", "GP25", "MOD_INT", "OSO module interrupt/present detect"]);
 
   const header = "ref,pin,net,notes";
   return `${header}\n${rows.map(row => row.map(csv).join(",")).join("\n")}\n`;
@@ -448,15 +501,15 @@ function circuitMarkdown() {
   const colPins = ["GP6", "GP7", "GP8", "GP9", "GP10", "GP11", "GP12", "GP13", "GP14", "GP15", "GP16", "GP17", "GP18", "GP19", "GP20", "GP21"];
   const matrixRows = rowPins.map((pin, index) => `| ROW${index} | U1 ${pin} | ${keys.filter(k => k.row === index).length} switches |`).join("\n");
   const matrixCols = colPins.map((pin, index) => `| COL${index} | U1 ${pin} | ${keys.filter(k => k.col === index).length} switches |`).join("\n");
-  return `# OSO75 Circuit Design\n\nThis is the first real circuit pass for the OSO75 custom PCB. It defines the MCU\nsupport circuit, USB-C input, matrix wiring, diode direction, and assembly intent.\nUse the generated CSV files next to this document as the source of truth for\nschematic capture.\n\n## Electrical Target\n\n- MCU: onboard RP2040, QFN-56.\n- Firmware: QMK/VIA-compatible matrix using native USB.\n- Matrix: 6 rows x 16 columns, 84 populated switch positions.\n- Diode direction: \`COL2ROW\`.\n- Builder soldering target: switches/stabilizers only. SMD diodes and controller\n  support parts should be factory assembled.\n\n## Switch Matrix\n\nEach key uses this net order:\n\n\`\`\`text\nCOLn -> switch -> diode anode -> diode cathode -> ROWm\n\`\`\`\n\nThat matches QMK \`COL2ROW\`: conventional current flows from the selected column\nthrough the switch and diode into the sensed row.\n\n### Rows\n\n| Net | RP2040 pin | Populated keys |\n|---|---|---:|\n${matrixRows}\n\n### Columns\n\n| Net | RP2040 pin | Populated keys |\n|---|---|---:|\n${matrixCols}\n\n## USB-C And Power\n\n- J1 is a USB-C receptacle wired as a USB 2.0 device.\n- CC1 and CC2 each get a 5.1k pulldown to GND.\n- D+ and D- route from J1 through U4 ESD protection, then through 27R series\n  resistors to RP2040 USB_DP/USB_DM.\n- VBUS feeds U3, a 3.3 V LDO such as AP2112K-3.3.\n- C1 and C2 are 10uF bulk capacitors at LDO input/output.\n- R7/R8 create a 100k/100k VBUS sense divider into GP24.\n\n## RP2040 Support\n\n- U2 is a 16 MB QSPI flash such as W25Q128JVSIQ.\n- Y1 is a 12 MHz crystal with load capacitors sized to the chosen crystal.\n- SW_RESET pulls RUN low.\n- SW_BOOT pulls FLASH_CS_N/QSPI_SS low for UF2 bootloader entry.\n- J2 exposes 3V3, SWDIO, SWCLK, and GND for rescue/debug.\n- GP22 drives a status LED through R9.\n- GP26/GP27 are reserved for an optional encoder.\n- GP28/GP29 are reserved for optional I2C expansion.\n\n## Layout Rules\n\n- Put J1, U4, R3, and R4 close together at the front USB port.\n- Keep D+/D- short, parallel, and away from the switch matrix where possible.\n- Put U1, U2, Y1, and their decoupling caps in one controller cluster.\n- Place one 100nF cap near each RP2040 supply pin group and one near U2.\n- Route rows horizontally and columns vertically where possible.\n- Put the SOD-123 diode near each hotswap socket; cathode stripe goes to the row net.\n- Use a solid ground fill on both layers, stitched around USB and MCU.\n\n## Generated Files\n\n- \`oso75_matrix_netlist.csv\`: one switch/diode row per key.\n- \`oso75_rp2040_netlist.csv\`: MCU, USB, power, flash, crystal, buttons, and headers.\n- \`oso75_components.csv\`: component list with footprints and assembly intent.\n- \`oso75_placement.csv\`: switch and diode coordinates from the keyboard layout.\n\n`;
+  return `# OSO75 Circuit Design\n\nThis is the first real circuit pass for the OSO75 custom PCB. It defines the MCU\nsupport circuit, USB-C input, matrix wiring, OSO module bay, diode direction, and\nassembly intent. Use the generated CSV files next to this document as the source\nof truth for schematic capture.\n\n## Electrical Target\n\n- MCU: onboard RP2040, QFN-56.\n- Firmware: QMK/VIA-compatible matrix using native USB.\n- Matrix: 6 rows x 16 columns, 84 populated switch positions.\n- Diode direction: \`COL2ROW\`.\n- Builder soldering target: switches/stabilizers only. SMD diodes and controller\n  support parts should be factory assembled.\n\n## Switch Matrix\n\nEach key uses this net order:\n\n\`\`\`text\nCOLn -> switch -> diode anode -> diode cathode -> ROWm\n\`\`\`\n\nThat matches QMK \`COL2ROW\`: conventional current flows from the selected column\nthrough the switch and diode into the sensed row.\n\n### Rows\n\n| Net | RP2040 pin | Populated keys |\n|---|---|---:|\n${matrixRows}\n\n### Columns\n\n| Net | RP2040 pin | Populated keys |\n|---|---|---:|\n${matrixCols}\n\n## USB-C And Power\n\n- J1 is a USB-C receptacle wired as a USB 2.0 device.\n- CC1 and CC2 each get a 5.1k pulldown to GND.\n- D+ and D- route from J1 through U4 ESD protection, then through 27R series\n  resistors to RP2040 USB_DP/USB_DM.\n- VBUS feeds U3, a 3.3 V LDO such as AP2112K-3.3.\n- F1 creates a current-limited VBUS_FUSED rail for optional 5 V module loads.\n- C1 and C2 are 10uF bulk capacitors at LDO input/output.\n- R7/R8 create a 100k/100k VBUS sense divider into GP24.\n\n## RP2040 Support\n\n- U2 is a 16 MB QSPI flash such as W25Q128JVSIQ.\n- Y1 is a 12 MHz crystal with load capacitors sized to the chosen crystal.\n- SW_RESET pulls RUN low.\n- SW_BOOT pulls FLASH_CS_N/QSPI_SS low for UF2 bootloader entry.\n- J2 exposes 3V3, SWDIO, SWCLK, and GND for rescue/debug.\n- GP22 drives a status LED through R9.\n- GP25 routes to the OSO bay as module-present or interrupt.\n- GP26/GP27 route to the OSO bay for encoder/GPIO use.\n- GP28/GP29 route to the OSO bay for I2C OLED/sensor modules.\n\n## OSO Module Bay\n\nThe top-left bay is the keyboard's swappable gadget slot. It is intended for\nsmall open-source modules such as volume knobs, OLED status screens, sliders,\nLED widgets, sensor boards, or macro panels.\n\n| Pin | Net | Use |\n|---:|---|---|\n| 1 | GND | Ground |\n| 2 | +3V3 | Main module power |\n| 3 | VBUS_FUSED | Optional 5 V for LEDs/modules |\n| 4 | I2C_SDA | OLED/sensor data |\n| 5 | I2C_SCL | OLED/sensor clock |\n| 6 | MOD_A | Encoder A / GPIO |\n| 7 | MOD_B | Encoder B / GPIO |\n| 8 | MOD_INT | Interrupt or module-present detect |\n| 9 | RESET_N | Optional module reset |\n| 10 | GND | Ground |\n\n## Layout Rules\n\n- Put J1, U4, R3, and R4 close together at the front USB port.\n- Keep D+/D- short, parallel, and away from the switch matrix where possible.\n- Put U1, U2, Y1, and their decoupling caps in one controller cluster.\n- Place one 100nF cap near each RP2040 supply pin group and one near U2.\n- Route rows horizontally and columns vertically where possible.\n- Put the SOD-123 diode near each hotswap socket; cathode stripe goes to the row net.\n- Keep the top-left bay clear for J3, retention holes, and module mechanical fit.\n- Use a solid ground fill on both layers, stitched around USB and MCU.\n\n## Generated Files\n\n- \`oso75_matrix_netlist.csv\`: one switch/diode row per key.\n- \`oso75_rp2040_netlist.csv\`: MCU, USB, power, flash, crystal, buttons, module bay, and headers.\n- \`oso75_components.csv\`: component list with footprints and assembly intent.\n- \`oso75_placement.csv\`: switch and diode coordinates from the keyboard layout.\n\n`;
 }
 
 function pinPlanMarkdown() {
-  return `# OSO75 RP2040 Pin Plan\n\nThe first custom PCB target uses an onboard RP2040 and a 6 x 16 keyboard matrix.\nThis gives 96 matrix positions for the 84 physical keys, leaving spare positions for\nfuture encoder, macro, or alternate layout variants.\n\n## Matrix\n\n| Signal | Pins |\n|---|---|\n| Rows | GP0, GP1, GP2, GP3, GP4, GP5 |\n| Columns | GP6, GP7, GP8, GP9, GP10, GP11, GP12, GP13, GP14, GP15, GP16, GP17, GP18, GP19, GP20, GP21 |\n| Diode direction | COL2ROW |\n| Per-key wiring | COLn -> switch -> diode anode -> diode cathode -> ROWm |\n\n## Reserved Pins\n\n| Purpose | Pin |\n|---|---|\n| USB D+ / D- | RP2040 native USB_DP / USB_DM pins |\n| USB VBUS sense | GP24 through 100k/100k divider |\n| Status LED | GP22 |\n| Optional encoder A/B | GP26 / GP27 |\n| Optional OLED I2C | GP28 / GP29 |\n| Reset | RUN pulled high, reset switch pulls low |\n| Boot | QSPI_SS/FLASH_CS_N pulled high, boot switch pulls low |\n| Debug | SWDIO / SWCLK on optional header |\n\n## Assembly Intent\n\nJLCPCB/PCBWay should assemble the RP2040, crystal, flash, USB-C connector,\nESD protection, reset/boot buttons, SMD diodes, and passives. The builder should\nonly need to install switches, stabilizers, and case hardware.\n\nSee \`oso75_circuit.md\`, \`oso75_matrix_netlist.csv\`, and\n\`oso75_rp2040_netlist.csv\` for the actual circuit nets.\n`;
+  return `# OSO75 RP2040 Pin Plan\n\nThe first custom PCB target uses an onboard RP2040 and a 6 x 16 keyboard matrix.\nThis gives 96 matrix positions for the 84 physical keys, leaving spare positions for\nfuture encoder, macro, or alternate layout variants.\n\n## Matrix\n\n| Signal | Pins |\n|---|---|\n| Rows | GP0, GP1, GP2, GP3, GP4, GP5 |\n| Columns | GP6, GP7, GP8, GP9, GP10, GP11, GP12, GP13, GP14, GP15, GP16, GP17, GP18, GP19, GP20, GP21 |\n| Diode direction | COL2ROW |\n| Per-key wiring | COLn -> switch -> diode anode -> diode cathode -> ROWm |\n\n## Reserved Pins\n\n| Purpose | Pin |\n|---|---|\n| USB D+ / D- | RP2040 native USB_DP / USB_DM pins |\n| USB VBUS sense | GP24 through 100k/100k divider |\n| Status LED | GP22 |\n| OSO module interrupt/present | GP25 |\n| OSO module encoder/GPIO | GP26 / GP27 |\n| OSO module I2C | GP28 / GP29 |\n| Reset | RUN pulled high, reset switch pulls low |\n| Boot | QSPI_SS/FLASH_CS_N pulled high, boot switch pulls low |\n| Debug | SWDIO / SWCLK on optional header |\n\n## OSO Module Bay\n\nThe top-left bay is a hot-swappable accessory dock for small user-programmable\nmodules: rotary encoder/volume knob, OLED status screen, slider, macro display,\ntouch strip, sensor board, or debugging widget.\n\nProposed connector: 10 spring contacts or a low-profile board-to-board mezzanine\nconnector, keyed mechanically by the case recess.\n\n| Pin | Net | Use |\n|---:|---|---|\n| 1 | GND | Ground |\n| 2 | +3V3 | Main module power |\n| 3 | VBUS_FUSED | Optional 5 V input for LEDs, through fuse/current limit |\n| 4 | I2C_SDA / GP28 | OLED/sensor data |\n| 5 | I2C_SCL / GP29 | OLED/sensor clock |\n| 6 | MOD_A / GP26 | Encoder A / GPIO / SPI option |\n| 7 | MOD_B / GP27 | Encoder B / GPIO / SPI option |\n| 8 | MOD_INT / GP25 | Interrupt, button, or module-present detect |\n| 9 | RESET_N | Optional module reset/programming signal |\n| 10 | GND | Ground / shield |\n\nKeep modules 3.3 V logic by default. Any 5 V LED module should include its own\ncurrent limiting and should not pull more than the budget set by the PCB fuse.\n\n## Assembly Intent\n\nJLCPCB/PCBWay should assemble the RP2040, crystal, flash, USB-C connector,\nESD protection, reset/boot buttons, SMD diodes, the OSO bay dock, and passives.\nThe builder should only need to install switches, stabilizers, and case hardware.\n\nSee \`oso75_circuit.md\`, \`oso75_matrix_netlist.csv\`, and\n\`oso75_rp2040_netlist.csv\` for the actual circuit nets.\n`;
 }
 
 function bomMarkdown() {
-  return `# OSO75 Initial BOM\n\nThis BOM is split between parts we want assembled on the PCB and parts the builder\ninstalls manually.\n\n## PCB Factory Assembly\n\n| Qty | Part | Notes |\n|---:|---|---|\n| 1 | RP2040 | Onboard MCU |\n| 1 | 16MB QSPI flash | Prefer W25Q128-compatible footprint |\n| 1 | 12 MHz crystal | RP2040 reference design |\n| 84 | 1N4148W SOD-123 diodes | One per switch, factory assembled |\n| 1 | USB-C receptacle | USB 2.0 device wiring |\n| 1 | USB ESD protection | Near USB-C port |\n| 2 | 5.1k CC resistors | USB-C device mode |\n| 1 | Reset tactile switch | SMD or through-hole |\n| 1 | Boot tactile switch | For UF2 flashing |\n| many | 0402/0603 passives | Per RP2040 reference schematic |\n\n## Builder Assembly\n\n| Qty | Part | Current pick |\n|---:|---|---|\n| 84-90 | MX switches | Gateron Milky Yellow Pro V3 or MMD Princess V4 |\n| 84 | Kailh MX hotswap sockets | Only if not factory assembled |\n| 1 set | PCB screw-in stabilizers | 6.25u + 2u set |\n| 1 | Plate | Generated from OpenSCAD or laser-cut DXF later |\n| 1 | Case | Generated from OpenSCAD tray model |\n| 1 | USB-C cable | Data-capable cable |\n\n`;
+  return `# OSO75 Initial BOM\n\nThis BOM is split between parts we want assembled on the PCB and parts the builder\ninstalls manually.\n\n## PCB Factory Assembly\n\n| Qty | Part | Notes |\n|---:|---|---|\n| 1 | RP2040 | Onboard MCU |\n| 1 | 16MB QSPI flash | Prefer W25Q128-compatible footprint |\n| 1 | 12 MHz crystal | RP2040 reference design |\n| 84 | 1N4148W SOD-123 diodes | One per switch, factory assembled |\n| 1 | USB-C receptacle | USB 2.0 device wiring |\n| 1 | 10-contact module dock | Pogo pads or low-profile board-to-board connector for OSO bay |\n| 1 | Module bay current limit/fuse | Protect optional 5 V accessory modules |\n| 1 | USB ESD protection | Near USB-C port |\n| 2 | 5.1k CC resistors | USB-C device mode |\n| 1 | Reset tactile switch | SMD or through-hole |\n| 1 | Boot tactile switch | For UF2 flashing |\n| many | 0402/0603 passives | Per RP2040 reference schematic |\n\n## Builder Assembly\n\n| Qty | Part | Current pick |\n|---:|---|---|\n| 84-90 | MX switches | Gateron Milky Yellow Pro V3 or MMD Princess V4 |\n| 84 | Kailh MX hotswap sockets | Only if not factory assembled |\n| 1 set | PCB screw-in stabilizers | 6.25u + 2u set |\n| 1 | Plate | Generated from OpenSCAD or laser-cut DXF later |\n| 1 | Case | Generated from OpenSCAD tray model |\n| 1 | USB-C cable | Data-capable cable |\n\n## Optional OSO Bay Modules\n\n| Module idea | Main parts |\n|---|---|\n| Volume knob | Rotary encoder, knob, small module PCB |\n| OLED status screen | 0.91-1.3 inch I2C OLED, module PCB |\n| Slider/macropanel | Potentiometer or linear Hall sensor, module PCB |\n| LED widget | Addressable LEDs with current limiting |\n\n`;
 }
 
 write(path.join(root, "hardware/cad/generated/oso75_case_plate.scad"), scadString());

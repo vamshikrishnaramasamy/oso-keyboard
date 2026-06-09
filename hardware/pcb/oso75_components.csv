@@ -5,6 +5,8 @@ U3,3.3 V LDO,SOT-23-5,AP2112K-3.3TRG1,factory,USB 5 V to 3.3 V
 U4,USB ESD array,SOT-23-6,USBLC6-2SC6 or equivalent,factory,Place by USB-C
 J1,USB-C receptacle,USB-C-16P-SMD,HRO TYPE-C-31-M-12,factory,USB 2.0 device port
 J2,SWD header,1x04 1.27mm or tag-connect,DNP header option,optional,3V3 SWDIO SWCLK GND
+J3,OSO module bay dock,10 spring contacts or 2x5 mezzanine,pogo/mezzanine TBD,factory,Top-left hot-swappable accessory bay
+F1,500mA resettable fuse,1206 polyfuse,generic,factory,Optional fused 5 V for module bay
 Y1,12 MHz crystal,3225 crystal,12 MHz CL matched,factory,RP2040 clock
 SW_BOOT,Boot tactile switch,SMD tactile,SKRPACE010,factory,Pull QSPI_SS low while reset
 SW_RESET,Reset tactile switch,SMD tactile,SKRPACE010,factory,Pull RUN low
@@ -18,6 +20,7 @@ R6,100k,0603,generic,factory,QSPI_SS pullup
 R7,100k,0603,generic,factory,VBUS sense high divider
 R8,100k,0603,generic,factory,VBUS sense low divider
 R9,1k,0603,generic,factory,Status LED current limit
+R10,10k,0603,generic,factory,Module present/interrupt pullup
 C1,10uF,0603/0805,generic X5R,factory,LDO input
 C2,10uF,0603/0805,generic X5R,factory,LDO output
 C3,1uF,0603,generic X5R,factory,RP2040 VREG_OUT

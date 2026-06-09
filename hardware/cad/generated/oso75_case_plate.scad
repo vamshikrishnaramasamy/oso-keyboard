@@ -6,8 +6,13 @@ case_wall = 4;
 case_floor = 3;
 switch_cutout = 14;
 plate_z = 14.5;
+gadget_offset_y = 16;
+gadget_x = 11;
+gadget_y = 5;
+gadget_w = 54;
+gadget_h = 25;
 board_width = 346.613;
-board_height = 137.063;
+board_height = 153.063;
 keys = [
   [9.525, 9.525, 19.050, 19.050, "Esc"],
   [47.625, 9.525, 19.050, 19.050, "F1"],
@@ -108,14 +113,14 @@ module rounded_box(size, radius) {
 
 module switch_cutouts(depth = plate_thickness + 0.3) {
   for (k = keys) {
-    translate([k[0] + 9, k[1] + 9, -0.15])
+    translate([k[0] + 9, k[1] + 9 + gadget_offset_y, -0.15])
       cube([switch_cutout, switch_cutout, depth], center = true);
   }
 }
 
 module plate_bezels() {
   for (k = keys) {
-    translate([k[0] + 9, k[1] + 9, plate_thickness - 0.2])
+    translate([k[0] + 9, k[1] + 9 + gadget_offset_y, plate_thickness - 0.2])
       linear_extrude(height = 0.45)
         difference() {
           square([min(k[2] - 2.2, 17.2), 17.2], center = true);
@@ -129,11 +134,39 @@ module stabilizer_slots() {
     if (k[2] >= unit * 1.75) {
       stab_spacing = k[2] >= unit * 5 ? 50 : 23.8;
       for (xoff = [-stab_spacing / 2, stab_spacing / 2]) {
-        translate([k[0] + 9 + xoff, k[1] + 9, -0.2])
+        translate([k[0] + 9 + xoff, k[1] + 9 + gadget_offset_y, -0.2])
           cube([6.6, 12.4, plate_thickness + 0.5], center = true);
       }
     }
   }
+}
+
+module gadget_bay_cutouts() {
+  translate([gadget_x + gadget_w / 2, gadget_y + gadget_h / 2, plate_thickness - 0.55])
+    linear_extrude(height = 0.75)
+      rounded_rect_2d([gadget_w, gadget_h], 3);
+
+  for (xoff = [6, gadget_w - 6]) {
+    translate([gadget_x + xoff, gadget_y + gadget_h / 2, -0.2])
+      cylinder(h = plate_thickness + 0.5, r = 1.8);
+  }
+}
+
+module gadget_bay_details() {
+  translate([gadget_x + gadget_w / 2, gadget_y + gadget_h / 2, plate_thickness + 0.15])
+    linear_extrude(height = 0.65)
+      difference() {
+        rounded_rect_2d([gadget_w + 2.2, gadget_h + 2.2], 3.6);
+        rounded_rect_2d([gadget_w - 2.4, gadget_h - 2.4], 2.2);
+      }
+
+  for (i = [0:9]) {
+    translate([gadget_x + 9 + i * 3.8, gadget_y + gadget_h - 5.2, plate_thickness + 0.85])
+      cube([2.2, 5.0, 0.5], center = true);
+  }
+
+  translate([gadget_x + gadget_w / 2, gadget_y + 6.5, plate_thickness + 0.9])
+    cube([31, 2.2, 0.45], center = true);
 }
 
 module usb_c_slot(width = 10.2, height = 3.8, depth = case_wall + 0.7) {
@@ -158,8 +191,10 @@ module top_plate() {
     rounded_box([board_width, board_height, plate_thickness], 5);
     switch_cutouts();
     stabilizer_slots();
+    gadget_bay_cutouts();
   }
   plate_bezels();
+  gadget_bay_details();
 }
 
 module tray_case() {
@@ -173,7 +208,7 @@ module tray_case() {
 
 module keycap_frames() {
   for (k = keys) {
-    translate([k[0] + 9 + case_wall, k[1] + 9 + case_wall, plate_z + plate_thickness + 1.45])
+    translate([k[0] + 9 + case_wall, k[1] + 9 + gadget_offset_y + case_wall, plate_z + plate_thickness + 1.45])
       difference() {
         cube([max(10, k[2] - 3.4), max(10, k[3] - 3.8), 2.2], center = true);
         cube([switch_cutout + 1.2, switch_cutout + 1.2, 2.6], center = true);

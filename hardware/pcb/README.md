@@ -8,7 +8,7 @@ Current files:
 - `oso75_placement.csv` is generated placement data for switches and diodes.
 - `oso75_matrix_netlist.csv` defines every switch, diode, row net, and column net.
 - `oso75_rp2040_netlist.csv` defines USB-C, power, flash, crystal, reset, boot,
-  debug, status LED, and matrix pins.
+  debug, status LED, OSO module bay, and matrix pins.
 - `oso75_components.csv` lists footprints, part choices, and factory/builder
   assembly intent.
 - `oso75_circuit.md` explains the circuit blocks and routing rules.
@@ -21,6 +21,7 @@ schematic/PCB project with:
 - 6 x 16 matrix routing
 - MX hotswap sockets
 - SOD-123 diodes
+- top-left hot-swappable OSO module bay for encoder/OLED/slider-style accessories
 - PCB-mount stabilizer holes
 - VIA/QMK-compatible metadata
 
