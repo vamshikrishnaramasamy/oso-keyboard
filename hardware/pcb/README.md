@@ -21,7 +21,7 @@ schematic/PCB project with:
 - 6 x 16 matrix routing
 - MX hotswap sockets
 - SOD-123 diodes
-- top-left hot-swappable OSO module bay for encoder/OLED/slider-style accessories
+- top-left protruding OSO module tab for encoder/OLED/slider-style accessories
 - PCB-mount stabilizer holes
 - VIA/QMK-compatible metadata
 

@@ -78,7 +78,7 @@ function keycodeFor(label) {
 
 function scadString() {
   const width = (Math.max(...keys.map(k => k.x + k.w)) * unit) + 18;
-  const height = (Math.max(...keys.map(k => k.y + k.h)) * unit) + 34;
+  const height = (Math.max(...keys.map(k => k.y + k.h)) * unit) + 18;
   const keyRows = keys
     .map(k => `  [${k.cx.toFixed(3)}, ${k.cy.toFixed(3)}, ${(k.w * unit).toFixed(3)}, ${(k.h * unit).toFixed(3)}, ${JSON.stringify(k.label)}]`)
     .join(",\n");
@@ -90,9 +90,8 @@ case_wall = 4;
 case_floor = 3;
 switch_cutout = ${layout.switch_cutout_mm};
 plate_z = 14.5;
-gadget_offset_y = 16;
 gadget_x = 11;
-gadget_y = 5;
+gadget_y = -25;
 gadget_w = 54;
 gadget_h = 25;
 board_width = ${width.toFixed(3)};
@@ -112,16 +111,24 @@ module rounded_box(size, radius) {
       rounded_rect_2d([size[0], size[1]], radius);
 }
 
+module plate_outline(height) {
+  union() {
+    rounded_box([board_width, board_height, height], 5);
+    translate([gadget_x - 3, gadget_y - 3, 0])
+      rounded_box([gadget_w + 6, gadget_h + 6, height], 5);
+  }
+}
+
 module switch_cutouts(depth = plate_thickness + 0.3) {
   for (k = keys) {
-    translate([k[0] + 9, k[1] + 9 + gadget_offset_y, -0.15])
+    translate([k[0] + 9, k[1] + 9, -0.15])
       cube([switch_cutout, switch_cutout, depth], center = true);
   }
 }
 
 module plate_bezels() {
   for (k = keys) {
-    translate([k[0] + 9, k[1] + 9 + gadget_offset_y, plate_thickness - 0.2])
+    translate([k[0] + 9, k[1] + 9, plate_thickness - 0.2])
       linear_extrude(height = 0.45)
         difference() {
           square([min(k[2] - 2.2, 17.2), 17.2], center = true);
@@ -135,7 +142,7 @@ module stabilizer_slots() {
     if (k[2] >= unit * 1.75) {
       stab_spacing = k[2] >= unit * 5 ? 50 : 23.8;
       for (xoff = [-stab_spacing / 2, stab_spacing / 2]) {
-        translate([k[0] + 9 + xoff, k[1] + 9 + gadget_offset_y, -0.2])
+        translate([k[0] + 9 + xoff, k[1] + 9, -0.2])
           cube([6.6, 12.4, plate_thickness + 0.5], center = true);
       }
     }
@@ -189,7 +196,7 @@ module usb_c_bezel() {
 
 module top_plate() {
   difference() {
-    rounded_box([board_width, board_height, plate_thickness], 5);
+    plate_outline(plate_thickness);
     switch_cutouts();
     stabilizer_slots();
     gadget_bay_cutouts();
@@ -200,16 +207,22 @@ module top_plate() {
 
 module tray_case() {
   difference() {
-    rounded_box([board_width + case_wall * 2, board_height + case_wall * 2, 14], 8);
+    union() {
+      rounded_box([board_width + case_wall * 2, board_height + case_wall * 2, 14], 8);
+      translate([gadget_x - 3, gadget_y - 3, 0])
+        rounded_box([gadget_w + 6 + case_wall * 2, gadget_h + 6 + case_wall * 2, 14], 8);
+    }
     translate([case_wall, case_wall, case_floor])
       rounded_box([board_width, board_height, 15], 5);
+    translate([gadget_x + case_wall - 3, gadget_y + case_wall - 3, case_floor])
+      rounded_box([gadget_w + 6, gadget_h + 6, 15], 5);
     usb_c_slot();
   }
 }
 
 module keycap_frames() {
   for (k = keys) {
-    translate([k[0] + 9 + case_wall, k[1] + 9 + gadget_offset_y + case_wall, plate_z + plate_thickness + 1.45])
+    translate([k[0] + 9 + case_wall, k[1] + 9 + case_wall, plate_z + plate_thickness + 1.45])
       difference() {
         cube([max(10, k[2] - 3.4), max(10, k[3] - 3.8), 2.2], center = true);
         cube([switch_cutout + 1.2, switch_cutout + 1.2, 2.6], center = true);
