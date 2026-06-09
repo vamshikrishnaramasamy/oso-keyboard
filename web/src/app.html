@@ -24,7 +24,7 @@
       <section class="section">
         <p class="section-title">Build Status</p>
         <div class="build-list">
-          <div class="build-row"><span class="check">✓</span><span>Layout generated</span><span class="stage-time">84 keys</span></div>
+          <div class="build-row"><span class="check">✓</span><span>Layout generated</span><span class="stage-time">82 keys + module bay</span></div>
           <div class="build-row"><span class="check">✓</span><span>OpenSCAD parsed</span></div>
           <div class="build-row"><span class="check">✓</span><span>STL exported</span></div>
           <div class="build-row"><span class="check">✓</span><span>Viewer loaded</span></div>

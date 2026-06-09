@@ -1,7 +1,7 @@
 # OSO75 RP2040 Pin Plan
 
 The first custom PCB target uses an onboard RP2040 and a 6 x 16 keyboard matrix.
-This gives 96 matrix positions for the 84 physical keys, leaving spare positions for
+This gives 96 matrix positions for the 82 physical keys, leaving spare positions for
 future encoder, macro, or alternate layout variants.
 
 ## Matrix
@@ -12,6 +12,7 @@ future encoder, macro, or alternate layout variants.
 | Columns | GP6, GP7, GP8, GP9, GP10, GP11, GP12, GP13, GP14, GP15, GP16, GP17, GP18, GP19, GP20, GP21 |
 | Diode direction | COL2ROW |
 | Per-key wiring | COLn -> switch -> diode anode -> diode cathode -> ROWm |
+| Module bay replaced positions | Esc, F1 |
 
 ## Reserved Pins
 

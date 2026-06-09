@@ -2,7 +2,15 @@
   "name": "OSO75",
   "unit_mm": 19.05,
   "switch_cutout_mm": 14,
-  "description": "84-key 75% ANSI layout with exploded nav cluster and arrows.",
+  "description": "82-key 75% ANSI layout with exploded nav cluster, arrows, and a flush top-left OSO module bay.",
+  "module_bay": {
+    "x_mm": 11,
+    "y_mm": 5,
+    "w_mm": 54,
+    "h_mm": 25,
+    "replaces": ["Esc", "F1"],
+    "pins": ["GND", "+3V3", "VBUS_FUSED", "I2C_SDA", "I2C_SCL", "MOD_A", "MOD_B", "MOD_INT", "RESET_N", "GND"]
+  },
   "keys": [
     { "label": "Esc", "x": 0, "y": 0, "row": 0, "col": 0 },
     { "label": "F1", "x": 2, "y": 0, "row": 0, "col": 1 },

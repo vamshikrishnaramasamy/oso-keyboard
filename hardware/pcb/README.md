@@ -19,11 +19,11 @@ schematic/PCB project with:
 - RP2040 reference schematic
 - USB-C, ESD, boot, reset, flash, crystal, and regulator circuitry
 - 6 x 16 matrix routing
-- MX hotswap sockets
-- SOD-123 diodes
+- 82 MX hotswap sockets
+- 82 SOD-123 diodes
 - flush top-left OSO module bay for encoder/OLED/slider-style accessories
 - PCB-mount stabilizer holes
 - VIA/QMK-compatible metadata
 
 Design note: the diodes are still part of the PCB, but the plan is to make them
-SMD/factory-assembled so builders do not have to solder 84 tiny parts by hand.
+SMD/factory-assembled so builders do not have to solder 82 tiny parts by hand.

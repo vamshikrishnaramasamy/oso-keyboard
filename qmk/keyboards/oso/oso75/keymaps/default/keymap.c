@@ -3,8 +3,6 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT(
-    KC_ESC,
-    KC_F1,
     KC_F2,
     KC_F3,
     KC_F4,
@@ -89,8 +87,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_RGHT
   ),
   [1] = LAYOUT(
-    QK_BOOT,
-    KC_TRNS,
     KC_TRNS,
     KC_TRNS,
     KC_TRNS,

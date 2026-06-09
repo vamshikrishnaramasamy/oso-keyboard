@@ -9,11 +9,36 @@ const layout = JSON.parse(fs.readFileSync(path.join(root, "hardware/layout/oso75
 const unit = layout.unit_mm;
 const boardWidth = (Math.max(...layout.keys.map(k => k.x + (k.w ?? 1))) * unit) + 18;
 const boardHeight = (Math.max(...layout.keys.map(k => k.y + (k.h ?? 1))) * unit) + 18;
-const pcbHeight = boardHeight + 34;
-const controllerY = boardHeight + 15;
-const keys = layout.keys.map((key, index) => {
+const pcbHeight = boardHeight;
+const controllerY = boardHeight - 10;
+const moduleBay = layout.module_bay;
+
+function keyCenter(key) {
   const w = key.w ?? 1;
   const h = key.h ?? 1;
+  return {
+    x: ((key.x + w / 2) * unit) + 9,
+    y: ((key.y + h / 2) * unit) + 9
+  };
+}
+
+function isInsideModuleBay(key) {
+  if (!moduleBay) return false;
+  const center = keyCenter(key);
+  return (
+    center.x >= moduleBay.x_mm &&
+    center.x <= moduleBay.x_mm + moduleBay.w_mm &&
+    center.y >= moduleBay.y_mm &&
+    center.y <= moduleBay.y_mm + moduleBay.h_mm
+  );
+}
+
+const omittedKeys = layout.keys.filter(isInsideModuleBay);
+const physicalLayoutKeys = layout.keys.filter(key => !isInsideModuleBay(key));
+const keys = physicalLayoutKeys.map((key, index) => {
+  const w = key.w ?? 1;
+  const h = key.h ?? 1;
+  const center = keyCenter(key);
   return {
     ...key,
     w,
@@ -21,8 +46,8 @@ const keys = layout.keys.map((key, index) => {
     ref: `SW${index + 1}`,
     diode: `D${index + 1}`,
     da: `D${index + 1}_A`,
-    x: ((key.x + w / 2) * unit) + 9,
-    y: ((key.y + h / 2) * unit) + 9
+    x: center.x,
+    y: center.y
   };
 });
 
@@ -48,8 +73,9 @@ const netNames = [
   "GND", "VBUS", "+3V3", "+1V1", "USB_CC1", "USB_CC2", "USB_DP_CONN",
   "USB_DM_CONN", "USB_DP", "USB_DM", "RESET_N", "FLASH_CS_N", "XTAL_IN",
   "XTAL_OUT", "QSPI_SCLK", "QSPI_SD0", "QSPI_SD1", "QSPI_SD2", "QSPI_SD3",
-  "VBUS_SENSE", "LED_STATUS", "D85_A", "SWDIO", "SWCLK", "ENC_A", "ENC_B",
-  "I2C_SDA", "I2C_SCL", ...Array.from({ length: 6 }, (_, i) => `ROW${i}`),
+  "VBUS_SENSE", "VBUS_FUSED", "LED_STATUS", "D85_A", "SWDIO", "SWCLK",
+  "MOD_A", "MOD_B", "MOD_INT", "I2C_SDA", "I2C_SCL",
+  ...Array.from({ length: 6 }, (_, i) => `ROW${i}`),
   ...Array.from({ length: 16 }, (_, i) => `COL${i}`),
   ...keys.map(k => k.da)
 ];
@@ -126,7 +152,7 @@ const rp2040Pins = {
   20: "XTAL_IN", 21: "XTAL_OUT", 22: "+3V3", 23: "+1V1", 24: "SWCLK",
   25: "SWDIO", 26: "RESET_N", 27: "COL10", 28: "COL11", 29: "COL12",
   30: "COL13", 31: "COL14", 32: "COL15", 33: "+3V3", 34: "LED_STATUS",
-  35: "GND", 36: "VBUS_SENSE", 37: "GND", 38: "ENC_A", 39: "ENC_B",
+  35: "GND", 36: "VBUS_SENSE", 37: "MOD_INT", 38: "MOD_A", 39: "MOD_B",
   40: "I2C_SDA", 41: "I2C_SCL", 42: "+3V3", 43: "+3V3", 44: "+3V3",
   45: "+1V1", 46: "USB_DM", 47: "USB_DP", 48: "+3V3", 49: "+3V3",
   50: "+1V1", 51: "QSPI_SD3", 52: "QSPI_SCLK", 53: "QSPI_SD0",
@@ -183,6 +209,39 @@ function button(ref, value, x, y, netA, netB) {
     pad(ref, "2", "smd", "roundrect", 1.7, 0, 1.2, 1.7, '"F.Cu" "F.Paste" "F.Mask"', netB, " (roundrect_rratio 0.2)")
   ].join("\n");
   return footprint(ref, value, x, y, body, "OSO75:SW_Tactile_4x3");
+}
+
+function moduleBayFootprint() {
+  const x = moduleBay.x_mm + moduleBay.w_mm / 2;
+  const y = moduleBay.y_mm + moduleBay.h_mm / 2;
+  const padStart = -((moduleBay.pins.length - 1) * 3.8) / 2;
+  const contactPads = moduleBay.pins.map((netName, index) =>
+    pad(
+      "J3",
+      String(index + 1),
+      "smd",
+      "roundrect",
+      Number((padStart + index * 3.8).toFixed(3)),
+      -5.2,
+      2.2,
+      5.0,
+      '"F.Cu" "F.Paste" "F.Mask"',
+      netName,
+      " (roundrect_rratio 0.18)"
+    )
+  );
+  const body = [
+    fpLine(-moduleBay.w_mm / 2, -moduleBay.h_mm / 2, moduleBay.w_mm / 2, -moduleBay.h_mm / 2, "F.CrtYd", 0.12),
+    fpLine(moduleBay.w_mm / 2, -moduleBay.h_mm / 2, moduleBay.w_mm / 2, moduleBay.h_mm / 2, "F.CrtYd", 0.12),
+    fpLine(moduleBay.w_mm / 2, moduleBay.h_mm / 2, -moduleBay.w_mm / 2, moduleBay.h_mm / 2, "F.CrtYd", 0.12),
+    fpLine(-moduleBay.w_mm / 2, moduleBay.h_mm / 2, -moduleBay.w_mm / 2, -moduleBay.h_mm / 2, "F.CrtYd", 0.12),
+    fpLine(-moduleBay.w_mm / 2 + 4, 5.8, moduleBay.w_mm / 2 - 4, 5.8, "F.Fab", 0.2),
+    text("J3", "OSO MODULE BAY", 0, 9.2, "F.Fab"),
+    ...contactPads,
+    pad("J3", "MH1", "np_thru_hole", "circle", -moduleBay.w_mm / 2 + 6, 0, 3.6, 3.6, '"*.Cu" "*.Mask"', "", " (drill 1.8)"),
+    pad("J3", "MH2", "np_thru_hole", "circle", moduleBay.w_mm / 2 - 6, 0, 3.6, 3.6, '"*.Cu" "*.Mask"', "", " (drill 1.8)")
+  ].join("\n");
+  return footprint("J3", "OSO_Module_Bay_10", x, y, body, "OSO75:OSO_Module_Bay_10");
 }
 
 function usbFootprint() {
@@ -267,6 +326,7 @@ function matrixRoutes() {
 function boardFile() {
   const footprints = [
     ...keys.flatMap(k => [switchFootprint(k), diodeFootprint(k)]),
+    moduleBayFootprint(),
     usbFootprint(),
     rp2040Footprint(),
     flashFootprint(),
@@ -277,6 +337,8 @@ function boardFile() {
     twoPad("R4", "27R", boardWidth / 2 + 5, pcbHeight - 13, "USB_DM_CONN", "USB_DM"),
     twoPad("R5", "100k", boardWidth / 2 - 25, controllerY - 6, "RESET_N", "+3V3"),
     twoPad("R6", "100k", boardWidth / 2 + 25, controllerY - 6, "FLASH_CS_N", "+3V3"),
+    twoPad("F1", "500mA", boardWidth / 2 - 44, controllerY + 7, "VBUS", "VBUS_FUSED", "OSO75:Polyfuse_1206"),
+    twoPad("R10", "10k", boardWidth / 2 - 33, controllerY + 7, "MOD_INT", "+3V3"),
     twoPad("C1", "10uF", boardWidth / 2 - 24, pcbHeight - 12, "VBUS", "GND", "OSO75:C_0603"),
     twoPad("C2", "10uF", boardWidth / 2 - 24, pcbHeight - 15, "+3V3", "GND", "OSO75:C_0603"),
     twoPad("C3", "1uF", boardWidth / 2 - 9, controllerY - 5, "+1V1", "GND", "OSO75:C_0603"),
@@ -316,16 +378,18 @@ Generated from \`hardware/layout/oso75.layout.json\` and the PCB circuit netlist
 
 Open \`oso75.kicad_pro\` in KiCad 10. The board currently contains:
 
-- 84 MX switch footprints
-- 84 SOD-123 diode footprints
+- ${keys.length} MX switch footprints; ${omittedKeys.map(k => k.label).join(" and ")} are replaced by the module bay
+- ${keys.length} SOD-123 diode footprints
 - 6 x 16 COL2ROW matrix nets
 - RP2040 QFN-56 footprint with real package pin/net assignment
+- Flush top-left J3 OSO module bay footprint with 10 exposed contacts and two retention holes
+- F1 fused 5 V module rail and R10 module-present/interrupt pullup
 - USB-C, CC pulldowns, USB series resistors, LDO, flash, boot/reset, crystal/load caps
-- Board outline with a controller/USB tail below the key field
+- Board outline sized to the generated case: ${boardWidth.toFixed(3)} mm x ${boardHeight.toFixed(3)} mm
 - First-pass local switch-to-diode routing
 
 This is an electrical/layout starting point, not a fab-ready release yet. Next pass:
-route the remaining row/column/controller nets, add mounting/stabilizer holes,
+route the remaining row/column/controller/module nets, add stabilizer holes,
 tune USB diff-pair routing, run interactive KiCad DRC, and export Gerbers after review.
 `;
 }

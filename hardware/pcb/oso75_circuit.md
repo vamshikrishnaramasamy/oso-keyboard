@@ -9,7 +9,8 @@ of truth for schematic capture.
 
 - MCU: onboard RP2040, QFN-56.
 - Firmware: QMK/VIA-compatible matrix using native USB.
-- Matrix: 6 rows x 16 columns, 84 populated switch positions.
+- Matrix: 6 rows x 16 columns, 82 populated switch positions.
+- Module bay replaces: Esc, F1.
 - Diode direction: `COL2ROW`.
 - Builder soldering target: switches/stabilizers only. SMD diodes and controller
   support parts should be factory assembled.
@@ -29,7 +30,7 @@ through the switch and diode into the sensed row.
 
 | Net | RP2040 pin | Populated keys |
 |---|---|---:|
-| ROW0 | U1 GP0 | 14 switches |
+| ROW0 | U1 GP0 | 12 switches |
 | ROW1 | U1 GP1 | 16 switches |
 | ROW2 | U1 GP2 | 16 switches |
 | ROW3 | U1 GP3 | 15 switches |
@@ -40,8 +41,8 @@ through the switch and diode into the sensed row.
 
 | Net | RP2040 pin | Populated keys |
 |---|---|---:|
-| COL0 | U1 GP6 | 6 switches |
-| COL1 | U1 GP7 | 6 switches |
+| COL0 | U1 GP6 | 5 switches |
+| COL1 | U1 GP7 | 5 switches |
 | COL2 | U1 GP8 | 6 switches |
 | COL3 | U1 GP9 | 6 switches |
 | COL4 | U1 GP10 | 6 switches |

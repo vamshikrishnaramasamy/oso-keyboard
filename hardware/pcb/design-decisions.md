@@ -44,9 +44,9 @@ The first KiCad pass should include:
 
 - RP2040, 16MB flash, crystal, regulator, USB-C, ESD, boot, reset.
 - 6 x 16 COL2ROW keyboard matrix.
-- 84 MX hotswap sockets.
-- 84 SOD-123 diodes.
-- Top-left OSO module bay connector and mechanical keepout.
+- 82 MX hotswap sockets.
+- 82 SOD-123 diodes.
+- Top-left OSO module bay connector, 10 exposed contacts, retention holes, and mechanical keepout.
 - PCB-mount stabilizer holes.
 - Mounting holes aligned to the generated case.
 - Clear silkscreen labels for rows, columns, and switch positions.

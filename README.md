@@ -9,9 +9,10 @@ programmable PCB target, QMK firmware, and parametric CAD.
 
 Current design target:
 
-- 84-key 75% ANSI layout
+- 82-key 75% ANSI layout with a flush hot-swappable OSO module bay
 - Onboard RP2040 microcontroller
 - USB-C
+- 10-contact programmable module dock replacing the Esc/F1 corner
 - QMK/VIA-ready firmware
 - MX hotswap switch footprints
 - PCB-mounted stabilizers
@@ -37,7 +38,7 @@ This is the first hardware bring-up pass. The layout, firmware skeleton, CAD
 plate/case model, RP2040 pin plan, PCB circuit netlists, and KiCad board
 starting point are in place.
 
-The KiCad board currently loads in KiCad 10 and has an error-only DRC report with
-0 violations, but it is not fab-ready yet. The remaining work is routing the
-unconnected matrix/controller nets, adding mounting and stabilizer holes, tuning
-the USB routing, and exporting final Gerbers.
+The KiCad board is generated as a real layout starting point, but it is not
+fab-ready yet. The remaining work is routing the unconnected matrix/controller/module
+nets, adding stabilizer holes, tuning the USB routing, running KiCad DRC, and
+exporting final Gerbers.

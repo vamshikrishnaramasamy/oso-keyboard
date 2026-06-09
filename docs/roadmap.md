@@ -2,7 +2,7 @@
 
 ## Done
 
-- 84-key 75% layout source.
+- 82-key 75% layout source with the OSO module bay replacing Esc/F1.
 - Generator for QMK metadata, keymap, CAD, BOM, and placement data.
 - QMK firmware skeleton.
 - RP2040 matrix pin plan.
@@ -17,4 +17,3 @@
 - Create a VIA JSON definition.
 - Make first firmware compile inside a QMK checkout.
 - Export Gerbers and assembly files.
-
