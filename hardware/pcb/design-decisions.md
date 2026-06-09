@@ -14,7 +14,7 @@ Reasons:
 
 ## Decision: Top-Left Hot-Swappable Module Bay
 
-OSO75 includes a top-left accessory tab as the signature customizable feature.
+OSO75 includes a flush top-left accessory bay as the signature customizable feature.
 The bay is meant for small user-created modules that can be swapped without
 redesigning the whole keyboard: a volume knob, OLED display, slider, macro
 display, sensor board, or other programmable widget.
@@ -26,8 +26,8 @@ optional fused 5 V, and ground.
 
 Mechanical intent:
 
-- A visible top-left recessed pocket on its own small case/plate tab, not a
-  full-width empty strip above the keyboard.
+- A visible top-left recessed pocket inside the normal keyboard outline, not a
+  protruding tab or full-width empty strip.
 - Two small retention/mounting holes for module plates or screws.
 - A 10-contact pad strip for pogo pins or a low-profile board-to-board connector.
 - Modules should be independently open-source and printable/fabbable.
