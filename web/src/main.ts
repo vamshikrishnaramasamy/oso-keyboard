@@ -3,7 +3,7 @@ import appHtml from "./app.html?raw";
 import layout from "../../hardware/layout/oso75.layout.json";
 import * as THREE from "three";
 import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import { TrackballControls } from "three/examples/jsm/controls/TrackballControls.js";
 import { OutputPass } from "three/examples/jsm/postprocessing/OutputPass.js";
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
 import { SSAOPass } from "three/examples/jsm/postprocessing/SSAOPass.js";
@@ -60,9 +60,14 @@ ssaoPass.maxDistance = 0.18;
 composer.addPass(ssaoPass);
 composer.addPass(new OutputPass());
 
-const controls = new OrbitControls(camera, renderer.domElement);
-controls.enableDamping = true;
-controls.dampingFactor = 0.08;
+const controls = new TrackballControls(camera, renderer.domElement);
+controls.rotateSpeed = 3.8;
+controls.zoomSpeed = 1.35;
+controls.panSpeed = 0.75;
+controls.dynamicDampingFactor = 0.12;
+controls.staticMoving = false;
+controls.minDistance = 35;
+controls.maxDistance = 1400;
 controls.target.set(170, 64, 8);
 
 const modelGroup = new THREE.Group();
@@ -151,6 +156,7 @@ function resize() {
   renderer.setSize(rect.width, rect.height, false);
   composer.setSize(rect.width, rect.height);
   ssaoPass.setSize(rect.width, rect.height);
+  controls.handleResize();
 }
 
 function fitModel() {
