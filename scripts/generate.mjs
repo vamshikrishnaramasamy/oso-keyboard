@@ -137,6 +137,23 @@ module stabilizer_slots() {
   }
 }
 
+module usb_c_slot(width = 10.2, height = 3.8, depth = case_wall + 0.7) {
+  translate([board_width / 2 + case_wall, -0.2, 6.7])
+    rotate([90, 0, 0])
+      linear_extrude(height = depth)
+        rounded_rect_2d([width, height], height / 2);
+}
+
+module usb_c_bezel() {
+  translate([board_width / 2 + case_wall, -0.35, 6.7])
+    rotate([90, 0, 0])
+      linear_extrude(height = 0.7)
+        difference() {
+          rounded_rect_2d([13.4, 6.4], 2.3);
+          rounded_rect_2d([10.2, 3.8], 1.9);
+        }
+}
+
 module top_plate() {
   difference() {
     rounded_box([board_width, board_height, plate_thickness], 5);
@@ -151,8 +168,7 @@ module tray_case() {
     rounded_box([board_width + case_wall * 2, board_height + case_wall * 2, 14], 8);
     translate([case_wall, case_wall, case_floor])
       rounded_box([board_width, board_height, 15], 5);
-    translate([board_width / 2 - 8 + case_wall, -0.1, 6])
-      cube([16, case_wall + 0.2, 5], center = false);
+    usb_c_slot();
   }
 }
 
@@ -167,6 +183,7 @@ module keycap_frames() {
 }
 
 tray_case();
+usb_c_bezel();
 translate([case_wall, case_wall, plate_z]) top_plate();
 keycap_frames();
 `;
