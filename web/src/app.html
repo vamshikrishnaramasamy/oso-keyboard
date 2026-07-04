@@ -6,19 +6,27 @@
       <div class="status"><span class="status-dot"></span><span id="status-text">Starting</span></div>
     </div>
     <div class="topbar-actions">
-      <a class="topbar-button" href="/models/oso75_case_plate.stl" download>Download STL</a>
-      <a class="topbar-button" href="/models/oso75_case_plate.stl" target="_blank">Open model</a>
+      <a class="topbar-button" href="/models/oso75_case_bottom.stl" download>Download case STL</a>
+      <a class="topbar-button" href="/models/oso75_case_bottom.stl" target="_blank">Open raw STL</a>
     </div>
   </header>
 
   <main class="shell">
     <aside class="sidebar">
       <section class="section">
-        <p class="section-title">Models</p>
+        <p class="section-title">Model</p>
+        <select id="model" aria-label="Model">
+          <option value="prod">Production case (build123d)</option>
+          <option value="module">Production case + carrier module</option>
+          <option value="scad">Deprecated concept (OpenSCAD)</option>
+        </select>
         <div class="file-list">
-          <div class="file-row active"><span>oso75_case_plate.stl</span><span class="muted">STL</span></div>
-          <div class="file-row"><span>oso75_case_plate.scad</span><span class="muted">SCAD</span></div>
-          <div class="file-row"><span>oso75_placement.csv</span><span class="muted">PCB</span></div>
+          <div class="file-row"><span>oso75_case_bottom.stl</span><span class="muted">tray</span></div>
+          <div class="file-row"><span>oso75_case_bezel.stl</span><span class="muted">bezel</span></div>
+          <div class="file-row"><span>oso75_plate.stl</span><span class="muted">plate</span></div>
+          <div class="file-row"><span>oso75_bay_cover.stl</span><span class="muted">bay blank</span></div>
+          <div class="file-row"><span>oso75_module_carrier.stl</span><span class="muted">module</span></div>
+          <div class="file-row"><span>oso75_case_plate.stl</span><span class="muted">deprecated concept</span></div>
         </div>
       </section>
       <section class="section">
@@ -48,9 +56,16 @@
           <button class="tool-button" data-mode="xray">X-ray</button>
         </div>
         <div class="tool-group">
+          <button class="tool-button" data-layer-view="both">Both</button>
+          <button class="tool-button active" data-layer-view="case">Case STL</button>
+          <button class="tool-button" data-layer-view="pcb">PCB outline</button>
+        </div>
+        <div class="tool-group">
           <button class="tool-button" data-view="top">Top</button>
           <button class="tool-button" data-view="front">Front</button>
+          <button class="tool-button" data-view="back">Back</button>
           <button class="tool-button" data-view="right">Right</button>
+          <button class="tool-button" data-view="module">Module</button>
           <button class="tool-button" data-view="iso">Iso</button>
           <button class="tool-button" id="fit">Fit</button>
           <button class="tool-button" id="reset">Reset</button>
@@ -61,7 +76,7 @@
       </div>
       <div class="statusbar">
         <span>Unit: mm</span>
-        <span>Source: hardware/cad/generated/oso75_case_plate.scad</span>
+        <span id="model-source">Source: hardware/cad/build123d/oso75_case.py</span>
       </div>
     </section>
 
@@ -78,20 +93,20 @@
       <section class="section">
         <p class="section-title">Layers</p>
         <div class="layer-list">
-          <div class="layer-row"><span class="layer-name"><span class="layer-chip case-chip"></span>Case</span><span>visible</span></div>
-          <div class="layer-row"><span class="layer-name"><span class="layer-chip plate-chip"></span>Plate</span><span>visible</span></div>
-          <div class="layer-row"><span class="layer-name"><span class="layer-chip switch-chip"></span>Cutout depth</span><span>visible</span></div>
+          <div class="layer-row"><span class="layer-name"><span class="layer-chip case-chip"></span>Raw case STL</span><span>actual export</span></div>
+          <div class="layer-row"><span class="layer-name"><span class="layer-chip plate-chip"></span>PCB outline</span><span>337.088 x 150.063 mm</span></div>
+          <div class="layer-row"><span class="layer-name"><span class="layer-chip switch-chip"></span>Extra overlays</span><span>off</span></div>
         </div>
       </section>
       <section class="section">
         <p class="section-title">Export</p>
         <div class="file-list">
-          <a class="download-button" id="download-stl" download="oso75_case_plate.stl">Download current STL</a>
-          <a class="download-button" href="/models/oso75_case_plate.stl" target="_blank">Inspect raw file</a>
+          <a class="download-button" id="download-stl" download="oso75_case_bottom.stl">Download current STL</a>
+          <a class="download-button" href="/models/oso75_case_bottom.stl" target="_blank">Inspect raw file</a>
         </div>
       </section>
       <div class="footer-note">
-        This viewer loads the generated OpenSCAD STL. Update the layout, run the generator, and restart the viewer to inspect changes.
+        Production mode loads Build123d STL exports and overlays the KiCad Edge.Cuts PCB extract at real millimeter scale.
       </div>
     </aside>
   </main>

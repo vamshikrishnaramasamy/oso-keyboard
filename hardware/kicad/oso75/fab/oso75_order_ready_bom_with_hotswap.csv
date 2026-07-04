@@ -1,0 +1,182 @@
+Comment,Designator,Footprint,Quantity,MPN/Part,Notes
+ESP32-S3-WROOM-1U-N16,U1,RF module with external IPEX antenna,1,ESP32-S3-WROOM-1U-N16,"Main MCU module with native USB, Wi-Fi, BLE, 16 MB flash, and external antenna connector; do not substitute N16R8/R16V/Octal-PSRAM variants"
+3.3 V LDO,U3,SOT-23-5,1,AP2112K-3.3TRG1,USB 5 V to 3.3 V
+USB-C receptacle,J1,USB-C-16P-SMD,1,HRO TYPE-C-31-M-12,USB 2.0 device port
+500mA resettable fuse,F1,0603 PPTC,1,Littelfuse 0603L050SLYR,6 V 500 mA hold resettable fuse for optional module-bay 5 V
+Boot tactile switch,SW_BOOT,SMD tactile,1,SKRPACE010,Pull GPIO0 low for ROM download mode
+Reset tactile switch,SW_RESET,SMD tactile,1,SKRPACE010,Pull EN low
+5.1k,R1,0603,1,generic,USB-C CC1 pulldown
+5.1k,R2,0603,1,generic,USB-C CC2 pulldown
+27R,R3,0603,1,generic,USB D+ series
+27R,R4,0603,1,generic,USB D- series
+10k,R5,0603,1,generic,ESP_EN pullup
+10k,R6,0603,1,generic,GPIO0 boot pullup
+10k,R10,0603,1,generic,Module present/interrupt pullup
+10uF 10V,C1,0603,1,generic X5R/X7R,LDO input; footprint is 0603 only
+10uF 10V,C2,0603,1,generic X5R/X7R,LDO output; footprint is 0603 only
+100nF,"C3,C4",0603,2,generic X7R,ESP32 local decoupling
+1uF,C_EN,0603,1,generic X5R/X7R,ESP_EN reset delay capacitor
+MX hotswap socket,SW1,Kailh MX hotswap,1,CPG151101S11,F2 switch
+1N4148W,D1,SOD-123,1,1N4148W,F2 anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW2,Kailh MX hotswap,1,CPG151101S11,F3 switch
+1N4148W,D2,SOD-123,1,1N4148W,F3 anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW3,Kailh MX hotswap,1,CPG151101S11,F4 switch
+1N4148W,D3,SOD-123,1,1N4148W,F4 anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW4,Kailh MX hotswap,1,CPG151101S11,F5 switch
+1N4148W,D4,SOD-123,1,1N4148W,F5 anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW5,Kailh MX hotswap,1,CPG151101S11,F6 switch
+1N4148W,D5,SOD-123,1,1N4148W,F6 anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW6,Kailh MX hotswap,1,CPG151101S11,F7 switch
+1N4148W,D6,SOD-123,1,1N4148W,F7 anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW7,Kailh MX hotswap,1,CPG151101S11,F8 switch
+1N4148W,D7,SOD-123,1,1N4148W,F8 anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW8,Kailh MX hotswap,1,CPG151101S11,F9 switch
+1N4148W,D8,SOD-123,1,1N4148W,F9 anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW9,Kailh MX hotswap,1,CPG151101S11,F10 switch
+1N4148W,D9,SOD-123,1,1N4148W,F10 anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW10,Kailh MX hotswap,1,CPG151101S11,F11 switch
+1N4148W,D10,SOD-123,1,1N4148W,F11 anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW11,Kailh MX hotswap,1,CPG151101S11,F12 switch
+1N4148W,D11,SOD-123,1,1N4148W,F12 anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW12,Kailh MX hotswap,1,CPG151101S11,` switch
+1N4148W,D12,SOD-123,1,1N4148W,` anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW13,Kailh MX hotswap,1,CPG151101S11,1 switch
+1N4148W,D13,SOD-123,1,1N4148W,1 anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW14,Kailh MX hotswap,1,CPG151101S11,2 switch
+1N4148W,D14,SOD-123,1,1N4148W,2 anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW15,Kailh MX hotswap,1,CPG151101S11,3 switch
+1N4148W,D15,SOD-123,1,1N4148W,3 anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW16,Kailh MX hotswap,1,CPG151101S11,4 switch
+1N4148W,D16,SOD-123,1,1N4148W,4 anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW17,Kailh MX hotswap,1,CPG151101S11,5 switch
+1N4148W,D17,SOD-123,1,1N4148W,5 anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW18,Kailh MX hotswap,1,CPG151101S11,6 switch
+1N4148W,D18,SOD-123,1,1N4148W,6 anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW19,Kailh MX hotswap,1,CPG151101S11,7 switch
+1N4148W,D19,SOD-123,1,1N4148W,7 anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW20,Kailh MX hotswap,1,CPG151101S11,8 switch
+1N4148W,D20,SOD-123,1,1N4148W,8 anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW21,Kailh MX hotswap,1,CPG151101S11,9 switch
+1N4148W,D21,SOD-123,1,1N4148W,9 anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW22,Kailh MX hotswap,1,CPG151101S11,0 switch
+1N4148W,D22,SOD-123,1,1N4148W,0 anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW23,Kailh MX hotswap,1,CPG151101S11,- switch
+1N4148W,D23,SOD-123,1,1N4148W,- anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW24,Kailh MX hotswap,1,CPG151101S11,= switch
+1N4148W,D24,SOD-123,1,1N4148W,= anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW25,Kailh MX hotswap,1,CPG151101S11,Backspace switch
+1N4148W,D25,SOD-123,1,1N4148W,Backspace anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW26,Kailh MX hotswap,1,CPG151101S11,Tab switch
+1N4148W,D26,SOD-123,1,1N4148W,Tab anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW27,Kailh MX hotswap,1,CPG151101S11,Q switch
+1N4148W,D27,SOD-123,1,1N4148W,Q anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW28,Kailh MX hotswap,1,CPG151101S11,W switch
+1N4148W,D28,SOD-123,1,1N4148W,W anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW29,Kailh MX hotswap,1,CPG151101S11,E switch
+1N4148W,D29,SOD-123,1,1N4148W,E anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW30,Kailh MX hotswap,1,CPG151101S11,R switch
+1N4148W,D30,SOD-123,1,1N4148W,R anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW31,Kailh MX hotswap,1,CPG151101S11,T switch
+1N4148W,D31,SOD-123,1,1N4148W,T anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW32,Kailh MX hotswap,1,CPG151101S11,Y switch
+1N4148W,D32,SOD-123,1,1N4148W,Y anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW33,Kailh MX hotswap,1,CPG151101S11,U switch
+1N4148W,D33,SOD-123,1,1N4148W,U anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW34,Kailh MX hotswap,1,CPG151101S11,I switch
+1N4148W,D34,SOD-123,1,1N4148W,I anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW35,Kailh MX hotswap,1,CPG151101S11,O switch
+1N4148W,D35,SOD-123,1,1N4148W,O anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW36,Kailh MX hotswap,1,CPG151101S11,P switch
+1N4148W,D36,SOD-123,1,1N4148W,P anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW37,Kailh MX hotswap,1,CPG151101S11,[ switch
+1N4148W,D37,SOD-123,1,1N4148W,[ anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW38,Kailh MX hotswap,1,CPG151101S11,] switch
+1N4148W,D38,SOD-123,1,1N4148W,] anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW39,Kailh MX hotswap,1,CPG151101S11,\ switch
+1N4148W,D39,SOD-123,1,1N4148W,\ anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW40,Kailh MX hotswap,1,CPG151101S11,Caps switch
+1N4148W,D40,SOD-123,1,1N4148W,Caps anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW41,Kailh MX hotswap,1,CPG151101S11,A switch
+1N4148W,D41,SOD-123,1,1N4148W,A anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW42,Kailh MX hotswap,1,CPG151101S11,S switch
+1N4148W,D42,SOD-123,1,1N4148W,S anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW43,Kailh MX hotswap,1,CPG151101S11,D switch
+1N4148W,D43,SOD-123,1,1N4148W,D anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW44,Kailh MX hotswap,1,CPG151101S11,F switch
+1N4148W,D44,SOD-123,1,1N4148W,F anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW45,Kailh MX hotswap,1,CPG151101S11,G switch
+1N4148W,D45,SOD-123,1,1N4148W,G anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW46,Kailh MX hotswap,1,CPG151101S11,H switch
+1N4148W,D46,SOD-123,1,1N4148W,H anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW47,Kailh MX hotswap,1,CPG151101S11,J switch
+1N4148W,D47,SOD-123,1,1N4148W,J anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW48,Kailh MX hotswap,1,CPG151101S11,K switch
+1N4148W,D48,SOD-123,1,1N4148W,K anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW49,Kailh MX hotswap,1,CPG151101S11,L switch
+1N4148W,D49,SOD-123,1,1N4148W,L anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW50,Kailh MX hotswap,1,CPG151101S11,; switch
+1N4148W,D50,SOD-123,1,1N4148W,; anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW51,Kailh MX hotswap,1,CPG151101S11,' switch
+1N4148W,D51,SOD-123,1,1N4148W,' anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW52,Kailh MX hotswap,1,CPG151101S11,Enter switch
+1N4148W,D52,SOD-123,1,1N4148W,Enter anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW53,Kailh MX hotswap,1,CPG151101S11,LShift switch
+1N4148W,D53,SOD-123,1,1N4148W,LShift anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW54,Kailh MX hotswap,1,CPG151101S11,Z switch
+1N4148W,D54,SOD-123,1,1N4148W,Z anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW55,Kailh MX hotswap,1,CPG151101S11,X switch
+1N4148W,D55,SOD-123,1,1N4148W,X anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW56,Kailh MX hotswap,1,CPG151101S11,C switch
+1N4148W,D56,SOD-123,1,1N4148W,C anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW57,Kailh MX hotswap,1,CPG151101S11,V switch
+1N4148W,D57,SOD-123,1,1N4148W,V anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW58,Kailh MX hotswap,1,CPG151101S11,B switch
+1N4148W,D58,SOD-123,1,1N4148W,B anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW59,Kailh MX hotswap,1,CPG151101S11,N switch
+1N4148W,D59,SOD-123,1,1N4148W,N anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW60,Kailh MX hotswap,1,CPG151101S11,M switch
+1N4148W,D60,SOD-123,1,1N4148W,M anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW61,Kailh MX hotswap,1,CPG151101S11,", switch"
+1N4148W,D61,SOD-123,1,1N4148W,", anti-ghosting diode; pad 1/cathode band faces ROW net"
+MX hotswap socket,SW62,Kailh MX hotswap,1,CPG151101S11,. switch
+1N4148W,D62,SOD-123,1,1N4148W,. anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW63,Kailh MX hotswap,1,CPG151101S11,/ switch
+1N4148W,D63,SOD-123,1,1N4148W,/ anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW64,Kailh MX hotswap,1,CPG151101S11,RShift switch
+1N4148W,D64,SOD-123,1,1N4148W,RShift anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW65,Kailh MX hotswap,1,CPG151101S11,LCtrl switch
+1N4148W,D65,SOD-123,1,1N4148W,LCtrl anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW66,Kailh MX hotswap,1,CPG151101S11,LGUI switch
+1N4148W,D66,SOD-123,1,1N4148W,LGUI anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW67,Kailh MX hotswap,1,CPG151101S11,LAlt switch
+1N4148W,D67,SOD-123,1,1N4148W,LAlt anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW68,Kailh MX hotswap,1,CPG151101S11,Space switch
+1N4148W,D68,SOD-123,1,1N4148W,Space anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW69,Kailh MX hotswap,1,CPG151101S11,RAlt switch
+1N4148W,D69,SOD-123,1,1N4148W,RAlt anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW70,Kailh MX hotswap,1,CPG151101S11,Fn switch
+1N4148W,D70,SOD-123,1,1N4148W,Fn anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW71,Kailh MX hotswap,1,CPG151101S11,RCtrl switch
+1N4148W,D71,SOD-123,1,1N4148W,RCtrl anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW72,Kailh MX hotswap,1,CPG151101S11,PrtSc switch
+1N4148W,D72,SOD-123,1,1N4148W,PrtSc anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW73,Kailh MX hotswap,1,CPG151101S11,Ins switch
+1N4148W,D73,SOD-123,1,1N4148W,Ins anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW74,Kailh MX hotswap,1,CPG151101S11,Home switch
+1N4148W,D74,SOD-123,1,1N4148W,Home anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW75,Kailh MX hotswap,1,CPG151101S11,PgUp switch
+1N4148W,D75,SOD-123,1,1N4148W,PgUp anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW76,Kailh MX hotswap,1,CPG151101S11,Del switch
+1N4148W,D76,SOD-123,1,1N4148W,Del anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW77,Kailh MX hotswap,1,CPG151101S11,End switch
+1N4148W,D77,SOD-123,1,1N4148W,End anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW78,Kailh MX hotswap,1,CPG151101S11,PgDn switch
+1N4148W,D78,SOD-123,1,1N4148W,PgDn anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW79,Kailh MX hotswap,1,CPG151101S11,Up switch
+1N4148W,D79,SOD-123,1,1N4148W,Up anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW80,Kailh MX hotswap,1,CPG151101S11,Left switch
+1N4148W,D80,SOD-123,1,1N4148W,Left anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW81,Kailh MX hotswap,1,CPG151101S11,Down switch
+1N4148W,D81,SOD-123,1,1N4148W,Down anti-ghosting diode; pad 1/cathode band faces ROW net
+MX hotswap socket,SW82,Kailh MX hotswap,1,CPG151101S11,Right switch
+1N4148W,D82,SOD-123,1,1N4148W,Right anti-ghosting diode; pad 1/cathode band faces ROW net

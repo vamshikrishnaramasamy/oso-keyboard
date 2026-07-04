@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>OSO75 Revised Build Budget</title>
+    <style>
+      body {
+        margin: 0;
+        background: #f7f2e8;
+        color: #2f281f;
+        font: 20px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      main {
+        width: 1220px;
+        padding: 50px 60px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 40px;
+      }
+
+      .sub {
+        margin: 0 0 28px;
+        color: #665948;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fffaf1;
+        border: 2px solid #47392b;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid #d8c7ad;
+        padding: 15px 16px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        background: #513f2d;
+        color: #fff8e8;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+
+      td:nth-child(2) {
+        text-align: right;
+        white-space: nowrap;
+        font-weight: 700;
+      }
+
+      .total {
+        margin-top: 24px;
+        padding: 18px 22px;
+        display: inline-block;
+        background: #2f6f49;
+        color: white;
+        font-size: 30px;
+        font-weight: 800;
+      }
+
+      .notes {
+        margin-top: 22px;
+        color: #594b3b;
+        font-size: 17px;
+      }
+
+      .notes strong {
+        color: #2f281f;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>OSO75 Revised Level 2 Build Budget</h1>
+      <p class="sub">Updated July 4, 2026 after reviewer feedback. Electronics moved from Amazon-style sourcing to LCSC/JLCPCB-friendly sourcing, and the request is capped at Macondo Level 2 funding.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Build area</th>
+            <th>Cost</th>
+            <th>Evidence / notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>LCSC electronic components</td><td>$11.19</td><td>Detailed LCSC parts list uses ESP32-S3 module, hotswap sockets, USB-C, LDO, fuse, tactile switches, diodes, and 0603 passives.</td></tr>
+          <tr><td>PCB fabrication / assembly allowance</td><td>$85.00</td><td>2-layer 337.088 x 150.063 mm PCB with order-ready Gerbers in hardware/kicad/oso75/fab; request trimmed to fit Level 2.</td></tr>
+          <tr><td>Case / plate fabrication allowance</td><td>$55.00</td><td>Split top/bottom case and plate STEP/STL files in hardware/cad/build123d; prototype fabrication allowance only.</td></tr>
+          <tr><td>Builder-installed keyboard hardware</td><td>$48.81</td><td>Partial allowance for MX switches, keycaps, stabilizers, screws, feet, USB cable, and antenna pigtail.</td></tr>
+        </tbody>
+      </table>
+
+      <div class="total">Revised requested build cost: $200.00</div>
+
+      <p class="notes">
+        <strong>Level 2 cap check:</strong>
+        Macondo blocks Level 2 requests above $200, so this revised request is exactly capped at $200. Extra prototype costs will be self-funded or deferred.
+      </p>
+    </main>
+  </body>
+</html>

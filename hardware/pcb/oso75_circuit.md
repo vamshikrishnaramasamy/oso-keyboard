@@ -1,14 +1,13 @@
 # OSO75 Circuit Design
 
-This is the first real circuit pass for the OSO75 custom PCB. It defines the MCU
-support circuit, USB-C input, matrix wiring, OSO module bay, diode direction, and
-assembly intent. Use the generated CSV files next to this document as the source
-of truth for schematic capture.
+This circuit pass makes the ESP32-S3 the main keyboard brain. The computer plugs
+into the keyboard's USB-C port, and the ESP32-S3 enumerates as the USB HID
+keyboard while also owning BLE, Wi-Fi, and the hot-swappable OSO module bay.
 
 ## Electrical Target
 
-- MCU: onboard RP2040, QFN-56.
-- Firmware: QMK/VIA-compatible matrix using native USB.
+- MCU: onboard ESP32-S3-WROOM-1U-N16 module with external IPEX/u.FL antenna connector. Do not substitute N16R8/R16V/Octal-PSRAM variants.
+- Firmware: ESP-IDF + TinyUSB first; BLE/Wi-Fi config after wired USB is stable.
 - Matrix: 6 rows x 16 columns, 82 populated switch positions.
 - Module bay replaces: Esc, F1.
 - Diode direction: `COL2ROW`.
@@ -23,69 +22,75 @@ Each key uses this net order:
 COLn -> switch -> diode anode -> diode cathode -> ROWm
 ```
 
-That matches QMK `COL2ROW`: conventional current flows from the selected column
-through the switch and diode into the sensed row.
+The SOD-123 diode footprint intentionally uses pad 1 as the cathode/ROW-side pad.
+The cathode band and `K` mark face the ROW net on the assembly drawing.
 
 ### Rows
 
-| Net | RP2040 pin | Populated keys |
+| Net | ESP32-S3 pin | Populated keys |
 |---|---|---:|
-| ROW0 | U1 GP0 | 12 switches |
-| ROW1 | U1 GP1 | 16 switches |
-| ROW2 | U1 GP2 | 16 switches |
-| ROW3 | U1 GP3 | 15 switches |
-| ROW4 | U1 GP4 | 13 switches |
-| ROW5 | U1 GP5 | 10 switches |
+| ROW0 | U1 GPIO1 | 12 switches |
+| ROW1 | U1 GPIO2 | 16 switches |
+| ROW2 | U1 GPIO4 | 16 switches |
+| ROW3 | U1 GPIO5 | 15 switches |
+| ROW4 | U1 GPIO6 | 13 switches |
+| ROW5 | U1 GPIO7 | 10 switches |
 
 ### Columns
 
-| Net | RP2040 pin | Populated keys |
+| Net | ESP32-S3 pin | Populated keys |
 |---|---|---:|
-| COL0 | U1 GP6 | 5 switches |
-| COL1 | U1 GP7 | 5 switches |
-| COL2 | U1 GP8 | 6 switches |
-| COL3 | U1 GP9 | 6 switches |
-| COL4 | U1 GP10 | 6 switches |
-| COL5 | U1 GP11 | 6 switches |
-| COL6 | U1 GP12 | 6 switches |
-| COL7 | U1 GP13 | 6 switches |
-| COL8 | U1 GP14 | 6 switches |
-| COL9 | U1 GP15 | 6 switches |
-| COL10 | U1 GP16 | 5 switches |
-| COL11 | U1 GP17 | 5 switches |
-| COL12 | U1 GP18 | 5 switches |
-| COL13 | U1 GP19 | 4 switches |
-| COL14 | U1 GP20 | 3 switches |
-| COL15 | U1 GP21 | 2 switches |
+| COL0 | U1 GPIO8 | 5 switches |
+| COL1 | U1 GPIO9 | 5 switches |
+| COL2 | U1 GPIO10 | 6 switches |
+| COL3 | U1 GPIO11 | 5 switches |
+| COL4 | U1 GPIO12 | 5 switches |
+| COL5 | U1 GPIO13 | 5 switches |
+| COL6 | U1 GPIO14 | 6 switches |
+| COL7 | U1 GPIO15 | 5 switches |
+| COL8 | U1 GPIO16 | 5 switches |
+| COL9 | U1 GPIO17 | 6 switches |
+| COL10 | U1 GPIO18 | 6 switches |
+| COL11 | U1 GPIO21 | 6 switches |
+| COL12 | U1 GPIO35 | 4 switches |
+| COL13 | U1 GPIO36 | 4 switches |
+| COL14 | U1 GPIO37 | 5 switches |
+| COL15 | U1 GPIO38 | 4 switches |
+
+GPIO35/GPIO36/GPIO37 are only valid because the target module is ESP32-S3-WROOM-1U-N16,
+not an Octal-PSRAM N16R8/R16V module.
 
 ## USB-C And Power
 
 - J1 is a USB-C receptacle wired as a USB 2.0 device.
 - CC1 and CC2 each get a 5.1k pulldown to GND.
-- D+ and D- route from J1 through U4 ESD protection, then through 27R series
-  resistors to RP2040 USB_DP/USB_DM.
+- D+ and D- route from J1 through 27R series resistors to ESP32-S3 GPIO20/GPIO19 native USB.
+- USB ESD protection is not fitted in this routed rev; add a USBLC6-class part during the next USB reroute instead of dropping it into the current crowded fanout.
 - VBUS feeds U3, a 3.3 V LDO such as AP2112K-3.3.
-- F1 creates a current-limited VBUS_FUSED rail for optional 5 V module loads.
-- C1 and C2 are 10uF bulk capacitors at LDO input/output.
-- R7/R8 create a 100k/100k VBUS sense divider into GP24.
+- AP2112K pinout: pin 1 VIN=VBUS, pin 2 GND, pin 3 EN=VBUS, pin 4 NC, pin 5 VOUT=+3V3.
+- F1 is a Littelfuse 0603L050SLYR 0603 PPTC fuse. It creates a current-limited
+  VBUS_FUSED rail for optional 5 V module loads.
+- C1 and C2 are 10uF 10V 0603 bulk capacitors at LDO input/output.
 
-## RP2040 Support
+## ESP32-S3 Support
 
-- U2 is a 16 MB QSPI flash such as W25Q128JVSIQ.
-- Y1 is a 12 MHz crystal with load capacitors sized to the chosen crystal.
-- SW_RESET pulls RUN low.
-- SW_BOOT pulls FLASH_CS_N/QSPI_SS low for UF2 bootloader entry.
-- J2 exposes 3V3, SWDIO, SWCLK, and GND for rescue/debug.
-- GP22 drives a status LED through R9.
-- GP25 routes to the OSO bay as module-present or interrupt.
-- GP26/GP27 route to the OSO bay for encoder/GPIO use.
-- GP28/GP29 route to the OSO bay for I2C OLED/sensor modules.
+- U1 is an ESP32-S3-WROOM-1U module, so flash, crystal, RF matching, and the IPEX antenna connector are inside the module.
+- Fit a compatible 2.4 GHz IPEX/u.FL antenna if BLE/Wi-Fi will be used. Wired USB keyboard mode works without the antenna.
+- SW_RESET pulls EN low.
+- C_EN is 1uF from ESP_EN to GND for the ESP32-S3 EN reset delay.
+- SW_BOOT pulls GPIO0 low for ROM download mode.
+- GPIO47 routes to the OSO bay as module-present or interrupt.
+- GPIO39/GPIO40 route to the OSO bay for encoder/GPIO use.
+- GPIO41/GPIO42 route to the OSO bay for I2C OLED/sensor modules.
+- GPIO19/GPIO20 are reserved for USB D-/D+ and are not used by the switch matrix.
+- Avoid GPIO0, GPIO3, GPIO45, and GPIO46 for ordinary matrix wiring because they affect boot/strapping.
 
 ## OSO Module Bay
 
-The top-left bay is the keyboard's swappable gadget slot. It is intended for
-small open-source modules such as volume knobs, OLED status screens, sliders,
-LED widgets, sensor boards, or macro panels.
+The keyboard PCB side is exposed ENIG copper pads plus two retention holes, not a
+factory-assembled pogo or mezzanine connector. Put the spring contacts on the
+removable module side. Rev A is **power-off swap only**: unplug the keyboard
+before inserting or removing modules.
 
 | Pin | Net | Use |
 |---:|---|---|
@@ -97,24 +102,34 @@ LED widgets, sensor boards, or macro panels.
 | 6 | MOD_A | Encoder A / GPIO |
 | 7 | MOD_B | Encoder B / GPIO |
 | 8 | MOD_INT | Interrupt or module-present detect |
-| 9 | RESET_N | Optional module reset |
+| 9 | ESP_EN | Optional module reset/programming signal |
 | 10 | GND | Ground |
+
+Keep modules 3.3 V logic by default. Any 5 V LED module should include its own
+current limiting and should not pull more than the 500 mA hold budget set by F1.
+Do not live-swap rev A modules. A later live-swap revision needs ground-first
+contact, keyboard-side signal resistors, GPIO ESD protection, and 3.3 V current
+limiting/load switching.
+
+Fab note: J3 is intentional exposed contact copper. Do not place a component, do
+not paste/stencil the pads, and use ENIG at minimum; choose hard gold if modules
+will be swapped often.
 
 ## Layout Rules
 
-- Put J1, U4, R3, and R4 close together at the front USB port.
+- Put J1, R3, and R4 close together at the rear USB port.
 - Keep D+/D- short, parallel, and away from the switch matrix where possible.
-- Put U1, U2, Y1, and their decoupling caps in one controller cluster.
-- Place one 100nF cap near each RP2040 supply pin group and one near U2.
+- Keep the WROOM-1U module body clear of switch/stabilizer mechanical courtyards; wireless RF depends on the external antenna and cable placement, not a PCB antenna area.
+- Place 10uF bulk and 100nF local decoupling near the module 3V3 pins.
 - Route rows horizontally and columns vertically where possible.
-- Put the SOD-123 diode near each hotswap socket; cathode stripe goes to the row net.
+- Put the SOD-123 diode near each hotswap socket; cathode stripe/pad 1 goes to the row net.
 - Keep the top-left bay clear for J3, retention holes, and module mechanical fit.
 - Use a solid ground fill on both layers, stitched around USB and MCU.
 
 ## Generated Files
 
 - `oso75_matrix_netlist.csv`: one switch/diode row per key.
-- `oso75_rp2040_netlist.csv`: MCU, USB, power, flash, crystal, buttons, module bay, and headers.
+- `oso75_esp32s3_netlist.csv`: MCU module, USB, power, buttons, module bay, and headers.
 - `oso75_components.csv`: component list with footprints and assembly intent.
 - `oso75_placement.csv`: switch and diode coordinates from the keyboard layout.
 

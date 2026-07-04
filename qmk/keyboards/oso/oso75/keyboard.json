@@ -2,8 +2,8 @@
   "manufacturer": "OSO",
   "keyboard_name": "OSO75",
   "maintainer": "OSO Keyboard contributors",
-  "bootloader": "rp2040",
-  "processor": "RP2040",
+  "bootloader": "esp-idf",
+  "processor": "ESP32-S3",
   "diode_direction": "COL2ROW",
   "features": {
     "bootmagic": true,
@@ -15,30 +15,30 @@
   },
   "matrix_pins": {
     "rows": [
-      "GP0",
-      "GP1",
-      "GP2",
-      "GP3",
-      "GP4",
-      "GP5"
+      "GPIO1",
+      "GPIO2",
+      "GPIO4",
+      "GPIO5",
+      "GPIO6",
+      "GPIO7"
     ],
     "cols": [
-      "GP6",
-      "GP7",
-      "GP8",
-      "GP9",
-      "GP10",
-      "GP11",
-      "GP12",
-      "GP13",
-      "GP14",
-      "GP15",
-      "GP16",
-      "GP17",
-      "GP18",
-      "GP19",
-      "GP20",
-      "GP21"
+      "GPIO8",
+      "GPIO9",
+      "GPIO10",
+      "GPIO11",
+      "GPIO12",
+      "GPIO13",
+      "GPIO14",
+      "GPIO15",
+      "GPIO16",
+      "GPIO17",
+      "GPIO18",
+      "GPIO21",
+      "GPIO35",
+      "GPIO36",
+      "GPIO37",
+      "GPIO38"
     ]
   },
   "usb": {
@@ -666,7 +666,7 @@
           "label": "Space",
           "matrix": [
             5,
-            3
+            6
           ],
           "x": 3.75,
           "y": 5.25,
@@ -676,7 +676,7 @@
           "label": "RAlt",
           "matrix": [
             5,
-            4
+            9
           ],
           "x": 10,
           "y": 5.25,
@@ -686,7 +686,7 @@
           "label": "Fn",
           "matrix": [
             5,
-            5
+            10
           ],
           "x": 11.25,
           "y": 5.25,
@@ -696,7 +696,7 @@
           "label": "RCtrl",
           "matrix": [
             5,
-            6
+            11
           ],
           "x": 12.5,
           "y": 5.25,
@@ -708,7 +708,7 @@
             0,
             13
           ],
-          "x": 15.25,
+          "x": 15.75,
           "y": 0
         },
         {
@@ -717,7 +717,7 @@
             1,
             14
           ],
-          "x": 15.25,
+          "x": 14.75,
           "y": 1.25
         },
         {
@@ -726,7 +726,7 @@
             1,
             15
           ],
-          "x": 16.25,
+          "x": 15.75,
           "y": 1.25
         },
         {
@@ -735,7 +735,7 @@
             2,
             14
           ],
-          "x": 15.25,
+          "x": 14.75,
           "y": 2.25
         },
         {
@@ -744,61 +744,61 @@
             2,
             15
           ],
-          "x": 16.25,
+          "x": 15.75,
           "y": 2.25
         },
         {
           "label": "End",
           "matrix": [
             3,
-            13
+            14
           ],
-          "x": 15.25,
+          "x": 14.75,
           "y": 3.25
         },
         {
           "label": "PgDn",
           "matrix": [
             3,
-            14
+            15
           ],
-          "x": 16.25,
+          "x": 15.75,
           "y": 3.25
         },
         {
           "label": "Up",
           "matrix": [
             4,
-            12
+            14
           ],
-          "x": 15.25,
+          "x": 14.75,
           "y": 4.25
         },
         {
           "label": "Left",
           "matrix": [
             5,
-            7
+            13
           ],
-          "x": 14.25,
+          "x": 13.75,
           "y": 5.25
         },
         {
           "label": "Down",
           "matrix": [
             5,
-            8
+            14
           ],
-          "x": 15.25,
+          "x": 14.75,
           "y": 5.25
         },
         {
           "label": "Right",
           "matrix": [
             5,
-            9
+            15
           ],
-          "x": 16.25,
+          "x": 15.75,
           "y": 5.25
         }
       ]

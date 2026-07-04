@@ -1,0 +1,5028 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-06-10T18:55:33",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error"
+    ],
+    "kicad_version": "10.0.3",
+    "schematic_parity": [],
+    "source": "oso75.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                },
+                {
+                    "description": "Pad 2 [GND] of C2 on F.Cu",
+                    "pos": {
+                        "x": 140.7,
+                        "y": 5.563
+                    },
+                    "uuid": "acf5b1c9-0ec6-7f8c-76aa-2ee13b851f73"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                },
+                {
+                    "description": "Zone [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "71f1671f-3052-4b48-b31e-d954cdd887b6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                },
+                {
+                    "description": "Pad 2 [GND] of R2 on F.Cu",
+                    "pos": {
+                        "x": 178.7,
+                        "y": 6.063
+                    },
+                    "uuid": "a9a37c7c-82fd-f627-7bf1-6aa0edf22d68"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of R2 on F.Cu",
+                    "pos": {
+                        "x": 178.7,
+                        "y": 6.063
+                    },
+                    "uuid": "a9a37c7c-82fd-f627-7bf1-6aa0edf22d68"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 40 [GND] of U1 on F.Cu",
+                    "pos": {
+                        "x": 190.74,
+                        "y": 2.513
+                    },
+                    "uuid": "879dcbdf-30dc-4f81-b637-1fd4000b50f1"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 40 [GND] of U1 on F.Cu",
+                    "pos": {
+                        "x": 190.74,
+                        "y": 2.513
+                    },
+                    "uuid": "879dcbdf-30dc-4f81-b637-1fd4000b50f1"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [ROW5] on F.Cu, length 66.2902 mm",
+                    "pos": {
+                        "x": 147.3924,
+                        "y": 122.4646
+                    },
+                    "uuid": "a3133a07-764c-4343-8e7a-068e0de74dd0"
+                },
+                {
+                    "description": "Pad 7 [ROW5] of U1 on F.Cu",
+                    "pos": {
+                        "x": 198.36,
+                        "y": 20.013
+                    },
+                    "uuid": "15b3207d-6547-4224-a45d-823705a30761"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D62_A] of D62 on F.Cu",
+                    "pos": {
+                        "x": 222.064786,
+                        "y": 105.909448
+                    },
+                    "uuid": "35576509-b341-9751-fa83-1a7f093a1cb4"
+                },
+                {
+                    "description": "Track [ROW4] on F.Cu, length 17.9984 mm",
+                    "pos": {
+                        "x": 218.637,
+                        "y": 104.9354
+                    },
+                    "uuid": "ef4c0b0e-9a83-4e67-8f28-de08db77f023"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D28_A] of D28 on F.Cu",
+                    "pos": {
+                        "x": 74.427786,
+                        "y": 67.809448
+                    },
+                    "uuid": "67173cd8-f284-a3a7-59aa-4132c099c1f5"
+                },
+                {
+                    "description": "Track [ROW2] on F.Cu, length 17.9974 mm",
+                    "pos": {
+                        "x": 88.9974,
+                        "y": 66.8354
+                    },
+                    "uuid": "fe761d98-c7d9-4553-8547-ce63c8e7d93a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW1] on F.Cu, length 16.9448 mm",
+                    "pos": {
+                        "x": 174.7224,
+                        "y": 47.7854
+                    },
+                    "uuid": "034d1b6c-b32e-4e87-a46e-4b3d05fb2e95"
+                },
+                {
+                    "description": "Pad 2 [D19_A] of D19 on F.Cu",
+                    "pos": {
+                        "x": 160.152786,
+                        "y": 48.759448
+                    },
+                    "uuid": "762b3fce-ab3d-a0cc-3899-8729737b48fc"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW1] on F.Cu, length 16.9448 mm",
+                    "pos": {
+                        "x": 136.6224,
+                        "y": 47.7854
+                    },
+                    "uuid": "2840adaa-02ea-4f40-9e21-db076fdb0a93"
+                },
+                {
+                    "description": "Pad 2 [D17_A] of D17 on F.Cu",
+                    "pos": {
+                        "x": 122.052786,
+                        "y": 48.759448
+                    },
+                    "uuid": "7601b929-e8b3-f33a-58ab-bebc720932a9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1425 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW1] on F.Cu, length 16.9078 mm",
+                    "pos": {
+                        "x": 193.7539,
+                        "y": 47.7669
+                    },
+                    "uuid": "32ae48e7-6b51-482d-bdbc-3236987daa73"
+                },
+                {
+                    "description": "Pad 2 [D20_A] of D20 on F.Cu",
+                    "pos": {
+                        "x": 179.202786,
+                        "y": 48.759448
+                    },
+                    "uuid": "3c606e99-21d9-6e56-b0ee-21cb70600bad"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW1] on F.Cu, length 17.9974 mm",
+                    "pos": {
+                        "x": 80.525,
+                        "y": 47.7854
+                    },
+                    "uuid": "56f53dcc-4d7a-494a-ba84-f72daf80d032"
+                },
+                {
+                    "description": "Pad 2 [D14_A] of D14 on F.Cu",
+                    "pos": {
+                        "x": 64.902786,
+                        "y": 48.759448
+                    },
+                    "uuid": "a92347dd-839d-e9c3-6b0a-7347bf9ed420"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW3] on F.Cu, length 16.8928 mm",
+                    "pos": {
+                        "x": 112.7844,
+                        "y": 85.8594
+                    },
+                    "uuid": "06240981-cd45-4347-bc08-861988e07313"
+                },
+                {
+                    "description": "Pad 2 [D43_A] of D43 on F.Cu",
+                    "pos": {
+                        "x": 98.240786,
+                        "y": 86.859448
+                    },
+                    "uuid": "8173ef0b-c20c-79e0-efd2-11f016774d4a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW3] on F.Cu, length 15.8733 mm",
+                    "pos": {
+                        "x": 192.1871,
+                        "y": 85.8854
+                    },
+                    "uuid": "06a95316-3eab-408e-ad74-44a135106d4d"
+                },
+                {
+                    "description": "Pad 2 [D48_A] of D48 on F.Cu",
+                    "pos": {
+                        "x": 193.490786,
+                        "y": 86.859448
+                    },
+                    "uuid": "c3bfd3e0-e4a2-79ab-6369-6ef41366bf7a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW3] on F.Cu, length 17.9964 mm",
+                    "pos": {
+                        "x": 56.713,
+                        "y": 85.8854
+                    },
+                    "uuid": "105ef6f2-ee31-4e87-a595-dbf5768caf09"
+                },
+                {
+                    "description": "Pad 2 [D41_A] of D41 on F.Cu",
+                    "pos": {
+                        "x": 60.140786,
+                        "y": 86.859448
+                    },
+                    "uuid": "68f87f49-329d-dd3e-7db7-2f30dfac7100"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW3] on F.Cu, length 25.1414 mm",
+                    "pos": {
+                        "x": 31.5716,
+                        "y": 85.8854
+                    },
+                    "uuid": "202d3b53-358e-4f7e-a483-a126ecb72499"
+                },
+                {
+                    "description": "Pad 2 [D40_A] of D40 on F.Cu",
+                    "pos": {
+                        "x": 33.946786,
+                        "y": 86.859448
+                    },
+                    "uuid": "bfdca26a-17bf-2517-8389-9cc72ae0a756"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW3] on F.Cu, length 17.9964 mm",
+                    "pos": {
+                        "x": 171.012,
+                        "y": 85.8854
+                    },
+                    "uuid": "3b1d49e5-5bec-4368-a0e4-4b16ea479fb1"
+                },
+                {
+                    "description": "Pad 2 [D46_A] of D46 on F.Cu",
+                    "pos": {
+                        "x": 155.390786,
+                        "y": 86.859448
+                    },
+                    "uuid": "8c8cd40d-a52b-05b9-5a31-fd71f14f907b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D44_A] of D44 on F.Cu",
+                    "pos": {
+                        "x": 117.290786,
+                        "y": 86.859448
+                    },
+                    "uuid": "45a24204-cacc-d30e-c317-48f9006f89fe"
+                },
+                {
+                    "description": "Track [ROW3] on F.Cu, length 16.9448 mm",
+                    "pos": {
+                        "x": 114.9156,
+                        "y": 85.8854
+                    },
+                    "uuid": "53bcdd94-63d3-4015-9c16-d9d92f25fef6"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D50_A] of D50 on F.Cu",
+                    "pos": {
+                        "x": 231.590786,
+                        "y": 86.859448
+                    },
+                    "uuid": "3b235d12-e63f-8985-7207-798d7e998300"
+                },
+                {
+                    "description": "Track [ROW3] on F.Cu, length 16.9448 mm",
+                    "pos": {
+                        "x": 246.1604,
+                        "y": 85.8854
+                    },
+                    "uuid": "6d273269-1e84-4910-adb0-12f9b0796ca0"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D49_A] of D49 on F.Cu",
+                    "pos": {
+                        "x": 212.540786,
+                        "y": 86.859448
+                    },
+                    "uuid": "44289cef-3c8a-f32f-3925-45d96ac28e79"
+                },
+                {
+                    "description": "Track [ROW3] on F.Cu, length 16.9448 mm",
+                    "pos": {
+                        "x": 210.1656,
+                        "y": 85.8854
+                    },
+                    "uuid": "756448fd-97c4-498e-a318-e3ca03934973"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1888 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D45_A] of D45 on F.Cu",
+                    "pos": {
+                        "x": 136.340786,
+                        "y": 86.859448
+                    },
+                    "uuid": "4541bdf7-874d-09ee-9e06-106ded85a8b6"
+                },
+                {
+                    "description": "Track [ROW3] on F.Cu, length 16.8152 mm",
+                    "pos": {
+                        "x": 150.8456,
+                        "y": 85.8206
+                    },
+                    "uuid": "82f9061f-7140-4154-86f9-fdf9b1956b16"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW3] on F.Cu, length 17.9984 mm",
+                    "pos": {
+                        "x": 189.0104,
+                        "y": 85.8854
+                    },
+                    "uuid": "a9d2fbd5-8daa-4d07-9afd-fa254403e439"
+                },
+                {
+                    "description": "Pad 2 [D47_A] of D47 on F.Cu",
+                    "pos": {
+                        "x": 174.439786,
+                        "y": 86.859448
+                    },
+                    "uuid": "ab9cb53c-4ecd-2202-fef5-ebc0d49dbe36"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1498 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D73_A] of D73 on F.Cu",
+                    "pos": {
+                        "x": 307.789786,
+                        "y": 48.759448
+                    },
+                    "uuid": "4d9437d0-2443-44ba-3ab5-4355a3a11ca3"
+                },
+                {
+                    "description": "Track [ROW1] on F.Cu, length 16.8942 mm",
+                    "pos": {
+                        "x": 322.3346,
+                        "y": 47.7596
+                    },
+                    "uuid": "778f8ef3-99e6-4eb0-96b3-f6d675633c7f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D16_A] of D16 on F.Cu",
+                    "pos": {
+                        "x": 103.002786,
+                        "y": 48.759448
+                    },
+                    "uuid": "45647ca6-9c7d-d3c3-b3eb-ee3b1b0c5730"
+                },
+                {
+                    "description": "Track [ROW1] on F.Cu, length 16.9448 mm",
+                    "pos": {
+                        "x": 100.6276,
+                        "y": 47.7854
+                    },
+                    "uuid": "780e83db-910a-48d6-bbc0-3605b711902f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1399 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D22_A] of D22 on F.Cu",
+                    "pos": {
+                        "x": 217.302786,
+                        "y": 48.759448
+                    },
+                    "uuid": "93f90992-2d1d-3da6-f0ba-264d3ec71ff3"
+                },
+                {
+                    "description": "Track [ROW1] on F.Cu, length 16.9130 mm",
+                    "pos": {
+                        "x": 231.8565,
+                        "y": 47.7695
+                    },
+                    "uuid": "b54d5579-5d94-4696-ba22-9d62c56cc0c3"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1636 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D23_A] of D23 on F.Cu",
+                    "pos": {
+                        "x": 236.352786,
+                        "y": 48.759448
+                    },
+                    "uuid": "0a211f67-0eb7-2736-17f9-f7252149d7ce"
+                },
+                {
+                    "description": "Track [ROW1] on F.Cu, length 16.8656 mm",
+                    "pos": {
+                        "x": 250.8828,
+                        "y": 47.7458
+                    },
+                    "uuid": "b9832fdf-1741-4bd0-8529-822ebc6e98bf"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D15_A] of D15 on F.Cu",
+                    "pos": {
+                        "x": 83.952786,
+                        "y": 48.759448
+                    },
+                    "uuid": "147b797e-e60a-ed10-de5d-efe8e450b16c"
+                },
+                {
+                    "description": "Track [ROW1] on F.Cu, length 17.9974 mm",
+                    "pos": {
+                        "x": 98.5224,
+                        "y": 47.7854
+                    },
+                    "uuid": "b9eeee0d-c2c5-41d3-a4e9-c3d70c44a0e2"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1266 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D13_A] of D13 on F.Cu",
+                    "pos": {
+                        "x": 45.852786,
+                        "y": 48.759448
+                    },
+                    "uuid": "2c11ddd4-2649-a992-8a79-ca1a590fc1ac"
+                },
+                {
+                    "description": "Track [ROW1] on F.Cu, length 16.9396 mm",
+                    "pos": {
+                        "x": 60.4198,
+                        "y": 47.7828
+                    },
+                    "uuid": "c04ea1a6-241e-44f1-beca-ff970a31005c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1350 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D12_A] of D12 on F.Cu",
+                    "pos": {
+                        "x": 26.802786,
+                        "y": 48.759448
+                    },
+                    "uuid": "996c6728-2b50-a046-36c4-7e8752cba00c"
+                },
+                {
+                    "description": "Track [ROW1] on F.Cu, length 16.9228 mm",
+                    "pos": {
+                        "x": 41.3614,
+                        "y": 47.7744
+                    },
+                    "uuid": "c7d4a347-0dba-4b53-9c81-2979cca2b770"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1630 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D77_A] of D77 on F.Cu",
+                    "pos": {
+                        "x": 307.789786,
+                        "y": 86.859448
+                    },
+                    "uuid": "8fa68434-9f9c-4a24-28df-04a1a38c27ec"
+                },
+                {
+                    "description": "Track [ROW3] on F.Cu, length 16.8678 mm",
+                    "pos": {
+                        "x": 322.3214,
+                        "y": 85.8464
+                    },
+                    "uuid": "d2eae928-a65c-4819-b4ff-f998ce17ac77"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW1] on F.Cu, length 16.9448 mm",
+                    "pos": {
+                        "x": 212.8224,
+                        "y": 47.7854
+                    },
+                    "uuid": "dd3bf7ab-207f-49d1-87a4-3351e46dffcf"
+                },
+                {
+                    "description": "Pad 2 [D21_A] of D21 on F.Cu",
+                    "pos": {
+                        "x": 198.252786,
+                        "y": 48.759448
+                    },
+                    "uuid": "f1845960-e26c-925f-26ea-3bf84a8cd252"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D42_A] of D42 on F.Cu",
+                    "pos": {
+                        "x": 79.189786,
+                        "y": 86.859448
+                    },
+                    "uuid": "e4892669-93ba-7048-7ed6-a4748328d268"
+                },
+                {
+                    "description": "Track [ROW3] on F.Cu, length 16.9458 mm",
+                    "pos": {
+                        "x": 93.7604,
+                        "y": 85.8854
+                    },
+                    "uuid": "f7feace4-38f1-4205-810f-541c4fd279ae"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D18_A] of D18 on F.Cu",
+                    "pos": {
+                        "x": 141.102786,
+                        "y": 48.759448
+                    },
+                    "uuid": "ce23e7e1-7dd0-970f-8245-b2cfcecbb7a4"
+                },
+                {
+                    "description": "Track [ROW1] on F.Cu, length 16.9448 mm",
+                    "pos": {
+                        "x": 155.6724,
+                        "y": 47.7854
+                    },
+                    "uuid": "ed438dbc-24db-46d3-851f-68c949756628"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1477 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW4] on F.Cu, length 16.8974 mm",
+                    "pos": {
+                        "x": 160.4117,
+                        "y": 104.9117
+                    },
+                    "uuid": "29c1c838-8d6a-4609-9fe2-fbbdb1badb88"
+                },
+                {
+                    "description": "Pad 2 [D58_A] of D58 on F.Cu",
+                    "pos": {
+                        "x": 145.865786,
+                        "y": 105.909448
+                    },
+                    "uuid": "c4d4bd38-0b0e-440f-ecc6-8436acce7dac"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW4] on F.Cu, length 17.9964 mm",
+                    "pos": {
+                        "x": 200.6406,
+                        "y": 104.9354
+                    },
+                    "uuid": "3ac24792-6282-440c-8560-3758606285a0"
+                },
+                {
+                    "description": "Pad 2 [D61_A] of D61 on F.Cu",
+                    "pos": {
+                        "x": 203.015786,
+                        "y": 105.909448
+                    },
+                    "uuid": "9373a542-5aac-f304-b99e-f16ad8ca739f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW4] on F.Cu, length 16.9448 mm",
+                    "pos": {
+                        "x": 179.4854,
+                        "y": 104.9354
+                    },
+                    "uuid": "7fc508aa-63c3-4373-82c9-c6598d957a45"
+                },
+                {
+                    "description": "Pad 2 [D59_A] of D59 on F.Cu",
+                    "pos": {
+                        "x": 164.915786,
+                        "y": 105.909448
+                    },
+                    "uuid": "8507dd6a-399f-7e0e-63b4-367636ef833e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1102 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW4] of D64 on F.Cu",
+                    "pos": {
+                        "x": 264.008786,
+                        "y": 105.909448
+                    },
+                    "uuid": "b6c9a150-13f2-5157-9a53-9e95f46f2cf7"
+                },
+                {
+                    "description": "Via [D64_A] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 265.019,
+                        "y": 105.602
+                    },
+                    "uuid": "e13c44f7-1ab1-4856-b3b8-15a5d75c98ad"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1752 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D56_A] of D56 on F.Cu",
+                    "pos": {
+                        "x": 107.764786,
+                        "y": 105.909448
+                    },
+                    "uuid": "048a687f-a8a1-06b8-59a1-d418a178807f"
+                },
+                {
+                    "description": "Track [ROW4] on F.Cu, length 17.9472 mm",
+                    "pos": {
+                        "x": 105.4408,
+                        "y": 104.8842
+                    },
+                    "uuid": "8de3ee92-c8a2-4f72-9cc5-6f392097995b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1409 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW4] on F.Cu, length 17.9805 mm",
+                    "pos": {
+                        "x": 66.238,
+                        "y": 104.9185
+                    },
+                    "uuid": "a08cd754-4395-4997-a5ba-58fe24305ef7"
+                },
+                {
+                    "description": "Pad 2 [D54_A] of D54 on F.Cu",
+                    "pos": {
+                        "x": 69.665786,
+                        "y": 105.909448
+                    },
+                    "uuid": "a11c0071-0941-9017-3d1e-a7d34772a664"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1679 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW4] on F.Cu, length 2.5027 mm",
+                    "pos": {
+                        "x": 269.5356,
+                        "y": 105.2709
+                    },
+                    "uuid": "aaef2b3b-423c-47e6-a985-ceb8e8d00e10"
+                },
+                {
+                    "description": "Pad 2 [D64_A] of D64 on F.Cu",
+                    "pos": {
+                        "x": 267.308786,
+                        "y": 105.909448
+                    },
+                    "uuid": "f7cd3972-2de0-250a-3193-e456d5f15cd3"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW4] on F.Cu, length 24.0878 mm",
+                    "pos": {
+                        "x": 262.8284,
+                        "y": 104.9354
+                    },
+                    "uuid": "b2af2f69-1f9a-4ddf-ab85-ade01b873280"
+                },
+                {
+                    "description": "Pad 2 [D63_A] of D63 on F.Cu",
+                    "pos": {
+                        "x": 241.115786,
+                        "y": 105.909448
+                    },
+                    "uuid": "c9dea127-0423-d830-e6f3-25b566e5653c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1752 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D57_A] of D57 on F.Cu",
+                    "pos": {
+                        "x": 126.815786,
+                        "y": 105.909448
+                    },
+                    "uuid": "5245842e-0430-b2b1-2af8-7b79d7683dfc"
+                },
+                {
+                    "description": "Track [ROW4] on F.Cu, length 17.9462 mm",
+                    "pos": {
+                        "x": 123.388,
+                        "y": 104.8842
+                    },
+                    "uuid": "d1b7fe4b-4e16-46ec-a3f3-04aba379ea35"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW4] on F.Cu, length 16.9438 mm",
+                    "pos": {
+                        "x": 86.3406,
+                        "y": 104.9354
+                    },
+                    "uuid": "dbe090ea-5611-455c-9ca6-1436569caedf"
+                },
+                {
+                    "description": "Pad 2 [D55_A] of D55 on F.Cu",
+                    "pos": {
+                        "x": 88.715786,
+                        "y": 105.909448
+                    },
+                    "uuid": "e24eacd7-4d7a-2d9a-9f13-81286df0c1ea"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1740 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D60_A] of D60 on F.Cu",
+                    "pos": {
+                        "x": 183.965786,
+                        "y": 105.909448
+                    },
+                    "uuid": "131500d8-c06d-345a-452e-d17debc30bfb"
+                },
+                {
+                    "description": "Track [ROW4] on F.Cu, length 15.8612 mm",
+                    "pos": {
+                        "x": 198.4854,
+                        "y": 104.8854
+                    },
+                    "uuid": "dc962841-eda3-4c39-8006-8143d1fceb05"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW2] on F.Cu, length 16.9448 mm",
+                    "pos": {
+                        "x": 184.2474,
+                        "y": 66.8354
+                    },
+                    "uuid": "1e74b308-6724-4499-89a6-c6804e66ab5e"
+                },
+                {
+                    "description": "Pad 2 [D33_A] of D33 on F.Cu",
+                    "pos": {
+                        "x": 169.677786,
+                        "y": 67.809448
+                    },
+                    "uuid": "c2cedb87-e6a1-ceb8-d927-ea3ae44108cd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1863 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW0] of D2 on F.Cu",
+                    "pos": {
+                        "x": 99.702786,
+                        "y": 24.947448
+                    },
+                    "uuid": "735ffbde-25d4-87ba-801b-47b7d0105ba4"
+                },
+                {
+                    "description": "Via [D2_A] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 100.7813,
+                        "y": 24.3314
+                    },
+                    "uuid": "74bb31ee-8236-4788-baf2-29e96a471525"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW2] on F.Cu, length 16.9448 mm",
+                    "pos": {
+                        "x": 241.3974,
+                        "y": 66.8354
+                    },
+                    "uuid": "61f00b6f-06e8-4156-813d-20ef078206a2"
+                },
+                {
+                    "description": "Pad 2 [D36_A] of D36 on F.Cu",
+                    "pos": {
+                        "x": 226.827786,
+                        "y": 67.809448
+                    },
+                    "uuid": "def0e973-32e5-1482-d347-1f6d0914b255"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW2] on F.Cu, length 17.9974 mm",
+                    "pos": {
+                        "x": 261.5,
+                        "y": 66.8354
+                    },
+                    "uuid": "65b02cc4-b17b-41c0-aee6-7ba07051a1e5"
+                },
+                {
+                    "description": "Pad 2 [D37_A] of D37 on F.Cu",
+                    "pos": {
+                        "x": 245.877786,
+                        "y": 67.809448
+                    },
+                    "uuid": "e0df7739-ac05-98ce-eec2-e0e193a7199d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1665 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D39_A] of D39 on F.Cu",
+                    "pos": {
+                        "x": 288.740786,
+                        "y": 67.809448
+                    },
+                    "uuid": "3df5806d-c4ad-1c94-643d-376a0b2548e4"
+                },
+                {
+                    "description": "Track [ROW2] on F.Cu, length 16.8588 mm",
+                    "pos": {
+                        "x": 286.4081,
+                        "y": 66.7929
+                    },
+                    "uuid": "6bf06cb7-8d6a-4d32-8f52-eeff64850964"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1752 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW2] on F.Cu, length 17.9462 mm",
+                    "pos": {
+                        "x": 91.1538,
+                        "y": 66.7842
+                    },
+                    "uuid": "6f2f7da3-0be4-4d8f-b0c1-a945dfb23cb1"
+                },
+                {
+                    "description": "Pad 2 [D29_A] of D29 on F.Cu",
+                    "pos": {
+                        "x": 93.477786,
+                        "y": 67.809448
+                    },
+                    "uuid": "a3505e24-dddd-03df-f110-0383743968b0"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW2] on F.Cu, length 21.7068 mm",
+                    "pos": {
+                        "x": 29.1906,
+                        "y": 66.8354
+                    },
+                    "uuid": "83909e5f-6f5e-410f-a686-cb52941f2786"
+                },
+                {
+                    "description": "Pad 2 [D26_A] of D26 on F.Cu",
+                    "pos": {
+                        "x": 31.565786,
+                        "y": 67.809448
+                    },
+                    "uuid": "b47a3222-fa2c-294d-5581-eed451855180"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1752 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D30_A] of D30 on F.Cu",
+                    "pos": {
+                        "x": 112.527786,
+                        "y": 67.809448
+                    },
+                    "uuid": "208b899c-7068-a8e6-985e-a8cf0308cf95"
+                },
+                {
+                    "description": "Track [ROW2] on F.Cu, length 17.9462 mm",
+                    "pos": {
+                        "x": 109.1,
+                        "y": 66.7842
+                    },
+                    "uuid": "8de3df82-528c-4797-af30-77e2336544ba"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1740 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D32_A] of D32 on F.Cu",
+                    "pos": {
+                        "x": 150.627786,
+                        "y": 67.809448
+                    },
+                    "uuid": "8e0a6b81-97ed-ce5b-91fc-a2290380edcf"
+                },
+                {
+                    "description": "Track [ROW2] on F.Cu, length 16.8448 mm",
+                    "pos": {
+                        "x": 165.1474,
+                        "y": 66.7854
+                    },
+                    "uuid": "99b0970d-b103-4baf-ba1a-0758bdb6ec18"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW2] on F.Cu, length 16.9458 mm",
+                    "pos": {
+                        "x": 322.3604,
+                        "y": 66.8354
+                    },
+                    "uuid": "a0e384e4-e969-4d98-9aa6-b9e3f147ce91"
+                },
+                {
+                    "description": "Pad 2 [D75_A] of D75 on F.Cu",
+                    "pos": {
+                        "x": 307.789786,
+                        "y": 67.809448
+                    },
+                    "uuid": "e9f35185-f9b7-4cfb-27da-ce8cf6368f8b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D27_A] of D27 on F.Cu",
+                    "pos": {
+                        "x": 55.377786,
+                        "y": 67.809448
+                    },
+                    "uuid": "4823604c-5b02-b630-4f85-7bbb3de62924"
+                },
+                {
+                    "description": "Track [ROW2] on F.Cu, length 17.9974 mm",
+                    "pos": {
+                        "x": 71.0,
+                        "y": 66.8354
+                    },
+                    "uuid": "cc171ed9-0bc7-42f8-b631-1cbf382231c0"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D31_A] of D31 on F.Cu",
+                    "pos": {
+                        "x": 131.577786,
+                        "y": 67.809448
+                    },
+                    "uuid": "07cd961c-b907-dd4f-d19e-789d97dda76a"
+                },
+                {
+                    "description": "Track [ROW2] on F.Cu, length 12.4802 mm",
+                    "pos": {
+                        "x": 141.6828,
+                        "y": 66.8354
+                    },
+                    "uuid": "d2eec432-ce34-486e-a7b8-f7e79d69a7aa"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1740 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW2] on F.Cu, length 16.8448 mm",
+                    "pos": {
+                        "x": 203.2474,
+                        "y": 66.7854
+                    },
+                    "uuid": "d799266c-c341-4440-ac30-67d8bcebbd5e"
+                },
+                {
+                    "description": "Pad 2 [D34_A] of D34 on F.Cu",
+                    "pos": {
+                        "x": 188.727786,
+                        "y": 67.809448
+                    },
+                    "uuid": "e4bd705f-972c-794f-651a-37a4cb61fa6b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D35_A] of D35 on F.Cu",
+                    "pos": {
+                        "x": 207.777786,
+                        "y": 67.809448
+                    },
+                    "uuid": "a5948e56-d3b7-7d68-ee1e-6f7286ca99bb"
+                },
+                {
+                    "description": "Track [ROW2] on F.Cu, length 16.9448 mm",
+                    "pos": {
+                        "x": 205.4026,
+                        "y": 66.8354
+                    },
+                    "uuid": "da7e46b7-8923-4dba-903b-8d25990fb3f6"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D38_A] of D38 on F.Cu",
+                    "pos": {
+                        "x": 264.927786,
+                        "y": 67.809448
+                    },
+                    "uuid": "ccc93b13-59f5-4dd6-9f5a-0af10c924dd1"
+                },
+                {
+                    "description": "Track [ROW2] on F.Cu, length 22.7604 mm",
+                    "pos": {
+                        "x": 284.2604,
+                        "y": 66.8354
+                    },
+                    "uuid": "dc53b02f-7f6b-43b2-9864-6d27fe345293"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1271 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW5] on F.Cu, length 22.7573 mm",
+                    "pos": {
+                        "x": 49.569,
+                        "y": 123.9823
+                    },
+                    "uuid": "15576e01-72e6-4936-960f-209b6b91bd0f"
+                },
+                {
+                    "description": "Pad 2 [D65_A] of D65 on F.Cu",
+                    "pos": {
+                        "x": 29.183786,
+                        "y": 124.959448
+                    },
+                    "uuid": "57a3f2e3-5355-4520-b33c-27943520028b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1475 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW5] on F.Cu, length 16.8988 mm",
+                    "pos": {
+                        "x": 305.4381,
+                        "y": 123.9619
+                    },
+                    "uuid": "24ce588c-caa8-43b5-95ae-00daa9879952"
+                },
+                {
+                    "description": "Pad 2 [D81_A] of D81 on F.Cu",
+                    "pos": {
+                        "x": 307.789786,
+                        "y": 124.959448
+                    },
+                    "uuid": "6d59a1f6-94e6-d0ef-9739-a41ddf8f7662"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1651 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW5] on F.Cu, length 23.8130 mm",
+                    "pos": {
+                        "x": 217.3497,
+                        "y": 123.9443
+                    },
+                    "uuid": "75a1beb6-9310-4447-8e0e-d761a619d037"
+                },
+                {
+                    "description": "Pad 2 [D69_A] of D69 on F.Cu",
+                    "pos": {
+                        "x": 219.683786,
+                        "y": 124.959448
+                    },
+                    "uuid": "d9a14017-7c8c-a4f8-485f-f04942b5e5d9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1271 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW5] on F.Cu, length 22.7563 mm",
+                    "pos": {
+                        "x": 49.569,
+                        "y": 123.9823
+                    },
+                    "uuid": "808435ca-62ce-4eaa-854a-5805143686fc"
+                },
+                {
+                    "description": "Pad 2 [D66_A] of D66 on F.Cu",
+                    "pos": {
+                        "x": 52.996786,
+                        "y": 124.959448
+                    },
+                    "uuid": "eb457e79-5a7d-e3e5-16ce-88009447e0f9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D71_A] of D71 on F.Cu",
+                    "pos": {
+                        "x": 267.308786,
+                        "y": 124.959448
+                    },
+                    "uuid": "4d805b85-2889-ad38-ed09-8dfa0914e08c"
+                },
+                {
+                    "description": "Track [ROW5] on F.Cu, length 19.3268 mm",
+                    "pos": {
+                        "x": 284.2604,
+                        "y": 123.9854
+                    },
+                    "uuid": "a87fb79c-283e-4657-89c7-ef37a0f30c98"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1651 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D70_A] of D70 on F.Cu",
+                    "pos": {
+                        "x": 243.496786,
+                        "y": 124.959448
+                    },
+                    "uuid": "644d1765-1b02-bbf4-df09-ee1bab122ce9"
+                },
+                {
+                    "description": "Track [ROW5] on F.Cu, length 21.6246 mm",
+                    "pos": {
+                        "x": 241.1627,
+                        "y": 123.9443
+                    },
+                    "uuid": "aff72926-d7cc-4b45-85aa-4b9778d504e5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D80_A] of D80 on F.Cu",
+                    "pos": {
+                        "x": 288.740786,
+                        "y": 124.959448
+                    },
+                    "uuid": "3025986e-c33d-fba2-e7d3-c14454b3a204"
+                },
+                {
+                    "description": "Track [ROW5] on F.Cu, length 16.9438 mm",
+                    "pos": {
+                        "x": 303.3094,
+                        "y": 123.9854
+                    },
+                    "uuid": "c7a90d1c-558c-4041-bb38-4e00ea1ada26"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1579 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW0] on F.Cu, length 6.1662 mm",
+                    "pos": {
+                        "x": 186.3865,
+                        "y": 23.9395
+                    },
+                    "uuid": "0bffabab-4788-452c-a243-71dafaa4f3f8"
+                },
+                {
+                    "description": "Pad 2 [D6_A] of D6 on F.Cu",
+                    "pos": {
+                        "x": 188.727786,
+                        "y": 24.947448
+                    },
+                    "uuid": "b61fc83c-b679-688b-82fa-b13c0386b67a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1897 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW0] on F.Cu, length 17.9317 mm",
+                    "pos": {
+                        "x": 250.8567,
+                        "y": 23.9077
+                    },
+                    "uuid": "0caa0da4-9cd2-4ba0-8cb7-7a032d1f378e"
+                },
+                {
+                    "description": "Pad 2 [D8_A] of D8 on F.Cu",
+                    "pos": {
+                        "x": 236.352786,
+                        "y": 24.947448
+                    },
+                    "uuid": "24043d80-fe75-17de-df2f-1b17081b7a36"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1630 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW0] on F.Cu, length 16.8668 mm",
+                    "pos": {
+                        "x": 272.1166,
+                        "y": 23.9344
+                    },
+                    "uuid": "166d9a31-d324-4e50-bcaf-4932d33923bc"
+                },
+                {
+                    "description": "Pad 2 [D10_A] of D10 on F.Cu",
+                    "pos": {
+                        "x": 274.452786,
+                        "y": 24.947448
+                    },
+                    "uuid": "a233d464-9604-94c9-0251-0e22983b0159"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW0] on F.Cu, length 16.9448 mm",
+                    "pos": {
+                        "x": 269.9724,
+                        "y": 23.9734
+                    },
+                    "uuid": "1841edd9-47d9-4715-9e44-28e60d0e71b9"
+                },
+                {
+                    "description": "Pad 2 [D9_A] of D9 on F.Cu",
+                    "pos": {
+                        "x": 255.402786,
+                        "y": 24.947448
+                    },
+                    "uuid": "f9c2bcfc-deab-53c6-65d3-6de781060588"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1842 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW0] on F.Cu, length 9.5306 mm",
+                    "pos": {
+                        "x": 176.8934,
+                        "y": 23.9132
+                    },
+                    "uuid": "23c3be35-5f8f-4514-acb2-1dab849bc3d7"
+                },
+                {
+                    "description": "Pad 2 [D5_A] of D5 on F.Cu",
+                    "pos": {
+                        "x": 169.677786,
+                        "y": 24.947448
+                    },
+                    "uuid": "80155d8f-7dd3-e381-6f1d-d722dadd378a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1240 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D11_A] of D11 on F.Cu",
+                    "pos": {
+                        "x": 293.502786,
+                        "y": 24.947448
+                    },
+                    "uuid": "14572c87-dab7-a2f4-84fd-2b9ed378d559"
+                },
+                {
+                    "description": "Track [ROW0] on F.Cu, length 31.2328 mm",
+                    "pos": {
+                        "x": 322.3604,
+                        "y": 23.9734
+                    },
+                    "uuid": "47b492bc-94c0-4956-9ba5-9c89da620289"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1692 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW0] on F.Cu, length 6.0034 mm",
+                    "pos": {
+                        "x": 119.7228,
+                        "y": 23.9282
+                    },
+                    "uuid": "574982b3-ed63-47ad-95ff-6065467d40f3"
+                },
+                {
+                    "description": "Pad 2 [D3_A] of D3 on F.Cu",
+                    "pos": {
+                        "x": 122.052786,
+                        "y": 24.947448
+                    },
+                    "uuid": "f1c4f638-c423-2a7a-cf97-bb8b279fed6b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1750 mm)",
+            "items": [
+                {
+                    "description": "Track [ROW0] on F.Cu, length 16.8428 mm",
+                    "pos": {
+                        "x": 148.3036,
+                        "y": 23.9224
+                    },
+                    "uuid": "8cf5a5ca-dc0b-4bc9-95c7-632a17d29315"
+                },
+                {
+                    "description": "Pad 2 [D4_A] of D4 on F.Cu",
+                    "pos": {
+                        "x": 150.627786,
+                        "y": 24.947448
+                    },
+                    "uuid": "9da3338c-d8b0-58df-f811-a7bc33a36c1d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1359 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D1_A] of D1 on F.Cu",
+                    "pos": {
+                        "x": 83.952786,
+                        "y": 24.947448
+                    },
+                    "uuid": "22c97b53-3b1b-6870-1253-4bdc687b5a54"
+                },
+                {
+                    "description": "Track [ROW0] on F.Cu, length 16.9210 mm",
+                    "pos": {
+                        "x": 81.5895,
+                        "y": 23.9615
+                    },
+                    "uuid": "8eefdf12-5547-44e8-aee5-ff202965aa4c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1897 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D7_A] of D7 on F.Cu",
+                    "pos": {
+                        "x": 207.777786,
+                        "y": 24.947448
+                    },
+                    "uuid": "c325b21b-7775-60cd-7498-45597ac9e1e6"
+                },
+                {
+                    "description": "Track [ROW0] on F.Cu, length 27.4567 mm",
+                    "pos": {
+                        "x": 232.925,
+                        "y": 23.9077
+                    },
+                    "uuid": "f7673ab4-9e5a-4195-8a8a-9aabe0d49dc1"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW0] of D1 on F.Cu",
+                    "pos": {
+                        "x": 80.652786,
+                        "y": 24.947448
+                    },
+                    "uuid": "990a0758-f9ec-a8a8-3d19-0bcf1c4900bd"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW0] of D11 on F.Cu",
+                    "pos": {
+                        "x": 290.202786,
+                        "y": 24.947448
+                    },
+                    "uuid": "5c14a761-c7d7-89c5-8ae7-281b57a73888"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW3] of D43 on F.Cu",
+                    "pos": {
+                        "x": 94.940786,
+                        "y": 86.859448
+                    },
+                    "uuid": "da005217-7cb6-3187-c75e-60823fecda95"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW5] of D81 on F.Cu",
+                    "pos": {
+                        "x": 304.489786,
+                        "y": 124.959448
+                    },
+                    "uuid": "45004c6a-c5ff-54de-91b7-9b7690f20795"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D12_A] of D12 on F.Cu",
+                    "pos": {
+                        "x": 26.802786,
+                        "y": 48.759448
+                    },
+                    "uuid": "996c6728-2b50-a046-36c4-7e8752cba00c"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW4] of D58 on F.Cu",
+                    "pos": {
+                        "x": 142.565786,
+                        "y": 105.909448
+                    },
+                    "uuid": "c553125d-47bf-4271-6853-d57fc8cff4c7"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D66_A] of D66 on F.Cu",
+                    "pos": {
+                        "x": 52.996786,
+                        "y": 124.959448
+                    },
+                    "uuid": "eb457e79-5a7d-e3e5-16ce-88009447e0f9"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW4] of D60 on F.Cu",
+                    "pos": {
+                        "x": 180.665786,
+                        "y": 105.909448
+                    },
+                    "uuid": "d1718930-c008-2642-d268-9b55407c6fbe"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1870 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW0] of D2 on F.Cu",
+                    "pos": {
+                        "x": 99.702786,
+                        "y": 24.947448
+                    },
+                    "uuid": "735ffbde-25d4-87ba-801b-47b7d0105ba4"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW5] of D65 on F.Cu",
+                    "pos": {
+                        "x": 25.883786,
+                        "y": 124.959448
+                    },
+                    "uuid": "4644eb31-d26c-58a8-9f93-e0d6f6f778bc"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D58_A] of D58 on F.Cu",
+                    "pos": {
+                        "x": 145.865786,
+                        "y": 105.909448
+                    },
+                    "uuid": "c4d4bd38-0b0e-440f-ecc6-8436acce7dac"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D11_A] of D11 on F.Cu",
+                    "pos": {
+                        "x": 293.502786,
+                        "y": 24.947448
+                    },
+                    "uuid": "14572c87-dab7-a2f4-84fd-2b9ed378d559"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D81_A] of D81 on F.Cu",
+                    "pos": {
+                        "x": 307.789786,
+                        "y": 124.959448
+                    },
+                    "uuid": "6d59a1f6-94e6-d0ef-9739-a41ddf8f7662"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1714 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D60_A] of D60 on F.Cu",
+                    "pos": {
+                        "x": 183.965786,
+                        "y": 105.909448
+                    },
+                    "uuid": "131500d8-c06d-345a-452e-d17debc30bfb"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2168 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW3] of D48 on F.Cu",
+                    "pos": {
+                        "x": 190.190786,
+                        "y": 86.859448
+                    },
+                    "uuid": "ff9f5054-9426-9a36-ddcb-8366e58e8db6"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D1_A] of D1 on F.Cu",
+                    "pos": {
+                        "x": 83.952786,
+                        "y": 24.947448
+                    },
+                    "uuid": "22c97b53-3b1b-6870-1253-4bdc687b5a54"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1512 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D2_A] of D2 on F.Cu",
+                    "pos": {
+                        "x": 103.002786,
+                        "y": 24.947448
+                    },
+                    "uuid": "8392c638-4b38-6902-a030-5620ff5924d2"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW2] of D75 on F.Cu",
+                    "pos": {
+                        "x": 304.489786,
+                        "y": 67.809448
+                    },
+                    "uuid": "7c8fb462-e93a-5001-4d3c-76de2a02e758"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D65_A] of D65 on F.Cu",
+                    "pos": {
+                        "x": 29.183786,
+                        "y": 124.959448
+                    },
+                    "uuid": "57a3f2e3-5355-4520-b33c-27943520028b"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D43_A] of D43 on F.Cu",
+                    "pos": {
+                        "x": 98.240786,
+                        "y": 86.859448
+                    },
+                    "uuid": "8173ef0b-c20c-79e0-efd2-11f016774d4a"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D18_A] of D18 on F.Cu",
+                    "pos": {
+                        "x": 141.102786,
+                        "y": 48.759448
+                    },
+                    "uuid": "ce23e7e1-7dd0-970f-8245-b2cfcecbb7a4"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW5] of D69 on F.Cu",
+                    "pos": {
+                        "x": 216.383786,
+                        "y": 124.959448
+                    },
+                    "uuid": "5aecb777-acc2-c09f-6d3a-24162cddf322"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW2] of D31 on F.Cu",
+                    "pos": {
+                        "x": 128.277786,
+                        "y": 67.809448
+                    },
+                    "uuid": "fe432756-f9ce-9584-53bf-f56338dd0ac1"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D13_A] of D13 on F.Cu",
+                    "pos": {
+                        "x": 45.852786,
+                        "y": 48.759448
+                    },
+                    "uuid": "2c11ddd4-2649-a992-8a79-ca1a590fc1ac"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D48_A] of D48 on F.Cu",
+                    "pos": {
+                        "x": 193.490786,
+                        "y": 86.859448
+                    },
+                    "uuid": "c3bfd3e0-e4a2-79ab-6369-6ef41366bf7a"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1512 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW5] of D82 on F.Cu",
+                    "pos": {
+                        "x": 323.540786,
+                        "y": 124.959448
+                    },
+                    "uuid": "3a7e6755-fd79-f31e-842f-d2cdb711a947"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW5] of D67 on F.Cu",
+                    "pos": {
+                        "x": 73.508786,
+                        "y": 124.959448
+                    },
+                    "uuid": "007776a9-aa21-97d8-7c98-5a7e2eac3434"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW2] of D37 on F.Cu",
+                    "pos": {
+                        "x": 242.577786,
+                        "y": 67.809448
+                    },
+                    "uuid": "e1c7572a-78ef-5914-c138-0d964ea83f28"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D75_A] of D75 on F.Cu",
+                    "pos": {
+                        "x": 307.789786,
+                        "y": 67.809448
+                    },
+                    "uuid": "e9f35185-f9b7-4cfb-27da-ce8cf6368f8b"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW2] of D39 on F.Cu",
+                    "pos": {
+                        "x": 285.440786,
+                        "y": 67.809448
+                    },
+                    "uuid": "cf8abe99-c65a-3fed-beb7-6087fb1d14e1"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D31_A] of D31 on F.Cu",
+                    "pos": {
+                        "x": 131.577786,
+                        "y": 67.809448
+                    },
+                    "uuid": "07cd961c-b907-dd4f-d19e-789d97dda76a"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1512 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW0] of D72 on F.Cu",
+                    "pos": {
+                        "x": 323.540786,
+                        "y": 24.947448
+                    },
+                    "uuid": "d747cadb-a67d-3175-c20a-1cd7f4bba99c"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D54_A] of D54 on F.Cu",
+                    "pos": {
+                        "x": 69.665786,
+                        "y": 105.909448
+                    },
+                    "uuid": "a11c0071-0941-9017-3d1e-a7d34772a664"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1725 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D69_A] of D69 on F.Cu",
+                    "pos": {
+                        "x": 219.683786,
+                        "y": 124.959448
+                    },
+                    "uuid": "d9a14017-7c8c-a4f8-485f-f04942b5e5d9"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1512 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D82_A] of D82 on F.Cu",
+                    "pos": {
+                        "x": 326.840786,
+                        "y": 124.959448
+                    },
+                    "uuid": "e833202f-0754-ae1d-8a49-b5689c55ce4f"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D62_A] of D62 on F.Cu",
+                    "pos": {
+                        "x": 222.064786,
+                        "y": 105.909448
+                    },
+                    "uuid": "35576509-b341-9751-fa83-1a7f093a1cb4"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D37_A] of D37 on F.Cu",
+                    "pos": {
+                        "x": 245.877786,
+                        "y": 67.809448
+                    },
+                    "uuid": "e0df7739-ac05-98ce-eec2-e0e193a7199d"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1512 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D67_A] of D67 on F.Cu",
+                    "pos": {
+                        "x": 76.808786,
+                        "y": 124.959448
+                    },
+                    "uuid": "77d41a8f-872d-12c4-248b-185beddbcc0b"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1723 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D39_A] of D39 on F.Cu",
+                    "pos": {
+                        "x": 288.740786,
+                        "y": 67.809448
+                    },
+                    "uuid": "3df5806d-c4ad-1c94-643d-376a0b2548e4"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D28_A] of D28 on F.Cu",
+                    "pos": {
+                        "x": 74.427786,
+                        "y": 67.809448
+                    },
+                    "uuid": "67173cd8-f284-a3a7-59aa-4132c099c1f5"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW3] of D50 on F.Cu",
+                    "pos": {
+                        "x": 228.290786,
+                        "y": 86.859448
+                    },
+                    "uuid": "712ba0c2-97b9-d7a3-b66c-9055172a3554"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D17_A] of D17 on F.Cu",
+                    "pos": {
+                        "x": 122.052786,
+                        "y": 48.759448
+                    },
+                    "uuid": "7601b929-e8b3-f33a-58ab-bebc720932a9"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1512 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D72_A] of D72 on F.Cu",
+                    "pos": {
+                        "x": 326.840786,
+                        "y": 24.947448
+                    },
+                    "uuid": "b2add089-fff0-66ac-97d3-1d25976dd8ef"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW3] of D44 on F.Cu",
+                    "pos": {
+                        "x": 113.990786,
+                        "y": 86.859448
+                    },
+                    "uuid": "34ba6b4f-38ea-658b-ea8e-19baa80e80c2"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW3] of D51 on F.Cu",
+                    "pos": {
+                        "x": 247.340786,
+                        "y": 86.859448
+                    },
+                    "uuid": "741fe2f2-1946-d440-8048-f9e3e1b5194d"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW2] of D29 on F.Cu",
+                    "pos": {
+                        "x": 90.177786,
+                        "y": 67.809448
+                    },
+                    "uuid": "e6b255e1-b0db-9327-ba55-1bce49d0fc60"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW5] of D80 on F.Cu",
+                    "pos": {
+                        "x": 285.440786,
+                        "y": 124.959448
+                    },
+                    "uuid": "dad0c9a4-e90e-c7d7-fd9b-fda70c40e83c"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D19_A] of D19 on F.Cu",
+                    "pos": {
+                        "x": 160.152786,
+                        "y": 48.759448
+                    },
+                    "uuid": "762b3fce-ab3d-a0cc-3899-8729737b48fc"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW3] of D77 on F.Cu",
+                    "pos": {
+                        "x": 304.489786,
+                        "y": 86.859448
+                    },
+                    "uuid": "853ffeff-a5f0-7095-bcab-f56e878feef7"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW2] of D34 on F.Cu",
+                    "pos": {
+                        "x": 185.427786,
+                        "y": 67.809448
+                    },
+                    "uuid": "eb861ca4-511d-8d47-c5c4-e52124b0d43b"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D14_A] of D14 on F.Cu",
+                    "pos": {
+                        "x": 64.902786,
+                        "y": 48.759448
+                    },
+                    "uuid": "a92347dd-839d-e9c3-6b0a-7347bf9ed420"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1512 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D51_A] of D51 on F.Cu",
+                    "pos": {
+                        "x": 250.640786,
+                        "y": 86.859448
+                    },
+                    "uuid": "1981e68d-f1e9-ec38-af87-cc6eb991ec3c"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1714 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D34_A] of D34 on F.Cu",
+                    "pos": {
+                        "x": 188.727786,
+                        "y": 67.809448
+                    },
+                    "uuid": "e4bd705f-972c-794f-651a-37a4cb61fa6b"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1512 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW2] of D76 on F.Cu",
+                    "pos": {
+                        "x": 323.540786,
+                        "y": 67.809448
+                    },
+                    "uuid": "08c60f08-4a11-9f16-94f6-6554d62ec224"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D50_A] of D50 on F.Cu",
+                    "pos": {
+                        "x": 231.590786,
+                        "y": 86.859448
+                    },
+                    "uuid": "3b235d12-e63f-8985-7207-798d7e998300"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D44_A] of D44 on F.Cu",
+                    "pos": {
+                        "x": 117.290786,
+                        "y": 86.859448
+                    },
+                    "uuid": "45a24204-cacc-d30e-c317-48f9006f89fe"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW4] of D63 on F.Cu",
+                    "pos": {
+                        "x": 237.815786,
+                        "y": 105.909448
+                    },
+                    "uuid": "dc3b7143-90b4-20c0-2fdd-5417eb3791fa"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1712 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D29_A] of D29 on F.Cu",
+                    "pos": {
+                        "x": 93.477786,
+                        "y": 67.809448
+                    },
+                    "uuid": "a3505e24-dddd-03df-f110-0383743968b0"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D80_A] of D80 on F.Cu",
+                    "pos": {
+                        "x": 288.740786,
+                        "y": 124.959448
+                    },
+                    "uuid": "3025986e-c33d-fba2-e7d3-c14454b3a204"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1725 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D77_A] of D77 on F.Cu",
+                    "pos": {
+                        "x": 307.789786,
+                        "y": 86.859448
+                    },
+                    "uuid": "8fa68434-9f9c-4a24-28df-04a1a38c27ec"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW3] of D42 on F.Cu",
+                    "pos": {
+                        "x": 75.889786,
+                        "y": 86.859448
+                    },
+                    "uuid": "94e15805-3d39-5df2-dbdb-fe15da977c75"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW1] of D25 on F.Cu",
+                    "pos": {
+                        "x": 280.677786,
+                        "y": 48.759448
+                    },
+                    "uuid": "f3e3e7b4-8ee4-6f6c-117b-774bd6341a20"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1512 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D76_A] of D76 on F.Cu",
+                    "pos": {
+                        "x": 326.840786,
+                        "y": 67.809448
+                    },
+                    "uuid": "d4b5bd6b-6448-df33-5809-b14322bc5ac0"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1725 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D70_A] of D70 on F.Cu",
+                    "pos": {
+                        "x": 243.496786,
+                        "y": 124.959448
+                    },
+                    "uuid": "644d1765-1b02-bbf4-df09-ee1bab122ce9"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1725 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D23_A] of D23 on F.Cu",
+                    "pos": {
+                        "x": 236.352786,
+                        "y": 48.759448
+                    },
+                    "uuid": "0a211f67-0eb7-2736-17f9-f7252149d7ce"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D42_A] of D42 on F.Cu",
+                    "pos": {
+                        "x": 79.189786,
+                        "y": 86.859448
+                    },
+                    "uuid": "e4892669-93ba-7048-7ed6-a4748328d268"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1612 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW4] of D64 on F.Cu",
+                    "pos": {
+                        "x": 264.008786,
+                        "y": 105.909448
+                    },
+                    "uuid": "b6c9a150-13f2-5157-9a53-9e95f46f2cf7"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW2] of D26 on F.Cu",
+                    "pos": {
+                        "x": 28.265786,
+                        "y": 67.809448
+                    },
+                    "uuid": "195a7315-5845-f447-4e84-b1b44dc794cf"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1712 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D30_A] of D30 on F.Cu",
+                    "pos": {
+                        "x": 112.527786,
+                        "y": 67.809448
+                    },
+                    "uuid": "208b899c-7068-a8e6-985e-a8cf0308cf95"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1512 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D25_A] of D25 on F.Cu",
+                    "pos": {
+                        "x": 283.977786,
+                        "y": 48.759448
+                    },
+                    "uuid": "617c0dfd-e11f-0a4c-2a6f-2bee49c1c1c4"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1512 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW3] of D78 on F.Cu",
+                    "pos": {
+                        "x": 323.540786,
+                        "y": 86.859448
+                    },
+                    "uuid": "aad85ead-4c93-bc17-a382-ca2089501473"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW2] of D35 on F.Cu",
+                    "pos": {
+                        "x": 204.477786,
+                        "y": 67.809448
+                    },
+                    "uuid": "a600703f-d7f7-7b5e-0888-8ad845598c15"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D38_A] of D38 on F.Cu",
+                    "pos": {
+                        "x": 264.927786,
+                        "y": 67.809448
+                    },
+                    "uuid": "ccc93b13-59f5-4dd6-9f5a-0af10c924dd1"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW4] of D61 on F.Cu",
+                    "pos": {
+                        "x": 199.715786,
+                        "y": 105.909448
+                    },
+                    "uuid": "ddaf38e7-1772-9033-479b-ac7c4146da61"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1512 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D64_A] of D64 on F.Cu",
+                    "pos": {
+                        "x": 267.308786,
+                        "y": 105.909448
+                    },
+                    "uuid": "f7cd3972-2de0-250a-3193-e456d5f15cd3"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D26_A] of D26 on F.Cu",
+                    "pos": {
+                        "x": 31.565786,
+                        "y": 67.809448
+                    },
+                    "uuid": "b47a3222-fa2c-294d-5581-eed451855180"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D16_A] of D16 on F.Cu",
+                    "pos": {
+                        "x": 103.002786,
+                        "y": 48.759448
+                    },
+                    "uuid": "45647ca6-9c7d-d3c3-b3eb-ee3b1b0c5730"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D63_A] of D63 on F.Cu",
+                    "pos": {
+                        "x": 241.115786,
+                        "y": 105.909448
+                    },
+                    "uuid": "c9dea127-0423-d830-e6f3-25b566e5653c"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1512 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D78_A] of D78 on F.Cu",
+                    "pos": {
+                        "x": 326.840786,
+                        "y": 86.859448
+                    },
+                    "uuid": "da4d520c-54b6-365b-e9b2-3d5bd56ed3c7"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW3] of D52 on F.Cu",
+                    "pos": {
+                        "x": 278.296786,
+                        "y": 86.859448
+                    },
+                    "uuid": "3021e8d5-72e5-d045-c3a7-201fec886cee"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D61_A] of D61 on F.Cu",
+                    "pos": {
+                        "x": 203.015786,
+                        "y": 105.909448
+                    },
+                    "uuid": "9373a542-5aac-f304-b99e-f16ad8ca739f"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW4] of D53 on F.Cu",
+                    "pos": {
+                        "x": 35.408786,
+                        "y": 105.909448
+                    },
+                    "uuid": "dbf1150f-ee03-d9c7-d520-04aaa787f8fa"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D35_A] of D35 on F.Cu",
+                    "pos": {
+                        "x": 207.777786,
+                        "y": 67.809448
+                    },
+                    "uuid": "a5948e56-d3b7-7d68-ee1e-6f7286ca99bb"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW3] of D45 on F.Cu",
+                    "pos": {
+                        "x": 133.040786,
+                        "y": 86.859448
+                    },
+                    "uuid": "26382895-dd7a-5b7f-469a-f30bbfec3687"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1512 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW4] of D79 on F.Cu",
+                    "pos": {
+                        "x": 304.489786,
+                        "y": 105.909448
+                    },
+                    "uuid": "5d7e0eda-e429-4844-6181-328040255a6e"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW3] of D40 on F.Cu",
+                    "pos": {
+                        "x": 30.646786,
+                        "y": 86.859448
+                    },
+                    "uuid": "be4fd512-f3e2-f37d-a941-22c52cffd5fe"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW2] of D36 on F.Cu",
+                    "pos": {
+                        "x": 223.527786,
+                        "y": 67.809448
+                    },
+                    "uuid": "afc29a99-cbfd-72d8-ff00-477d00e2c56e"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1512 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D52_A] of D52 on F.Cu",
+                    "pos": {
+                        "x": 281.596786,
+                        "y": 86.859448
+                    },
+                    "uuid": "5e9b915c-b969-87e6-bd26-9a9d11a4e3c7"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW2] of D27 on F.Cu",
+                    "pos": {
+                        "x": 52.077786,
+                        "y": 67.809448
+                    },
+                    "uuid": "87184738-e54e-9b4e-cf30-62c75a134190"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1512 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D53_A] of D53 on F.Cu",
+                    "pos": {
+                        "x": 38.708786,
+                        "y": 105.909448
+                    },
+                    "uuid": "cccbf679-9ff8-a326-d99e-b66b80c3a0e8"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1696 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D45_A] of D45 on F.Cu",
+                    "pos": {
+                        "x": 136.340786,
+                        "y": 86.859448
+                    },
+                    "uuid": "4541bdf7-874d-09ee-9e06-106ded85a8b6"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1695 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D8_A] of D8 on F.Cu",
+                    "pos": {
+                        "x": 236.352786,
+                        "y": 24.947448
+                    },
+                    "uuid": "24043d80-fe75-17de-df2f-1b17081b7a36"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1512 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D79_A] of D79 on F.Cu",
+                    "pos": {
+                        "x": 307.789786,
+                        "y": 105.909448
+                    },
+                    "uuid": "ae1fef15-d609-c315-304a-5a1bbe1b5dc4"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D40_A] of D40 on F.Cu",
+                    "pos": {
+                        "x": 33.946786,
+                        "y": 86.859448
+                    },
+                    "uuid": "bfdca26a-17bf-2517-8389-9cc72ae0a756"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D36_A] of D36 on F.Cu",
+                    "pos": {
+                        "x": 226.827786,
+                        "y": 67.809448
+                    },
+                    "uuid": "def0e973-32e5-1482-d347-1f6d0914b255"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D27_A] of D27 on F.Cu",
+                    "pos": {
+                        "x": 55.377786,
+                        "y": 67.809448
+                    },
+                    "uuid": "4823604c-5b02-b630-4f85-7bbb3de62924"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1712 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D57_A] of D57 on F.Cu",
+                    "pos": {
+                        "x": 126.815786,
+                        "y": 105.909448
+                    },
+                    "uuid": "5245842e-0430-b2b1-2af8-7b79d7683dfc"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW4] of D56 on F.Cu",
+                    "pos": {
+                        "x": 104.464786,
+                        "y": 105.909448
+                    },
+                    "uuid": "1d4927a8-28dd-a66d-5267-c3902c131226"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW2] of D32 on F.Cu",
+                    "pos": {
+                        "x": 147.327786,
+                        "y": 67.809448
+                    },
+                    "uuid": "aefbb2b7-b4d7-99d3-8aac-e8d947b8c5ff"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D22_A] of D22 on F.Cu",
+                    "pos": {
+                        "x": 217.302786,
+                        "y": 48.759448
+                    },
+                    "uuid": "93f90992-2d1d-3da6-f0ba-264d3ec71ff3"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW1] of D73 on F.Cu",
+                    "pos": {
+                        "x": 304.489786,
+                        "y": 48.759448
+                    },
+                    "uuid": "ee1bb0cf-e2dc-9a41-c3f6-775b14bb50df"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1512 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW1] of D74 on F.Cu",
+                    "pos": {
+                        "x": 323.540786,
+                        "y": 48.759448
+                    },
+                    "uuid": "e1bd0dcf-07c1-6d65-f08e-f79592557ecf"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW0] of D7 on F.Cu",
+                    "pos": {
+                        "x": 204.477786,
+                        "y": 24.947448
+                    },
+                    "uuid": "3da6c5e0-87e5-d6f9-2253-90b4e36d32bb"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1712 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D56_A] of D56 on F.Cu",
+                    "pos": {
+                        "x": 107.764786,
+                        "y": 105.909448
+                    },
+                    "uuid": "048a687f-a8a1-06b8-59a1-d418a178807f"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1512 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW1] of D24 on F.Cu",
+                    "pos": {
+                        "x": 252.102786,
+                        "y": 48.759448
+                    },
+                    "uuid": "38a0bde5-df96-706e-bf74-2d0c1bef344d"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1714 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D32_A] of D32 on F.Cu",
+                    "pos": {
+                        "x": 150.627786,
+                        "y": 67.809448
+                    },
+                    "uuid": "8e0a6b81-97ed-ce5b-91fc-a2290380edcf"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D21_A] of D21 on F.Cu",
+                    "pos": {
+                        "x": 198.252786,
+                        "y": 48.759448
+                    },
+                    "uuid": "f1845960-e26c-925f-26ea-3bf84a8cd252"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D73_A] of D73 on F.Cu",
+                    "pos": {
+                        "x": 307.789786,
+                        "y": 48.759448
+                    },
+                    "uuid": "4d9437d0-2443-44ba-3ab5-4355a3a11ca3"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW3] of D49 on F.Cu",
+                    "pos": {
+                        "x": 209.240786,
+                        "y": 86.859448
+                    },
+                    "uuid": "b7b7f851-1bdd-adaf-11bc-6c0a2425a5b4"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW5] of D68 on F.Cu",
+                    "pos": {
+                        "x": 144.946786,
+                        "y": 124.959448
+                    },
+                    "uuid": "6cb07412-67d9-6085-f2d5-05fb6c6e4ec0"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1512 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D74_A] of D74 on F.Cu",
+                    "pos": {
+                        "x": 326.840786,
+                        "y": 48.759448
+                    },
+                    "uuid": "47e0adf6-b9d4-5062-eb6e-dc261ed13ddb"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1512 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D24_A] of D24 on F.Cu",
+                    "pos": {
+                        "x": 255.402786,
+                        "y": 48.759448
+                    },
+                    "uuid": "266e6b79-4897-8f07-d54f-2bb45ae4f145"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW0] of D3 on F.Cu",
+                    "pos": {
+                        "x": 118.752786,
+                        "y": 24.947448
+                    },
+                    "uuid": "e62a07df-7a3e-a61d-d3f7-5b4d9d5e23cf"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW4] of D55 on F.Cu",
+                    "pos": {
+                        "x": 85.415786,
+                        "y": 105.909448
+                    },
+                    "uuid": "eb639833-20fb-3a34-7780-62b74837069c"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D49_A] of D49 on F.Cu",
+                    "pos": {
+                        "x": 212.540786,
+                        "y": 86.859448
+                    },
+                    "uuid": "44289cef-3c8a-f32f-3925-45d96ac28e79"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1512 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D68_A] of D68 on F.Cu",
+                    "pos": {
+                        "x": 148.246786,
+                        "y": 124.959448
+                    },
+                    "uuid": "c60a2b60-28ab-ea09-d1ed-328176433f1d"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW0] of D10 on F.Cu",
+                    "pos": {
+                        "x": 271.152786,
+                        "y": 24.947448
+                    },
+                    "uuid": "5ac13d35-140f-43ce-e8d2-b11c84921b67"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D41_A] of D41 on F.Cu",
+                    "pos": {
+                        "x": 60.140786,
+                        "y": 86.859448
+                    },
+                    "uuid": "68f87f49-329d-dd3e-7db7-2f30dfac7100"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D55_A] of D55 on F.Cu",
+                    "pos": {
+                        "x": 88.715786,
+                        "y": 105.909448
+                    },
+                    "uuid": "e24eacd7-4d7a-2d9a-9f13-81286df0c1ea"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1720 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D3_A] of D3 on F.Cu",
+                    "pos": {
+                        "x": 122.052786,
+                        "y": 24.947448
+                    },
+                    "uuid": "f1c4f638-c423-2a7a-cf97-bb8b279fed6b"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW4] of D59 on F.Cu",
+                    "pos": {
+                        "x": 161.615786,
+                        "y": 105.909448
+                    },
+                    "uuid": "9713a45a-dc90-3614-9899-c7c9e72e51b4"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1725 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D10_A] of D10 on F.Cu",
+                    "pos": {
+                        "x": 274.452786,
+                        "y": 24.947448
+                    },
+                    "uuid": "a233d464-9604-94c9-0251-0e22983b0159"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW3] of D46 on F.Cu",
+                    "pos": {
+                        "x": 152.090786,
+                        "y": 86.859448
+                    },
+                    "uuid": "48ba3541-c060-72bc-c2eb-5824b9b04921"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW2] of D33 on F.Cu",
+                    "pos": {
+                        "x": 166.377786,
+                        "y": 67.809448
+                    },
+                    "uuid": "5764f198-006e-b135-3d1b-862eb87ac4d8"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW5] of D71 on F.Cu",
+                    "pos": {
+                        "x": 264.008786,
+                        "y": 124.959448
+                    },
+                    "uuid": "80f1c32c-e10c-da2a-6bfa-092818c98b9f"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D59_A] of D59 on F.Cu",
+                    "pos": {
+                        "x": 164.915786,
+                        "y": 105.909448
+                    },
+                    "uuid": "8507dd6a-399f-7e0e-63b4-367636ef833e"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D15_A] of D15 on F.Cu",
+                    "pos": {
+                        "x": 83.952786,
+                        "y": 48.759448
+                    },
+                    "uuid": "147b797e-e60a-ed10-de5d-efe8e450b16c"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D46_A] of D46 on F.Cu",
+                    "pos": {
+                        "x": 155.390786,
+                        "y": 86.859448
+                    },
+                    "uuid": "8c8cd40d-a52b-05b9-5a31-fd71f14f907b"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D33_A] of D33 on F.Cu",
+                    "pos": {
+                        "x": 169.677786,
+                        "y": 67.809448
+                    },
+                    "uuid": "c2cedb87-e6a1-ceb8-d927-ea3ae44108cd"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D71_A] of D71 on F.Cu",
+                    "pos": {
+                        "x": 267.308786,
+                        "y": 124.959448
+                    },
+                    "uuid": "4d805b85-2889-ad38-ed09-8dfa0914e08c"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D47_A] of D47 on F.Cu",
+                    "pos": {
+                        "x": 174.439786,
+                        "y": 86.859448
+                    },
+                    "uuid": "ab9cb53c-4ecd-2202-fef5-ebc0d49dbe36"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D20_A] of D20 on F.Cu",
+                    "pos": {
+                        "x": 179.202786,
+                        "y": 48.759448
+                    },
+                    "uuid": "3c606e99-21d9-6e56-b0ee-21cb70600bad"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.2204 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [ROW0] of D9 on F.Cu",
+                    "pos": {
+                        "x": 252.102786,
+                        "y": 24.947448
+                    },
+                    "uuid": "593cb196-9ca7-b534-a679-155ba7a4c11f"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (zone clearance 0.3000 mm; actual 0.1727 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [D9_A] of D9 on F.Cu",
+                    "pos": {
+                        "x": 255.402786,
+                        "y": 24.947448
+                    },
+                    "uuid": "f9c2bcfc-deab-53c6-65d3-6de781060588"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                },
+                {
+                    "description": "Pad 2 [GND] of C2 on F.Cu",
+                    "pos": {
+                        "x": 140.7,
+                        "y": 5.563
+                    },
+                    "uuid": "acf5b1c9-0ec6-7f8c-76aa-2ee13b851f73"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": -0.05,
+                        "y": -0.05
+                    },
+                    "uuid": "d21dc481-c30d-4f64-aae4-e962b4065a11"
+                },
+                {
+                    "description": "Pad 2 [GND] of R1 on F.Cu",
+                    "pos": {
+                        "x": 178.7,
+                        "y": 3.063
+                    },
+                    "uuid": "3f2542ac-b07a-6512-d42d-c4aaec942b16"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        }
+    ]
+}

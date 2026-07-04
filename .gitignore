@@ -1,10 +1,15 @@
 .DS_Store
 node_modules/
+*.log
+*.bak
 *.stl
 !web/public/models/*.stl
 *.3mf
 *.step
 *.fcstd1
 *.kicad_prl
+firmware/esp32s3-sim/build/
+firmware/esp32s3-sim/build-esp32s3/
+hardware/kicad/oso75/.history/
 hardware/cad/generated/*.csg
 web/dist/

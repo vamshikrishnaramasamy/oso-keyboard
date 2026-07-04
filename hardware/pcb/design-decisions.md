@@ -8,8 +8,8 @@ Reasons:
 
 - Better open-source hardware story for Stardance.
 - We control the layout, pinout, silkscreen, and future variants.
-- Onboard RP2040 gives more firmware space than ATmega32U4 Pro Micro boards.
-- SMD diodes and RP2040 support components can be factory assembled.
+- Onboard ESP32-S3 gives native USB plus BLE/Wi-Fi for the module ecosystem.
+- SMD diodes and ESP32-S3 support components can be factory assembled.
 - Builders should only need to install switches, stabilizers, and case hardware.
 
 ## Decision: Top-Left Hot-Swappable Module Bay
@@ -42,7 +42,7 @@ hardware target.
 
 The first KiCad pass should include:
 
-- RP2040, 16MB flash, crystal, regulator, USB-C, ESD, boot, reset.
+- ESP32-S3-WROOM-1U module, regulator, USB-C, ESD, boot, reset, and external antenna.
 - 6 x 16 COL2ROW keyboard matrix.
 - 82 MX hotswap sockets.
 - 82 SOD-123 diodes.

@@ -1,22 +1,21 @@
 # CAD
 
-The first CAD target is a parametric OpenSCAD tray case and switch plate.
+The production case is the build123d model in `hardware/cad/build123d/`.
 
 Generate it with:
 
 ```sh
-npm run generate
-openscad -o hardware/cad/generated/oso75_case_plate.stl hardware/cad/generated/oso75_case_plate.scad
+cd hardware/cad/build123d
+python3 oso75_case.py
 ```
 
-The CAD is intentionally simple for the first pass:
+Production outputs:
 
-- 1.6 mm switch plate
-- tray-style lower case
-- MX switch cutouts
-- USB-C opening
-- transparent switch preview blocks
+- `oso75_case_bottom.step/.stl`
+- `oso75_case_bezel.step/.stl`
+- `oso75_plate.step/.stl`
+- `oso75_bay_cover.step/.stl`
+- `oso75_assembly.step/.glb`
 
-The next CAD pass should add screw bosses, PCB mounting holes, plate reliefs, and
-stabilizer clearance cuts.
-
+The older OpenSCAD file in `hardware/cad/generated/oso75_case_plate.scad` is
+concept-only. Do not use it for final printing, CNC, or ordering.

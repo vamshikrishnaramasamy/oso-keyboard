@@ -1,0 +1,215 @@
+{
+  "generatedAt": "2026-06-21T18:33:12.719Z",
+  "board": "OSO75",
+  "target": "ESP32-S3-WROOM-1U-N16",
+  "sourceFiles": [
+    "qmk/keyboards/oso/oso75/keyboard.json",
+    "hardware/pcb/oso75_matrix_netlist.csv",
+    "hardware/pcb/oso75_esp32s3_netlist.csv",
+    "hardware/pcb/oso75_components.csv",
+    "qmk/keyboards/oso/oso75/keymaps/default/keymap.c"
+  ],
+  "matrix": {
+    "rows": [
+      "GPIO1",
+      "GPIO2",
+      "GPIO4",
+      "GPIO5",
+      "GPIO6",
+      "GPIO7"
+    ],
+    "cols": [
+      "GPIO8",
+      "GPIO9",
+      "GPIO10",
+      "GPIO11",
+      "GPIO12",
+      "GPIO13",
+      "GPIO14",
+      "GPIO15",
+      "GPIO16",
+      "GPIO17",
+      "GPIO18",
+      "GPIO21",
+      "GPIO35",
+      "GPIO36",
+      "GPIO37",
+      "GPIO38"
+    ],
+    "switches": 82,
+    "diodeDirection": "COL2ROW",
+    "pass": true
+  },
+  "compute": {
+    "cpu": {
+      "cores": 2,
+      "mhzPerCore": 240,
+      "totalCyclesPerSecond": 480000000,
+      "flashBytes": 16777216,
+      "psramBytes": 0,
+      "internalSramBytesApprox": 524288
+    },
+    "scanRateHz": 1000,
+    "debounceMs": 5,
+    "cyclesPerScan": 11030,
+    "cyclesPerSecond": 11030000,
+    "cpuPct": 2.2979166666666666,
+    "keymapBytes": 328,
+    "firmwareDataBytes": 490,
+    "pass": true
+  },
+  "power": {
+    "limits": {
+      "usbHighPowerMa": 500,
+      "ap2112ContinuousMa": 600,
+      "ap2112ThetaJaCPerWApprox": 160,
+      "ap2112MaxRecommendedCaseC": 85,
+      "ambientC": 25,
+      "vbusV": 5,
+      "v33V": 3.3,
+      "fuseHoldMa": 500
+    },
+    "scenarios": [
+      {
+        "name": "wired-keyboard-idle",
+        "expected": true,
+        "esp32Ma": 75,
+        "matrixMa": 2,
+        "module3v3Ma": 0,
+        "module5vMa": 0,
+        "note": "USB HID active, radio off",
+        "ldoMa": 77,
+        "usbMa": 78,
+        "ldoPowerW": 0.13090000000000002,
+        "ldoCaseC": 45.944,
+        "pass": true,
+        "warnings": []
+      },
+      {
+        "name": "wired-keyboard-heavy-scan",
+        "expected": true,
+        "esp32Ma": 115,
+        "matrixMa": 3,
+        "module3v3Ma": 20,
+        "module5vMa": 0,
+        "note": "USB HID plus module-present pullups / light module logic",
+        "ldoMa": 138,
+        "usbMa": 139,
+        "ldoPowerW": 0.23460000000000003,
+        "ldoCaseC": 62.536,
+        "pass": true,
+        "warnings": []
+      },
+      {
+        "name": "wifi-or-ble-peak-no-module",
+        "expected": false,
+        "esp32Ma": 340,
+        "matrixMa": 3,
+        "module3v3Ma": 0,
+        "module5vMa": 0,
+        "note": "RF burst modeled as peak, not safe as continuous SOT-23-5 heat",
+        "ldoMa": 343,
+        "usbMa": 344,
+        "ldoPowerW": 0.5831000000000001,
+        "ldoCaseC": 118.296,
+        "pass": false,
+        "warnings": [
+          "AP2112K would hit about 118.3 C if this current were continuous"
+        ]
+      },
+      {
+        "name": "3v3-module-spec-max-80ma",
+        "expected": true,
+        "esp32Ma": 130,
+        "matrixMa": 3,
+        "module3v3Ma": 80,
+        "module5vMa": 0,
+        "note": "Rev A recommended continuous 3.3 V module budget",
+        "ldoMa": 213,
+        "usbMa": 214,
+        "ldoPowerW": 0.36210000000000003,
+        "ldoCaseC": 82.936,
+        "pass": true,
+        "warnings": []
+      },
+      {
+        "name": "5v-module-leds-spec-max-330ma",
+        "expected": true,
+        "esp32Ma": 130,
+        "matrixMa": 3,
+        "module3v3Ma": 20,
+        "module5vMa": 330,
+        "note": "Rev A conservative bus-powered VBUS_FUSED module budget",
+        "ldoMa": 153,
+        "usbMa": 484,
+        "ldoPowerW": 0.2601,
+        "ldoCaseC": 66.616,
+        "pass": true,
+        "warnings": []
+      },
+      {
+        "name": "3v3-module-100ma-over-spec",
+        "expected": false,
+        "esp32Ma": 130,
+        "matrixMa": 3,
+        "module3v3Ma": 100,
+        "module5vMa": 0,
+        "note": "Overload probe: old 3.3 V module budget",
+        "ldoMa": 233,
+        "usbMa": 234,
+        "ldoPowerW": 0.39610000000000006,
+        "ldoCaseC": 88.376,
+        "pass": false,
+        "warnings": [
+          "AP2112K would hit about 88.4 C if this current were continuous"
+        ]
+      },
+      {
+        "name": "5v-module-leds-400ma-over-spec",
+        "expected": false,
+        "esp32Ma": 130,
+        "matrixMa": 3,
+        "module3v3Ma": 20,
+        "module5vMa": 400,
+        "note": "Overload probe: old 500 mA fuse-as-budget assumption",
+        "ldoMa": 153,
+        "usbMa": 554,
+        "ldoPowerW": 0.2601,
+        "ldoCaseC": 66.616,
+        "pass": false,
+        "warnings": [
+          "USB current estimate 554 mA exceeds 500 mA high-power budget"
+        ]
+      }
+    ]
+  },
+  "boot": {
+    "enPullupOhms": 10000,
+    "enCapUf": 1,
+    "tauMs": 10,
+    "en90PercentMs": 23.025850929940454,
+    "bootPullupOhms": 10000,
+    "bootPullupMa": 0.33,
+    "normalBoot": {
+      "gpio0": "pulled_high",
+      "en": "rc_rises_high",
+      "mode": "flash_boot"
+    },
+    "downloadBoot": {
+      "gpio0": "held_low_by_SW_BOOT_during_reset",
+      "en": "reset_released",
+      "mode": "usb_serial_rom_download"
+    },
+    "pass": true
+  },
+  "warnings": [
+    "wifi-or-ble-peak-no-module: AP2112K would hit about 118.3 C if this current were continuous",
+    "3v3-module-100ma-over-spec: AP2112K would hit about 88.4 C if this current were continuous",
+    "5v-module-leds-400ma-over-spec: USB current estimate 554 mA exceeds 500 mA high-power budget"
+  ],
+  "wokwi": {
+    "diagram": "hardware/sim/wokwi/diagram.json",
+    "sketch": "hardware/sim/wokwi/sketch.ino",
+    "note": "Generated Wokwi harness from PCB matrix/netlist"
+  }
+}

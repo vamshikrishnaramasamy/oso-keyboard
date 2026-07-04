@@ -9,7 +9,7 @@
     "w_mm": 54,
     "h_mm": 25,
     "replaces": ["Esc", "F1"],
-    "pins": ["GND", "+3V3", "VBUS_FUSED", "I2C_SDA", "I2C_SCL", "MOD_A", "MOD_B", "MOD_INT", "RESET_N", "GND"]
+    "pins": ["GND", "+3V3", "VBUS_FUSED", "I2C_SDA", "I2C_SCL", "MOD_A", "MOD_B", "MOD_INT", "ESP_EN", "GND"]
   },
   "keys": [
     { "label": "Esc", "x": 0, "y": 0, "row": 0, "col": 0 },
@@ -86,21 +86,21 @@
     { "label": "LCtrl", "x": 0, "y": 5.25, "w": 1.25, "row": 5, "col": 0 },
     { "label": "LGUI", "x": 1.25, "y": 5.25, "w": 1.25, "row": 5, "col": 1 },
     { "label": "LAlt", "x": 2.5, "y": 5.25, "w": 1.25, "row": 5, "col": 2 },
-    { "label": "Space", "x": 3.75, "y": 5.25, "w": 6.25, "row": 5, "col": 3 },
-    { "label": "RAlt", "x": 10, "y": 5.25, "w": 1.25, "row": 5, "col": 4 },
-    { "label": "Fn", "x": 11.25, "y": 5.25, "w": 1.25, "row": 5, "col": 5 },
-    { "label": "RCtrl", "x": 12.5, "y": 5.25, "w": 1.25, "row": 5, "col": 6 },
+    { "label": "Space", "x": 3.75, "y": 5.25, "w": 6.25, "row": 5, "col": 6 },
+    { "label": "RAlt", "x": 10, "y": 5.25, "w": 1.25, "row": 5, "col": 9 },
+    { "label": "Fn", "x": 11.25, "y": 5.25, "w": 1.25, "row": 5, "col": 10 },
+    { "label": "RCtrl", "x": 12.5, "y": 5.25, "w": 1.25, "row": 5, "col": 11 },
 
-    { "label": "PrtSc", "x": 15.25, "y": 0, "row": 0, "col": 13 },
-    { "label": "Ins", "x": 15.25, "y": 1.25, "row": 1, "col": 14 },
-    { "label": "Home", "x": 16.25, "y": 1.25, "row": 1, "col": 15 },
-    { "label": "PgUp", "x": 15.25, "y": 2.25, "row": 2, "col": 14 },
-    { "label": "Del", "x": 16.25, "y": 2.25, "row": 2, "col": 15 },
-    { "label": "End", "x": 15.25, "y": 3.25, "row": 3, "col": 13 },
-    { "label": "PgDn", "x": 16.25, "y": 3.25, "row": 3, "col": 14 },
-    { "label": "Up", "x": 15.25, "y": 4.25, "row": 4, "col": 12 },
-    { "label": "Left", "x": 14.25, "y": 5.25, "row": 5, "col": 7 },
-    { "label": "Down", "x": 15.25, "y": 5.25, "row": 5, "col": 8 },
-    { "label": "Right", "x": 16.25, "y": 5.25, "row": 5, "col": 9 }
+    { "label": "PrtSc", "x": 15.75, "y": 0, "row": 0, "col": 13 },
+    { "label": "Ins", "x": 14.75, "y": 1.25, "row": 1, "col": 14 },
+    { "label": "Home", "x": 15.75, "y": 1.25, "row": 1, "col": 15 },
+    { "label": "PgUp", "x": 14.75, "y": 2.25, "row": 2, "col": 14 },
+    { "label": "Del", "x": 15.75, "y": 2.25, "row": 2, "col": 15 },
+    { "label": "End", "x": 14.75, "y": 3.25, "row": 3, "col": 14 },
+    { "label": "PgDn", "x": 15.75, "y": 3.25, "row": 3, "col": 15 },
+    { "label": "Up", "x": 14.75, "y": 4.25, "row": 4, "col": 14 },
+    { "label": "Left", "x": 13.75, "y": 5.25, "row": 5, "col": 13 },
+    { "label": "Down", "x": 14.75, "y": 5.25, "row": 5, "col": 14 },
+    { "label": "Right", "x": 15.75, "y": 5.25, "row": 5, "col": 15 }
   ]
 }

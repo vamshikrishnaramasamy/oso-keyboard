@@ -1,0 +1,2911 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-06-10T19:06:14",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.3",
+    "schematic_parity": [],
+    "source": "oso75.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0962 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 152.45,
+                        "y": 6.313
+                    },
+                    "uuid": "02fdc8b4-8784-4c7b-9276-771a165eacc0"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 152.72,
+                        "y": 6.603
+                    },
+                    "uuid": "81bfc148-a0c8-45bd-9930-21dbf6937f7b"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 177.7,
+                        "y": 4.063
+                    },
+                    "uuid": "3fb8475c-01f8-42cc-9c69-ce830f91760e"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 177.7,
+                        "y": 4.062999
+                    },
+                    "uuid": "93678999-ac31-4495-b712-4805aa54631f"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 143.7,
+                        "y": 4.916
+                    },
+                    "uuid": "72672593-b1b9-4e95-982f-084bfc6c893e"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 143.599974,
+                        "y": 4.916
+                    },
+                    "uuid": "f222c32b-ae9c-45a7-8b8e-342b7429453b"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D12",
+                    "pos": {
+                        "x": 12.025,
+                        "y": 48.838
+                    },
+                    "uuid": "00a685dd-e7a3-4475-59ec-3bd7e43883fd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C3",
+                    "pos": {
+                        "x": 178.0,
+                        "y": 19.563
+                    },
+                    "uuid": "018fb727-1e22-00b5-8d7b-628e2c7ac232"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW12",
+                    "pos": {
+                        "x": 18.525,
+                        "y": 55.338
+                    },
+                    "uuid": "057f9376-fbbf-40e5-a04f-775d296b35dc"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW68",
+                    "pos": {
+                        "x": 139.969,
+                        "y": 131.538
+                    },
+                    "uuid": "06dd3e8b-4a1e-47e3-a2dd-0c2f60545e9f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW74",
+                    "pos": {
+                        "x": 318.563,
+                        "y": 55.338
+                    },
+                    "uuid": "09ebe9a2-9d60-4b3d-b668-2f7da4987fa4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW22",
+                    "pos": {
+                        "x": 209.025,
+                        "y": 55.338
+                    },
+                    "uuid": "0a02b4ce-64a4-4c02-927b-2d8ec53b178d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C_EN",
+                    "pos": {
+                        "x": 92.6,
+                        "y": 9.063
+                    },
+                    "uuid": "0e38f6d3-e6bb-422a-ae4e-e61996a455e7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW37",
+                    "pos": {
+                        "x": 237.6,
+                        "y": 74.388
+                    },
+                    "uuid": "0eb001be-7f4e-466f-ae3e-8b02322393b1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW60",
+                    "pos": {
+                        "x": 175.688,
+                        "y": 112.488
+                    },
+                    "uuid": "0f246800-1d83-4bc6-b605-d820f4702519"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW38",
+                    "pos": {
+                        "x": 256.65,
+                        "y": 74.388
+                    },
+                    "uuid": "0f2c6238-7800-4f0f-b58a-6cdbbc96016a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D75",
+                    "pos": {
+                        "x": 293.012,
+                        "y": 67.888
+                    },
+                    "uuid": "112067ec-3ce3-2389-2d84-d087e21f933e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D28",
+                    "pos": {
+                        "x": 59.65,
+                        "y": 67.888
+                    },
+                    "uuid": "11712c88-fd00-71e5-a1e8-f192cd9f21a4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW_RESET",
+                    "pos": {
+                        "x": 93.5,
+                        "y": 12.063
+                    },
+                    "uuid": "117fb1fd-6b0e-29cb-31e3-adc5882143b3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D14",
+                    "pos": {
+                        "x": 50.125,
+                        "y": 48.838
+                    },
+                    "uuid": "11cd562d-364b-fa44-7fc7-36a6e4fada7d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW53",
+                    "pos": {
+                        "x": 30.431,
+                        "y": 112.488
+                    },
+                    "uuid": "1651af6b-cb31-4b96-ba56-63d089112b83"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW17",
+                    "pos": {
+                        "x": 113.775,
+                        "y": 55.338
+                    },
+                    "uuid": "19b225b3-e358-4ddd-8145-1cd452fb8afe"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW44",
+                    "pos": {
+                        "x": 109.013,
+                        "y": 93.438
+                    },
+                    "uuid": "19f5fd73-4894-4a1f-b447-68a050ffa197"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW82",
+                    "pos": {
+                        "x": 318.563,
+                        "y": 131.538
+                    },
+                    "uuid": "1b690b20-64e7-4edd-b4e3-73d32d39cb47"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D25",
+                    "pos": {
+                        "x": 269.2,
+                        "y": 48.838
+                    },
+                    "uuid": "1e103f68-5110-f41f-d856-2e7091072db0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D65",
+                    "pos": {
+                        "x": 14.406,
+                        "y": 125.038
+                    },
+                    "uuid": "1fbea9af-0f65-dca1-1e9c-5c5e63e06e9c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D37",
+                    "pos": {
+                        "x": 231.1,
+                        "y": 67.888
+                    },
+                    "uuid": "1fc789d4-13ba-afbc-0967-3641989896f9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D80",
+                    "pos": {
+                        "x": 273.963,
+                        "y": 125.038
+                    },
+                    "uuid": "20908a13-49a9-b13d-d843-5005fd4ab9b8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW30",
+                    "pos": {
+                        "x": 104.25,
+                        "y": 74.388
+                    },
+                    "uuid": "20ecec8e-4e0a-47bc-91ac-7b3cbe100748"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW61",
+                    "pos": {
+                        "x": 194.738,
+                        "y": 112.488
+                    },
+                    "uuid": "21dc4c26-d62f-47d8-93e8-9eb1ed7db168"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 168.54,
+                        "y": 2.403
+                    },
+                    "uuid": "22660fc2-2731-46db-9f0a-f432d8e3bc03"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW78",
+                    "pos": {
+                        "x": 318.563,
+                        "y": 93.438
+                    },
+                    "uuid": "233fc107-59ae-4b02-8af3-2733d8eafb9f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D6",
+                    "pos": {
+                        "x": 173.95,
+                        "y": 25.026
+                    },
+                    "uuid": "254e8eb8-37ba-ec74-af10-5648fa0aa5e1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW18",
+                    "pos": {
+                        "x": 132.825,
+                        "y": 55.338
+                    },
+                    "uuid": "282a4db3-96c3-4702-bc91-ca785beab1d8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW57",
+                    "pos": {
+                        "x": 118.538,
+                        "y": 112.488
+                    },
+                    "uuid": "28fc7648-e569-4ec1-892a-c26f496f6b54"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW26",
+                    "pos": {
+                        "x": 23.288,
+                        "y": 74.388
+                    },
+                    "uuid": "2a36731a-413a-4df6-8deb-cef31dc56b33"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D26",
+                    "pos": {
+                        "x": 16.788,
+                        "y": 67.888
+                    },
+                    "uuid": "2af1b7ea-29d3-cae7-1d79-fc71010129dd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D45",
+                    "pos": {
+                        "x": 121.563,
+                        "y": 86.938
+                    },
+                    "uuid": "2bb75d80-2180-324c-f07f-73a86bc9a133"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R2",
+                    "pos": {
+                        "x": 179.5,
+                        "y": 6.063
+                    },
+                    "uuid": "2d416e4b-3cdc-e2c4-ac14-483e2f0b9c19"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D22",
+                    "pos": {
+                        "x": 202.525,
+                        "y": 48.838
+                    },
+                    "uuid": "32404e2c-8edf-0506-d498-108b9dc9375a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D21",
+                    "pos": {
+                        "x": 183.475,
+                        "y": 48.838
+                    },
+                    "uuid": "325e4349-9b6e-ef65-fd04-c33905fa6c62"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW31",
+                    "pos": {
+                        "x": 123.3,
+                        "y": 74.388
+                    },
+                    "uuid": "32ba9aa0-cd14-426b-85b4-0b5128d57b7a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D55",
+                    "pos": {
+                        "x": 73.938,
+                        "y": 105.988
+                    },
+                    "uuid": "32e9a640-72ef-e152-ae5f-304f8dfa0f47"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D33",
+                    "pos": {
+                        "x": 154.9,
+                        "y": 67.888
+                    },
+                    "uuid": "340e35cf-0ac6-5d81-a55b-7e6ec4e47ea2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW10",
+                    "pos": {
+                        "x": 266.175,
+                        "y": 31.526
+                    },
+                    "uuid": "35f04e04-b3a5-49a6-b021-e0f1730ffd17"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW16",
+                    "pos": {
+                        "x": 94.725,
+                        "y": 55.338
+                    },
+                    "uuid": "399aecb8-7d23-4d1c-b561-3c901630463d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R4",
+                    "pos": {
+                        "x": 157.5,
+                        "y": 8.563
+                    },
+                    "uuid": "3b2e8c61-ece0-4fa2-97c3-595b4b130f77"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW9",
+                    "pos": {
+                        "x": 247.125,
+                        "y": 31.526
+                    },
+                    "uuid": "42560a13-bca7-4923-823a-66f10386de19"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D58",
+                    "pos": {
+                        "x": 131.088,
+                        "y": 105.988
+                    },
+                    "uuid": "45445ad2-5b38-9599-7910-a5180d277ab1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW51",
+                    "pos": {
+                        "x": 242.363,
+                        "y": 93.438
+                    },
+                    "uuid": "454f8bb6-4c9f-42b7-804c-36e26f8b7e00"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW3",
+                    "pos": {
+                        "x": 113.775,
+                        "y": 31.526
+                    },
+                    "uuid": "45aaec1b-1357-4337-9278-e57abe112b14"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D31",
+                    "pos": {
+                        "x": 116.8,
+                        "y": 67.888
+                    },
+                    "uuid": "45c2e307-c1a1-838b-8cfa-5af496a8f2c2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW64",
+                    "pos": {
+                        "x": 259.031,
+                        "y": 112.488
+                    },
+                    "uuid": "45c45c3b-de22-48b4-ae78-5e9f39145d79"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW2",
+                    "pos": {
+                        "x": 94.725,
+                        "y": 31.526
+                    },
+                    "uuid": "4753e47c-1733-4335-bbd6-809210202dfa"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW67",
+                    "pos": {
+                        "x": 68.531,
+                        "y": 131.538
+                    },
+                    "uuid": "48165fb4-8fef-4f89-a62c-c22d196afaaa"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW_BOOT",
+                    "pos": {
+                        "x": 101.5,
+                        "y": 12.063
+                    },
+                    "uuid": "48d6f59c-ae9b-fbdb-0b7d-5ef4cc8c948c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C4",
+                    "pos": {
+                        "x": 181.0,
+                        "y": 7.563
+                    },
+                    "uuid": "4939dd9e-af38-aede-72b7-271244db8b27"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 5.563
+                    },
+                    "uuid": "497f35b9-c5e6-5356-ed17-5dd3bc04daea"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D50",
+                    "pos": {
+                        "x": 216.813,
+                        "y": 86.938
+                    },
+                    "uuid": "4f9666cb-4ef0-0775-0868-9bea24f47395"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW8",
+                    "pos": {
+                        "x": 228.075,
+                        "y": 31.526
+                    },
+                    "uuid": "50145937-8456-4aa6-8fc1-065cbd177c26"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 196.0,
+                        "y": 11.263
+                    },
+                    "uuid": "5015e0aa-918b-c2a7-978b-5e9afe8c26c5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW27",
+                    "pos": {
+                        "x": 47.1,
+                        "y": 74.388
+                    },
+                    "uuid": "5296be66-8cee-4ed1-a5b3-0ed5dc5138ae"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW33",
+                    "pos": {
+                        "x": 161.4,
+                        "y": 74.388
+                    },
+                    "uuid": "52d4c7da-114a-42a1-b8ea-c2cfd7f3b823"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW5",
+                    "pos": {
+                        "x": 161.4,
+                        "y": 31.526
+                    },
+                    "uuid": "5583afaa-b59e-4aff-b7ed-44b4caa2ade4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D1",
+                    "pos": {
+                        "x": 69.175,
+                        "y": 25.026
+                    },
+                    "uuid": "5726db41-ebae-e973-5dde-a5f11b539e61"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D67",
+                    "pos": {
+                        "x": 62.031,
+                        "y": 125.038
+                    },
+                    "uuid": "579b6226-3670-3ce0-5c9e-a82ff272c19b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW65",
+                    "pos": {
+                        "x": 20.906,
+                        "y": 131.538
+                    },
+                    "uuid": "59644980-307a-46f0-acc8-4ef7e16c1b59"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW29",
+                    "pos": {
+                        "x": 85.2,
+                        "y": 74.388
+                    },
+                    "uuid": "59c630bb-d089-42fe-9dbd-ccd8c7f98576"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW48",
+                    "pos": {
+                        "x": 185.213,
+                        "y": 93.438
+                    },
+                    "uuid": "5af045fc-a3b7-4282-92a5-294153b1dc73"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D19",
+                    "pos": {
+                        "x": 145.375,
+                        "y": 48.838
+                    },
+                    "uuid": "5b1044d8-cf0f-4a5a-00f9-9d6e32d03bf3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D63",
+                    "pos": {
+                        "x": 226.338,
+                        "y": 105.988
+                    },
+                    "uuid": "5bc6deda-1462-15db-04ba-4291858f8476"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D36",
+                    "pos": {
+                        "x": 212.05,
+                        "y": 67.888
+                    },
+                    "uuid": "5beb4075-9fc8-1f7f-5296-bd273d643242"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D7",
+                    "pos": {
+                        "x": 193.0,
+                        "y": 25.026
+                    },
+                    "uuid": "5c42c6c6-be98-9f17-bd4c-109a93c32a1d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint ST3",
+                    "pos": {
+                        "x": 30.431,
+                        "y": 112.488
+                    },
+                    "uuid": "5d09b548-31f3-4ebb-b7ce-56f69bb5124f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW21",
+                    "pos": {
+                        "x": 189.975,
+                        "y": 55.338
+                    },
+                    "uuid": "5e3718bc-99f7-4509-9888-4732a5d84c6b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D68",
+                    "pos": {
+                        "x": 133.469,
+                        "y": 125.038
+                    },
+                    "uuid": "5efce9bd-0c98-a6d9-1313-37fe8b602b1e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D59",
+                    "pos": {
+                        "x": 150.138,
+                        "y": 105.988
+                    },
+                    "uuid": "5ff8c684-e584-f817-e8da-793a80a40401"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint ST1",
+                    "pos": {
+                        "x": 275.7,
+                        "y": 55.338
+                    },
+                    "uuid": "61008dad-0f72-4abd-97f8-cef3b863dd01"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D47",
+                    "pos": {
+                        "x": 159.662,
+                        "y": 86.938
+                    },
+                    "uuid": "62e94b8a-3c1b-7c9e-3c3e-f2f20d294858"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D9",
+                    "pos": {
+                        "x": 240.625,
+                        "y": 25.026
+                    },
+                    "uuid": "63ab6bff-cd2b-43b0-b31c-aca8f78aa1f8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint ST4",
+                    "pos": {
+                        "x": 139.969,
+                        "y": 131.538
+                    },
+                    "uuid": "66f937cd-0340-4385-aa7f-765ec60ec345"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW52",
+                    "pos": {
+                        "x": 273.319,
+                        "y": 93.438
+                    },
+                    "uuid": "6707bac9-d6cf-4315-a2db-73d46fc6e1a2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D11",
+                    "pos": {
+                        "x": 278.725,
+                        "y": 25.026
+                    },
+                    "uuid": "676fe044-c353-38da-9783-c5f90aade297"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint J3",
+                    "pos": {
+                        "x": 38.0,
+                        "y": 30.5
+                    },
+                    "uuid": "689f826b-ae62-b319-32e8-c10d18a0d4c2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D18",
+                    "pos": {
+                        "x": 126.325,
+                        "y": 48.838
+                    },
+                    "uuid": "695420d8-2f68-cad4-7947-348a42ebad45"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW66",
+                    "pos": {
+                        "x": 44.719,
+                        "y": 131.538
+                    },
+                    "uuid": "6bb0a964-b053-4146-82b6-ee4153a56b4a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D72",
+                    "pos": {
+                        "x": 312.063,
+                        "y": 25.026
+                    },
+                    "uuid": "6c3994e0-ecb1-272e-ed8b-870a5c117add"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D76",
+                    "pos": {
+                        "x": 312.063,
+                        "y": 67.888
+                    },
+                    "uuid": "6fb83bab-27ab-e742-44b7-74a6d6ef0c92"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW58",
+                    "pos": {
+                        "x": 137.588,
+                        "y": 112.488
+                    },
+                    "uuid": "72765f0b-87c9-4b41-a90e-96e8f0e729ca"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D35",
+                    "pos": {
+                        "x": 193.0,
+                        "y": 67.888
+                    },
+                    "uuid": "72e75e29-8840-b325-e48a-e4d6cbe63211"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D5",
+                    "pos": {
+                        "x": 154.9,
+                        "y": 25.026
+                    },
+                    "uuid": "73c99847-9c99-c731-46d3-3882713057e4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D8",
+                    "pos": {
+                        "x": 221.575,
+                        "y": 25.026
+                    },
+                    "uuid": "7bcb6f87-f28e-e17c-8e27-9b5503a2dedc"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW75",
+                    "pos": {
+                        "x": 299.512,
+                        "y": 74.388
+                    },
+                    "uuid": "7c2eadaf-a599-46b1-86d3-c980abf3f269"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW72",
+                    "pos": {
+                        "x": 318.563,
+                        "y": 31.526
+                    },
+                    "uuid": "7d543ddf-127d-4552-888c-ebf01660d7c1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D32",
+                    "pos": {
+                        "x": 135.85,
+                        "y": 67.888
+                    },
+                    "uuid": "7e960ba1-88c3-e3d4-96af-1840d36c489e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW80",
+                    "pos": {
+                        "x": 280.463,
+                        "y": 131.538
+                    },
+                    "uuid": "7fc33853-5a32-42c1-8d8a-3caa19a17cc6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW81",
+                    "pos": {
+                        "x": 299.512,
+                        "y": 131.538
+                    },
+                    "uuid": "7fcb9840-c820-467e-ac7f-367597dc1217"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW23",
+                    "pos": {
+                        "x": 228.075,
+                        "y": 55.338
+                    },
+                    "uuid": "805e2177-4327-4c78-8473-a1aa3fb0c90e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW42",
+                    "pos": {
+                        "x": 70.912,
+                        "y": 93.438
+                    },
+                    "uuid": "8060de65-1d8b-4114-ae95-61d35a9001f2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D3",
+                    "pos": {
+                        "x": 107.275,
+                        "y": 25.026
+                    },
+                    "uuid": "8216b28d-6b3c-a177-3086-d0bb06e37569"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D71",
+                    "pos": {
+                        "x": 252.531,
+                        "y": 125.038
+                    },
+                    "uuid": "83be1317-4664-2cb6-69a6-a876873a5e87"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW34",
+                    "pos": {
+                        "x": 180.45,
+                        "y": 74.388
+                    },
+                    "uuid": "8507a603-ab13-4282-bc4a-05a2f67f00ca"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D66",
+                    "pos": {
+                        "x": 38.219,
+                        "y": 125.038
+                    },
+                    "uuid": "85108d61-147b-125a-86d5-7291a477b3f3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW4",
+                    "pos": {
+                        "x": 142.35,
+                        "y": 31.526
+                    },
+                    "uuid": "85849f1d-9b1a-4700-99b8-a9e4264aa52e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW62",
+                    "pos": {
+                        "x": 213.787,
+                        "y": 112.488
+                    },
+                    "uuid": "8861958a-295f-4052-a362-ceffba3913a7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW73",
+                    "pos": {
+                        "x": 299.512,
+                        "y": 55.338
+                    },
+                    "uuid": "88bd3057-f41a-49e4-8a39-42a667e3bd40"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D48",
+                    "pos": {
+                        "x": 178.713,
+                        "y": 86.938
+                    },
+                    "uuid": "88e57c42-d93b-8660-8251-68aa8c879281"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW49",
+                    "pos": {
+                        "x": 204.263,
+                        "y": 93.438
+                    },
+                    "uuid": "8e03f34a-175d-4768-8742-764f9e89c787"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 141.5,
+                        "y": 5.563
+                    },
+                    "uuid": "8fe3586d-f388-7bfd-541c-e878d9b63e8e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D54",
+                    "pos": {
+                        "x": 54.888,
+                        "y": 105.988
+                    },
+                    "uuid": "90609e37-28b5-0d68-c14c-b20f55898039"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW76",
+                    "pos": {
+                        "x": 318.563,
+                        "y": 74.388
+                    },
+                    "uuid": "937e0e80-d32c-4acd-aa02-31d832b6f06e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D44",
+                    "pos": {
+                        "x": 102.513,
+                        "y": 86.938
+                    },
+                    "uuid": "94b9c0af-b997-9f57-860c-0ae8158c35ad"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW47",
+                    "pos": {
+                        "x": 166.162,
+                        "y": 93.438
+                    },
+                    "uuid": "94dddbec-2e5c-4ce3-ac55-b11fc0250a1d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R5",
+                    "pos": {
+                        "x": 124.5,
+                        "y": 12.063
+                    },
+                    "uuid": "951a01d8-fca5-bba8-5d68-3a8c2a96ba21"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW36",
+                    "pos": {
+                        "x": 218.55,
+                        "y": 74.388
+                    },
+                    "uuid": "954e2b17-080d-4c7f-8371-9655023761f3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D23",
+                    "pos": {
+                        "x": 221.575,
+                        "y": 48.838
+                    },
+                    "uuid": "9619e38b-896a-826a-b00c-ab0cf3e2fba8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D61",
+                    "pos": {
+                        "x": 188.238,
+                        "y": 105.988
+                    },
+                    "uuid": "961f5f12-d02c-4792-8bb1-90b692bf2e75"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW39",
+                    "pos": {
+                        "x": 280.463,
+                        "y": 74.388
+                    },
+                    "uuid": "96b24c8e-7d1f-4aa9-ab1c-ec8a36238867"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW35",
+                    "pos": {
+                        "x": 199.5,
+                        "y": 74.388
+                    },
+                    "uuid": "96d00248-9227-48de-980a-f5ce94661b48"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D27",
+                    "pos": {
+                        "x": 40.6,
+                        "y": 67.888
+                    },
+                    "uuid": "98dd497c-74b7-8122-3e28-7c808dfbb693"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D60",
+                    "pos": {
+                        "x": 169.188,
+                        "y": 105.988
+                    },
+                    "uuid": "997c4aad-3c70-2b25-5ce7-844170092c93"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW71",
+                    "pos": {
+                        "x": 259.031,
+                        "y": 131.538
+                    },
+                    "uuid": "9a85bf17-0a3a-40ed-9445-ec5c08b86106"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW46",
+                    "pos": {
+                        "x": 147.113,
+                        "y": 93.438
+                    },
+                    "uuid": "9bb19ce3-1a0c-4262-b678-61cc59065464"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D69",
+                    "pos": {
+                        "x": 204.906,
+                        "y": 125.038
+                    },
+                    "uuid": "9ef8d162-f4cf-2ab7-5b63-055c9a5f9180"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint F1",
+                    "pos": {
+                        "x": 117.0,
+                        "y": 12.063
+                    },
+                    "uuid": "9fddcc19-e0db-f149-85e3-e44a8049dc39"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D4",
+                    "pos": {
+                        "x": 135.85,
+                        "y": 25.026
+                    },
+                    "uuid": "a00a1927-ed19-c0f4-9100-97c9a4376eb3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D17",
+                    "pos": {
+                        "x": 107.275,
+                        "y": 48.838
+                    },
+                    "uuid": "a0ca9413-8c85-5110-739f-de5376eb33e5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW15",
+                    "pos": {
+                        "x": 75.675,
+                        "y": 55.338
+                    },
+                    "uuid": "a2ddf6ec-6d20-40e8-875b-7b9f9cc36388"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D34",
+                    "pos": {
+                        "x": 173.95,
+                        "y": 67.888
+                    },
+                    "uuid": "a3152deb-3482-c830-e9e7-2ced93a92ffb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW79",
+                    "pos": {
+                        "x": 299.512,
+                        "y": 112.488
+                    },
+                    "uuid": "a505651c-fc15-40c6-8742-9c0e73986cb2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D42",
+                    "pos": {
+                        "x": 64.412,
+                        "y": 86.938
+                    },
+                    "uuid": "a6550b0f-7912-c054-2e1a-926e08b8b65c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW28",
+                    "pos": {
+                        "x": 66.15,
+                        "y": 74.388
+                    },
+                    "uuid": "a91e8433-f257-46e4-ad98-580565c598ae"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW43",
+                    "pos": {
+                        "x": 89.963,
+                        "y": 93.438
+                    },
+                    "uuid": "aa8eeb65-840f-4b62-9a0b-b1a0d0fd3b6b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D38",
+                    "pos": {
+                        "x": 250.15,
+                        "y": 67.888
+                    },
+                    "uuid": "aadd1a2f-dd0e-3f9d-9040-a1b0207ab08b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D53",
+                    "pos": {
+                        "x": 23.931,
+                        "y": 105.988
+                    },
+                    "uuid": "af190aad-eafd-39c0-dfa2-91c296281227"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R6",
+                    "pos": {
+                        "x": 131.5,
+                        "y": 12.063
+                    },
+                    "uuid": "b16490e6-521e-f339-72d3-31832c46516b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D56",
+                    "pos": {
+                        "x": 92.987,
+                        "y": 105.988
+                    },
+                    "uuid": "b2ab7e24-20c9-3c3b-ec49-0f8f20b036bd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D49",
+                    "pos": {
+                        "x": 197.763,
+                        "y": 86.938
+                    },
+                    "uuid": "b34e41c7-29d0-23f4-169f-c4f0399a049a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R1",
+                    "pos": {
+                        "x": 179.5,
+                        "y": 3.063
+                    },
+                    "uuid": "b3ddbdc5-b71f-91ae-0331-87cf8a48c7f7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D43",
+                    "pos": {
+                        "x": 83.463,
+                        "y": 86.938
+                    },
+                    "uuid": "b6ed0873-4714-7313-5ca7-919d4133be5a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW32",
+                    "pos": {
+                        "x": 142.35,
+                        "y": 74.388
+                    },
+                    "uuid": "b72f9cf3-811b-4f9b-8744-fcc28d0ec3df"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW19",
+                    "pos": {
+                        "x": 151.875,
+                        "y": 55.338
+                    },
+                    "uuid": "b90697c9-31f8-40d9-8232-067091ad5292"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R10",
+                    "pos": {
+                        "x": 109.5,
+                        "y": 12.063
+                    },
+                    "uuid": "bd4b2e58-fffa-0f20-ddb1-c61cab9a7686"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D39",
+                    "pos": {
+                        "x": 273.963,
+                        "y": 67.888
+                    },
+                    "uuid": "bd7c852f-9d21-5060-be15-40d077aac96e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D77",
+                    "pos": {
+                        "x": 293.012,
+                        "y": 86.938
+                    },
+                    "uuid": "bdd304b4-ec60-99ce-18e0-1e5447d79b05"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D30",
+                    "pos": {
+                        "x": 97.75,
+                        "y": 67.888
+                    },
+                    "uuid": "c042346e-bccb-4dcd-b92b-30593027a93d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW11",
+                    "pos": {
+                        "x": 285.225,
+                        "y": 31.526
+                    },
+                    "uuid": "c1960bc3-57f9-4c5a-97ef-c9f39bbd4860"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D16",
+                    "pos": {
+                        "x": 88.225,
+                        "y": 48.838
+                    },
+                    "uuid": "c1dac79b-90cf-ab49-c1b3-d38a23b9f705"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW13",
+                    "pos": {
+                        "x": 37.575,
+                        "y": 55.338
+                    },
+                    "uuid": "c2edd99f-2407-465a-90b2-e48dc9be8a46"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW69",
+                    "pos": {
+                        "x": 211.406,
+                        "y": 131.538
+                    },
+                    "uuid": "c514fed6-66c7-4d3a-999e-6524d0884486"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW55",
+                    "pos": {
+                        "x": 80.438,
+                        "y": 112.488
+                    },
+                    "uuid": "c6d478a7-179c-4654-9113-87be57b36fcf"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D79",
+                    "pos": {
+                        "x": 293.012,
+                        "y": 105.988
+                    },
+                    "uuid": "c6df764f-4b1e-cae0-2f5b-a439af55b245"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 152.5,
+                        "y": 5.563
+                    },
+                    "uuid": "c74c5a50-ef81-49f3-a535-75f01fa1c911"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D73",
+                    "pos": {
+                        "x": 293.012,
+                        "y": 48.838
+                    },
+                    "uuid": "c9e6d6bd-3d51-e704-e8e4-18c6d8ea75ca"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW50",
+                    "pos": {
+                        "x": 223.313,
+                        "y": 93.438
+                    },
+                    "uuid": "ca10c4f4-d43d-4060-abdd-537e9995629d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW7",
+                    "pos": {
+                        "x": 199.5,
+                        "y": 31.526
+                    },
+                    "uuid": "cb7630b2-1ebd-4907-9e6c-a82d86790f53"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW20",
+                    "pos": {
+                        "x": 170.925,
+                        "y": 55.338
+                    },
+                    "uuid": "cc011448-f11e-478c-b2a6-6118fcd63258"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D2",
+                    "pos": {
+                        "x": 88.225,
+                        "y": 25.026
+                    },
+                    "uuid": "ccb1beae-7701-701c-fc27-8580bbf7752b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint R3",
+                    "pos": {
+                        "x": 157.5,
+                        "y": 5.063
+                    },
+                    "uuid": "cd274f84-bd64-2bb7-f52f-e03473d3c33c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW54",
+                    "pos": {
+                        "x": 61.388,
+                        "y": 112.488
+                    },
+                    "uuid": "d082f867-3004-4af3-bbe9-cea6efc9a55f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D82",
+                    "pos": {
+                        "x": 312.063,
+                        "y": 125.038
+                    },
+                    "uuid": "d191b498-d172-6328-485d-f3e04b617d4c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D51",
+                    "pos": {
+                        "x": 235.863,
+                        "y": 86.938
+                    },
+                    "uuid": "d4764484-e72f-0f41-4533-83863617fb48"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D70",
+                    "pos": {
+                        "x": 228.719,
+                        "y": 125.038
+                    },
+                    "uuid": "d92a758d-2d8b-1a3a-5826-7ed5dc69888a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D78",
+                    "pos": {
+                        "x": 312.063,
+                        "y": 86.938
+                    },
+                    "uuid": "da895b73-d48e-ef3c-b99a-ab8e6a927c6e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D40",
+                    "pos": {
+                        "x": 19.169,
+                        "y": 86.938
+                    },
+                    "uuid": "dac4dd1e-f0ce-d3a3-b2c7-f19bd8ef7f0d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW59",
+                    "pos": {
+                        "x": 156.638,
+                        "y": 112.488
+                    },
+                    "uuid": "dc0f62d7-093e-43a9-b62c-53e16ddfc9f2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW56",
+                    "pos": {
+                        "x": 99.487,
+                        "y": 112.488
+                    },
+                    "uuid": "dc79a783-cb43-495c-b4f1-4a59af200a34"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D74",
+                    "pos": {
+                        "x": 312.063,
+                        "y": 48.838
+                    },
+                    "uuid": "dda4a52d-befe-c1d2-13aa-7cf21f0258f3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW70",
+                    "pos": {
+                        "x": 235.219,
+                        "y": 131.538
+                    },
+                    "uuid": "ddbeb0dd-6586-4ed9-b868-952ca7e34a0f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW63",
+                    "pos": {
+                        "x": 232.838,
+                        "y": 112.488
+                    },
+                    "uuid": "dfb5b0ec-d13b-49c7-89b3-a763ca563967"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW77",
+                    "pos": {
+                        "x": 299.512,
+                        "y": 93.438
+                    },
+                    "uuid": "dfe19f0e-bdc5-4c45-858d-a8bdb3fb9363"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D10",
+                    "pos": {
+                        "x": 259.675,
+                        "y": 25.026
+                    },
+                    "uuid": "e1b0fb86-6c9b-f3fa-2df8-648cbf85a616"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D15",
+                    "pos": {
+                        "x": 69.175,
+                        "y": 48.838
+                    },
+                    "uuid": "e28bec5a-85ec-904f-f36f-3785b7098448"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint ST2",
+                    "pos": {
+                        "x": 273.319,
+                        "y": 93.438
+                    },
+                    "uuid": "e4236b2f-dc7d-4cb5-b799-7fb49c05de68"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D20",
+                    "pos": {
+                        "x": 164.425,
+                        "y": 48.838
+                    },
+                    "uuid": "e5e1d997-c0bd-6a97-995a-4b7cebb64f36"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D81",
+                    "pos": {
+                        "x": 293.012,
+                        "y": 125.038
+                    },
+                    "uuid": "e662e76e-4bb2-58d7-53ba-aff694f43c94"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW24",
+                    "pos": {
+                        "x": 247.125,
+                        "y": 55.338
+                    },
+                    "uuid": "e70fa3ae-c3bd-481c-bec6-4574e3ef8b4b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW40",
+                    "pos": {
+                        "x": 25.669,
+                        "y": 93.438
+                    },
+                    "uuid": "e7937214-510e-45a1-ab2d-7e8dab24ae14"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D13",
+                    "pos": {
+                        "x": 31.075,
+                        "y": 48.838
+                    },
+                    "uuid": "e9e2cfa3-2d2a-5ad9-1d4c-909201832335"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D62",
+                    "pos": {
+                        "x": 207.287,
+                        "y": 105.988
+                    },
+                    "uuid": "e9eee87e-9a78-1aec-e644-3fd785b856a6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D29",
+                    "pos": {
+                        "x": 78.7,
+                        "y": 67.888
+                    },
+                    "uuid": "ebe20986-0486-1ef9-fea9-d405464f13c3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW41",
+                    "pos": {
+                        "x": 51.863,
+                        "y": 93.438
+                    },
+                    "uuid": "ec171c85-81fa-4eb5-93b2-e3f38d0c87bd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D64",
+                    "pos": {
+                        "x": 252.531,
+                        "y": 105.988
+                    },
+                    "uuid": "ed2681fa-6722-b5b0-69f8-322d3e27d30f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D52",
+                    "pos": {
+                        "x": 266.819,
+                        "y": 86.938
+                    },
+                    "uuid": "eea656c9-a571-b941-209b-684c5560b51e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW1",
+                    "pos": {
+                        "x": 75.675,
+                        "y": 31.526
+                    },
+                    "uuid": "ef1bdcd1-1adc-42db-a366-7a2ed4ca685b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D57",
+                    "pos": {
+                        "x": 112.038,
+                        "y": 105.988
+                    },
+                    "uuid": "f1426e58-2189-add9-2035-0a719fd85f8e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D24",
+                    "pos": {
+                        "x": 240.625,
+                        "y": 48.838
+                    },
+                    "uuid": "f4e689e1-4619-ed02-5cbb-0b85399b03c1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW6",
+                    "pos": {
+                        "x": 180.45,
+                        "y": 31.526
+                    },
+                    "uuid": "f96329b9-7ff6-42f4-a377-d97d323d3de6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D41",
+                    "pos": {
+                        "x": 45.363,
+                        "y": 86.938
+                    },
+                    "uuid": "f9dd16da-9bb3-727f-a2a0-607faeb9884c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW14",
+                    "pos": {
+                        "x": 56.625,
+                        "y": 55.338
+                    },
+                    "uuid": "fd157039-c1eb-4f2e-973f-763b98e2387c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint D46",
+                    "pos": {
+                        "x": 140.613,
+                        "y": 86.938
+                    },
+                    "uuid": "fe96f0b9-be2b-65ed-394a-5a1610f936a3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW25",
+                    "pos": {
+                        "x": 275.7,
+                        "y": 55.338
+                    },
+                    "uuid": "ff714417-fff8-4eb0-b79f-09656cf66742"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'OSO75' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint SW45",
+                    "pos": {
+                        "x": 128.063,
+                        "y": 93.438
+                    },
+                    "uuid": "ff8da589-eb95-46bd-a616-ffc108e1f31c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        }
+    ]
+}

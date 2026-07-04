@@ -1,0 +1,39 @@
+(gr_line
+		(start 0 0)
+		(end 337.088 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "5910c0a0-1d58-4603-8acd-fdc8da022e95")
+
+(gr_line
+		(start 0 150.063)
+		(end 0 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "42fdf8de-4a1f-db4a-a04d-da1bad5744a5")
+
+(gr_line
+		(start 337.088 0)
+		(end 337.088 150.063)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "4234d169-30ee-38ff-256d-9e9b32197d62")
+
+(gr_line
+		(start 337.088 150.063)
+		(end 0 150.063)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "81d1818b-e23b-d10d-9e88-4e7cfac89b6c")

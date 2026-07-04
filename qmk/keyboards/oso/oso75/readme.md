@@ -1,12 +1,11 @@
-# OSO75 QMK Firmware
+# OSO75 Legacy QMK Layout Reference
 
-Generated firmware skeleton for the OSO75 custom PCB.
+Generated layout skeleton for the OSO75 key matrix.
 
-Build target once copied into a QMK checkout:
+The active PCB target is ESP32-S3, so production firmware is expected to move to
+ESP-IDF/TinyUSB. This QMK folder remains useful as a readable layout/keymap
+reference while the ESP32 firmware comes up.
 
 ```sh
 qmk compile -kb oso/oso75 -km default
 ```
-
-The keyboard uses an RP2040 target, native USB, and a 6 x 16 matrix.
-

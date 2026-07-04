@@ -1,0 +1,204 @@
+	(footprint "Stabilizer_Cherry_MX_6.25u"
+		(layer "F.Cu")
+		(descr "Cherry MX PCB Stabilizer 6.25u")
+		(tags "Cherry MX Keyboard Stabilizer 6.25u Cutout")
+		(property "Reference" "REF**"
+			(at 0.00125 4.9025 180)
+			(layer "F.SilkS")
+			(uuid "72981a76-fb12-419a-a4c9-41f8d49c26e8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "Stabilizer_Cherry_MX_6.25u"
+			(at 0 2 180)
+			(layer "F.Fab")
+			(uuid "7fe6b02e-de96-43fc-9996-450afe63c807")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4507d9cb-c0a7-4e99-a2f3-8b35afa8f115")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "43a4f4e9-9269-42df-9186-2f17ba5d1403")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 0 2)
+			(end 0 -2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "5f9c3367-64e2-4e4f-a5d1-c42c2c67e158")
+		)
+		(fp_line
+			(start -2 0)
+			(end 2 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "8a3d5c72-2b44-4791-bc8b-c7f255304940")
+		)
+		(fp_line
+			(start 53.375 6.77)
+			(end 53.375 -5.53)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Eco1.User")
+			(uuid "e4a31340-aab8-4834-b18b-80be049ee3df")
+		)
+		(fp_line
+			(start 53.375 -5.53)
+			(end 46.625 -5.53)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Eco1.User")
+			(uuid "82af7997-5035-4989-9178-9341da835a70")
+		)
+		(fp_line
+			(start 46.625 6.77)
+			(end 53.375 6.77)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Eco1.User")
+			(uuid "0b3ce542-3f76-4476-8fef-484ee24e296a")
+		)
+		(fp_line
+			(start 46.625 -5.53)
+			(end 46.625 6.77)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Eco1.User")
+			(uuid "c0d38b95-66cc-4fe2-81d7-ace1b6cdaef9")
+		)
+		(fp_line
+			(start -46.625 6.77)
+			(end -46.625 -5.53)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Eco1.User")
+			(uuid "e404d5f9-af48-4bbc-b168-be7ab907df01")
+		)
+		(fp_line
+			(start -46.625 -5.53)
+			(end -53.375 -5.53)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Eco1.User")
+			(uuid "55575a28-990f-49ee-a8e7-8bba27b84340")
+		)
+		(fp_line
+			(start -53.375 6.77)
+			(end -46.625 6.77)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Eco1.User")
+			(uuid "2d3e4f17-4ea7-4b00-a1fd-25105026cd7d")
+		)
+		(fp_line
+			(start -53.375 -5.53)
+			(end -53.375 6.77)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Eco1.User")
+			(uuid "f909fb8d-ce1a-4022-a93a-1ed93f2f3462")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 180)
+			(layer "F.Fab")
+			(uuid "9e7a5884-0575-4db4-9fe2-5f53a07eaf95")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at -50 -6.985 180)
+			(size 3.048 3.048)
+			(drill 3.048)
+			(layers "*.Cu" "*.Mask")
+			(uuid "c25afcd0-bba8-4f9f-92a8-eb945050795b")
+		)
+		(pad "" np_thru_hole circle
+			(at -50 8.225 180)
+			(size 3.9878 3.9878)
+			(drill 3.9878)
+			(layers "*.Cu" "*.Mask")
+			(uuid "c65a5db1-993a-4cf8-b02f-06237fd75972")
+		)
+		(pad "" np_thru_hole circle
+			(at 50 -6.985 180)
+			(size 3.048 3.048)
+			(drill 3.048)
+			(layers "*.Cu" "*.Mask")
+			(uuid "58962d59-d189-4a1e-bf73-4ded792706d8")
+		)
+		(pad "" np_thru_hole circle
+			(at 50 8.225 180)
+			(size 3.9878 3.9878)
+			(drill 3.9878)
+			(layers "*.Cu" "*.Mask")
+			(uuid "b8e27bcf-e490-4fd6-87fe-e2a513054a6f")
+		)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/models/Stabilizer_Cherry_MX_6.25u.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)

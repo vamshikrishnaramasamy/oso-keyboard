@@ -4,97 +4,108 @@ unit = 19.05;
 plate_thickness = 1.6;
 case_wall = 4;
 case_floor = 3;
+pcb_clearance = 0.8;
+pcb_thickness = 1.6;
+pcb_z = 9.5;
+usb_c_z = 12.7;
 switch_cutout = 14;
 plate_z = 14.5;
+case_height = plate_z + plate_thickness + 1.0;
 gadget_x = 11;
-gadget_y = 5;
+gadget_y = 107.063;
 gadget_w = 54;
 gadget_h = 25;
-board_width = 346.613;
-board_height = 137.063;
+gadget_contact_pitch = 3.8;
+gadget_contact_start = 9.900;
+// Contact row offset from the bay's low-y edge; matches J3 pads on the
+// routed board (pad centers at y = 114.363 = 107.063 + 7.3).
+gadget_contact_y = 7.3;
+board_width = 337.088;
+board_height = 150.063;
+usb_c_x = board_width / 2;
 keys = [
-  [66.675, 9.525, 19.050, 19.050, "F2"],
-  [85.725, 9.525, 19.050, 19.050, "F3"],
-  [104.775, 9.525, 19.050, 19.050, "F4"],
-  [133.350, 9.525, 19.050, 19.050, "F5"],
-  [152.400, 9.525, 19.050, 19.050, "F6"],
-  [171.450, 9.525, 19.050, 19.050, "F7"],
-  [190.500, 9.525, 19.050, 19.050, "F8"],
-  [219.075, 9.525, 19.050, 19.050, "F9"],
-  [238.125, 9.525, 19.050, 19.050, "F10"],
-  [257.175, 9.525, 19.050, 19.050, "F11"],
-  [276.225, 9.525, 19.050, 19.050, "F12"],
-  [9.525, 33.337, 19.050, 19.050, "`"],
-  [28.575, 33.337, 19.050, 19.050, "1"],
-  [47.625, 33.337, 19.050, 19.050, "2"],
-  [66.675, 33.337, 19.050, 19.050, "3"],
-  [85.725, 33.337, 19.050, 19.050, "4"],
-  [104.775, 33.337, 19.050, 19.050, "5"],
-  [123.825, 33.337, 19.050, 19.050, "6"],
-  [142.875, 33.337, 19.050, 19.050, "7"],
-  [161.925, 33.337, 19.050, 19.050, "8"],
-  [180.975, 33.337, 19.050, 19.050, "9"],
-  [200.025, 33.337, 19.050, 19.050, "0"],
-  [219.075, 33.337, 19.050, 19.050, "-"],
-  [238.125, 33.337, 19.050, 19.050, "="],
-  [266.700, 33.337, 38.100, 19.050, "Backspace"],
-  [14.288, 52.388, 28.575, 19.050, "Tab"],
-  [38.100, 52.388, 19.050, 19.050, "Q"],
-  [57.150, 52.388, 19.050, 19.050, "W"],
-  [76.200, 52.388, 19.050, 19.050, "E"],
-  [95.250, 52.388, 19.050, 19.050, "R"],
-  [114.300, 52.388, 19.050, 19.050, "T"],
-  [133.350, 52.388, 19.050, 19.050, "Y"],
-  [152.400, 52.388, 19.050, 19.050, "U"],
-  [171.450, 52.388, 19.050, 19.050, "I"],
-  [190.500, 52.388, 19.050, 19.050, "O"],
-  [209.550, 52.388, 19.050, 19.050, "P"],
-  [228.600, 52.388, 19.050, 19.050, "["],
-  [247.650, 52.388, 19.050, 19.050, "]"],
-  [271.463, 52.388, 28.575, 19.050, "\\"],
-  [16.669, 71.438, 33.337, 19.050, "Caps"],
-  [42.863, 71.438, 19.050, 19.050, "A"],
-  [61.913, 71.438, 19.050, 19.050, "S"],
-  [80.963, 71.438, 19.050, 19.050, "D"],
-  [100.013, 71.438, 19.050, 19.050, "F"],
-  [119.063, 71.438, 19.050, 19.050, "G"],
-  [138.113, 71.438, 19.050, 19.050, "H"],
-  [157.162, 71.438, 19.050, 19.050, "J"],
-  [176.213, 71.438, 19.050, 19.050, "K"],
-  [195.263, 71.438, 19.050, 19.050, "L"],
-  [214.313, 71.438, 19.050, 19.050, ";"],
-  [233.363, 71.438, 19.050, 19.050, "'"],
-  [264.319, 71.438, 42.863, 19.050, "Enter"],
-  [21.431, 90.487, 42.863, 19.050, "LShift"],
-  [52.388, 90.487, 19.050, 19.050, "Z"],
-  [71.438, 90.487, 19.050, 19.050, "X"],
-  [90.487, 90.487, 19.050, 19.050, "C"],
-  [109.538, 90.487, 19.050, 19.050, "V"],
-  [128.588, 90.487, 19.050, 19.050, "B"],
-  [147.638, 90.487, 19.050, 19.050, "N"],
-  [166.688, 90.487, 19.050, 19.050, "M"],
-  [185.738, 90.487, 19.050, 19.050, ","],
-  [204.787, 90.487, 19.050, 19.050, "."],
-  [223.838, 90.487, 19.050, 19.050, "/"],
-  [250.031, 90.487, 33.337, 19.050, "RShift"],
-  [11.906, 109.538, 23.813, 19.050, "LCtrl"],
-  [35.719, 109.538, 23.813, 19.050, "LGUI"],
-  [59.531, 109.538, 23.813, 19.050, "LAlt"],
-  [130.969, 109.538, 119.063, 19.050, "Space"],
-  [202.406, 109.538, 23.813, 19.050, "RAlt"],
-  [226.219, 109.538, 23.813, 19.050, "Fn"],
-  [250.031, 109.538, 23.813, 19.050, "RCtrl"],
-  [300.038, 9.525, 19.050, 19.050, "PrtSc"],
-  [300.038, 33.337, 19.050, 19.050, "Ins"],
-  [319.088, 33.337, 19.050, 19.050, "Home"],
-  [300.038, 52.388, 19.050, 19.050, "PgUp"],
-  [319.088, 52.388, 19.050, 19.050, "Del"],
-  [300.038, 71.438, 19.050, 19.050, "End"],
-  [319.088, 71.438, 19.050, 19.050, "PgDn"],
-  [300.038, 90.487, 19.050, 19.050, "Up"],
-  [280.988, 109.538, 19.050, 19.050, "Left"],
-  [300.038, 109.538, 19.050, 19.050, "Down"],
-  [319.088, 109.538, 19.050, 19.050, "Right"]
+  [66.675, 109.537, 19.050, 19.050, "F2"],
+  [85.725, 109.537, 19.050, 19.050, "F3"],
+  [104.775, 109.537, 19.050, 19.050, "F4"],
+  [133.350, 109.537, 19.050, 19.050, "F5"],
+  [152.400, 109.537, 19.050, 19.050, "F6"],
+  [171.450, 109.537, 19.050, 19.050, "F7"],
+  [190.500, 109.537, 19.050, 19.050, "F8"],
+  [219.075, 109.537, 19.050, 19.050, "F9"],
+  [238.125, 109.537, 19.050, 19.050, "F10"],
+  [257.175, 109.537, 19.050, 19.050, "F11"],
+  [276.225, 109.537, 19.050, 19.050, "F12"],
+  [9.525, 85.725, 19.050, 19.050, "`"],
+  [28.575, 85.725, 19.050, 19.050, "1"],
+  [47.625, 85.725, 19.050, 19.050, "2"],
+  [66.675, 85.725, 19.050, 19.050, "3"],
+  [85.725, 85.725, 19.050, 19.050, "4"],
+  [104.775, 85.725, 19.050, 19.050, "5"],
+  [123.825, 85.725, 19.050, 19.050, "6"],
+  [142.875, 85.725, 19.050, 19.050, "7"],
+  [161.925, 85.725, 19.050, 19.050, "8"],
+  [180.975, 85.725, 19.050, 19.050, "9"],
+  [200.025, 85.725, 19.050, 19.050, "0"],
+  [219.075, 85.725, 19.050, 19.050, "-"],
+  [238.125, 85.725, 19.050, 19.050, "="],
+  [266.700, 85.725, 38.100, 19.050, "Backspace"],
+  [14.288, 66.675, 28.575, 19.050, "Tab"],
+  [38.100, 66.675, 19.050, 19.050, "Q"],
+  [57.150, 66.675, 19.050, 19.050, "W"],
+  [76.200, 66.675, 19.050, 19.050, "E"],
+  [95.250, 66.675, 19.050, 19.050, "R"],
+  [114.300, 66.675, 19.050, 19.050, "T"],
+  [133.350, 66.675, 19.050, 19.050, "Y"],
+  [152.400, 66.675, 19.050, 19.050, "U"],
+  [171.450, 66.675, 19.050, 19.050, "I"],
+  [190.500, 66.675, 19.050, 19.050, "O"],
+  [209.550, 66.675, 19.050, 19.050, "P"],
+  [228.600, 66.675, 19.050, 19.050, "["],
+  [247.650, 66.675, 19.050, 19.050, "]"],
+  [271.463, 66.675, 28.575, 19.050, "\\"],
+  [16.669, 47.625, 33.337, 19.050, "Caps"],
+  [42.863, 47.625, 19.050, 19.050, "A"],
+  [61.912, 47.625, 19.050, 19.050, "S"],
+  [80.963, 47.625, 19.050, 19.050, "D"],
+  [100.013, 47.625, 19.050, 19.050, "F"],
+  [119.063, 47.625, 19.050, 19.050, "G"],
+  [138.113, 47.625, 19.050, 19.050, "H"],
+  [157.162, 47.625, 19.050, 19.050, "J"],
+  [176.213, 47.625, 19.050, 19.050, "K"],
+  [195.263, 47.625, 19.050, 19.050, "L"],
+  [214.313, 47.625, 19.050, 19.050, ";"],
+  [233.363, 47.625, 19.050, 19.050, "'"],
+  [264.319, 47.625, 42.863, 19.050, "Enter"],
+  [21.431, 28.575, 42.863, 19.050, "LShift"],
+  [52.388, 28.575, 19.050, 19.050, "Z"],
+  [71.438, 28.575, 19.050, 19.050, "X"],
+  [90.487, 28.575, 19.050, 19.050, "C"],
+  [109.538, 28.575, 19.050, 19.050, "V"],
+  [128.588, 28.575, 19.050, 19.050, "B"],
+  [147.638, 28.575, 19.050, 19.050, "N"],
+  [166.688, 28.575, 19.050, 19.050, "M"],
+  [185.738, 28.575, 19.050, 19.050, ","],
+  [204.787, 28.575, 19.050, 19.050, "."],
+  [223.838, 28.575, 19.050, 19.050, "/"],
+  [250.031, 28.575, 33.337, 19.050, "RShift"],
+  [11.906, 9.525, 23.813, 19.050, "LCtrl"],
+  [35.719, 9.525, 23.813, 19.050, "LGUI"],
+  [59.531, 9.525, 23.813, 19.050, "LAlt"],
+  [130.969, 9.525, 119.063, 19.050, "Space"],
+  [202.406, 9.525, 23.813, 19.050, "RAlt"],
+  [226.219, 9.525, 23.813, 19.050, "Fn"],
+  [250.031, 9.525, 23.813, 19.050, "RCtrl"],
+  [309.563, 109.537, 19.050, 19.050, "PrtSc"],
+  [290.512, 85.725, 19.050, 19.050, "Ins"],
+  [309.563, 85.725, 19.050, 19.050, "Home"],
+  [290.512, 66.675, 19.050, 19.050, "PgUp"],
+  [309.563, 66.675, 19.050, 19.050, "Del"],
+  [290.512, 47.625, 19.050, 19.050, "End"],
+  [309.563, 47.625, 19.050, 19.050, "PgDn"],
+  [290.512, 28.575, 19.050, 19.050, "Up"],
+  [271.463, 9.525, 19.050, 19.050, "Left"],
+  [290.512, 9.525, 19.050, 19.050, "Down"],
+  [309.563, 9.525, 19.050, 19.050, "Right"]
 ];
 
 module rounded_rect_2d(size, radius) {
@@ -110,7 +121,7 @@ module rounded_box(size, radius) {
 
 module switch_cutouts(depth = plate_thickness + 0.3) {
   for (k = keys) {
-    if (!(k[0] + 9 < gadget_x + gadget_w + 2 && k[1] + 9 < gadget_y + gadget_h + 2)) {
+    if (!(k[0] + 9 > gadget_x - 2 && k[0] + 9 < gadget_x + gadget_w + 2 && k[1] + 9 > gadget_y - 2 && k[1] + 9 < gadget_y + gadget_h + 2)) {
       translate([k[0] + 9, k[1] + 9, -0.15])
         cube([switch_cutout, switch_cutout, depth], center = true);
     }
@@ -119,7 +130,7 @@ module switch_cutouts(depth = plate_thickness + 0.3) {
 
 module plate_bezels() {
   for (k = keys) {
-    if (!(k[0] + 9 < gadget_x + gadget_w + 2 && k[1] + 9 < gadget_y + gadget_h + 2)) {
+    if (!(k[0] + 9 > gadget_x - 2 && k[0] + 9 < gadget_x + gadget_w + 2 && k[1] + 9 > gadget_y - 2 && k[1] + 9 < gadget_y + gadget_h + 2)) {
       translate([k[0] + 9, k[1] + 9, plate_thickness - 0.2])
         linear_extrude(height = 0.45)
           difference() {
@@ -159,32 +170,88 @@ module gadget_bay_details() {
       difference() {
         rounded_rect_2d([gadget_w + 2.2, gadget_h + 2.2], 3.6);
         rounded_rect_2d([gadget_w - 2.4, gadget_h - 2.4], 2.2);
-      }
-
-  for (i = [0:9]) {
-    translate([gadget_x + 9 + i * 3.8, gadget_y + gadget_h - 5.2, plate_thickness + 0.85])
-      cube([2.2, 5.0, 0.5], center = true);
   }
 
-  translate([gadget_x + gadget_w / 2, gadget_y + 6.5, plate_thickness + 0.9])
+  for (i = [0:9]) {
+    translate([gadget_x + gadget_contact_start + i * gadget_contact_pitch, gadget_y + gadget_contact_y, plate_thickness + 0.85])
+      cube([1.9, 4.2, 0.5], center = true);
+  }
+
+  translate([gadget_x + gadget_w / 2, gadget_y + gadget_h - 6.5, plate_thickness + 0.9])
     cube([31, 2.2, 0.45], center = true);
 }
 
+// USB-C exits through the BACK wall (high y): J1 sits at the rear edge of
+// the PCB next to the ESP32 module.
 module usb_c_slot(width = 10.2, height = 3.8, depth = case_wall + 0.7) {
-  translate([board_width / 2 + case_wall, -0.2, 6.7])
+  translate([case_wall + usb_c_x, case_wall * 2 + board_height + 0.35, usb_c_z])
     rotate([90, 0, 0])
       linear_extrude(height = depth)
         rounded_rect_2d([width, height], height / 2);
 }
 
 module usb_c_bezel() {
-  translate([board_width / 2 + case_wall, -0.35, 6.7])
+  translate([case_wall + usb_c_x, case_wall * 2 + board_height + 0.2, usb_c_z])
     rotate([90, 0, 0])
       linear_extrude(height = 0.7)
         difference() {
           rounded_rect_2d([13.4, 6.4], 2.3);
           rounded_rect_2d([10.2, 3.8], 1.9);
         }
+}
+
+module pcb_switch_holes(depth = pcb_thickness + 0.3) {
+  for (k = keys) {
+    translate([k[0] + 9, k[1] + 9, -0.15])
+      cylinder(h = depth, r = 2.05);
+    for (xoff = [-5.08, 5.08]) {
+      translate([k[0] + 9 + xoff, k[1] + 9, -0.15])
+        cylinder(h = depth, r = 1.15);
+    }
+  }
+}
+
+module pcb_switch_pads() {
+  for (k = keys) {
+    translate([k[0] + 9 - 5.08, k[1] + 9, pcb_thickness + 0.03])
+      cylinder(h = 0.12, r = 2.0);
+    translate([k[0] + 9 + 5.08, k[1] + 9, pcb_thickness + 0.03])
+      cylinder(h = 0.12, r = 2.0);
+    translate([k[0] + 9 + 6.5, k[1] + 9 + 6.5, pcb_thickness + 0.05])
+      cube([4.6, 2.5, 0.14], center = true);
+  }
+}
+
+module pcb_module_bay_holes(depth = pcb_thickness + 0.3) {
+  for (xoff = [6, gadget_w - 6]) {
+    translate([gadget_x + xoff, gadget_y + gadget_h / 2, -0.15])
+      cylinder(h = depth, r = 1.8);
+  }
+}
+
+module pcb_module_bay_contacts() {
+  for (i = [0:9]) {
+    translate([gadget_x + gadget_contact_start + i * gadget_contact_pitch, gadget_y + gadget_contact_y, pcb_thickness + 0.08])
+      cube([1.9, 4.2, 0.16], center = true);
+  }
+}
+
+module pcb_preview() {
+  translate([case_wall, case_wall, pcb_z]) {
+    color("#247a4b")
+      difference() {
+        rounded_box([board_width, board_height, pcb_thickness], 5);
+        pcb_switch_holes();
+        pcb_module_bay_holes();
+      }
+    color("#c9a13a")
+      pcb_switch_pads();
+    color("#c9a13a")
+      pcb_module_bay_contacts();
+    color("#b9bbb3")
+    translate([usb_c_x, board_height - 2.8, usb_c_z - pcb_z])
+      cube([9.8, 5.6, 3.2], center = true);
+  }
 }
 
 module top_plate() {
@@ -200,16 +267,16 @@ module top_plate() {
 
 module tray_case() {
   difference() {
-    rounded_box([board_width + case_wall * 2, board_height + case_wall * 2, 14], 8);
-    translate([case_wall, case_wall, case_floor])
-      rounded_box([board_width, board_height, 15], 5);
+    rounded_box([board_width + case_wall * 2, board_height + case_wall * 2, case_height], 8);
+    translate([case_wall - pcb_clearance / 2, case_wall - pcb_clearance / 2, case_floor])
+      rounded_box([board_width + pcb_clearance, board_height + pcb_clearance, case_height + 1], 5);
     usb_c_slot();
   }
 }
 
 module keycap_frames() {
   for (k = keys) {
-    if (!(k[0] + 9 < gadget_x + gadget_w + 2 && k[1] + 9 < gadget_y + gadget_h + 2)) {
+    if (!(k[0] + 9 > gadget_x - 2 && k[0] + 9 < gadget_x + gadget_w + 2 && k[1] + 9 > gadget_y - 2 && k[1] + 9 < gadget_y + gadget_h + 2)) {
       translate([k[0] + 9 + case_wall, k[1] + 9 + case_wall, plate_z + plate_thickness + 1.45])
         difference() {
           cube([max(10, k[2] - 3.4), max(10, k[3] - 3.8), 2.2], center = true);
@@ -219,7 +286,9 @@ module keycap_frames() {
   }
 }
 
-tray_case();
-usb_c_bezel();
-translate([case_wall, case_wall, plate_z]) top_plate();
-keycap_frames();
+color("#aaa79b") tray_case();
+pcb_preview();
+color("#b7b2a4") usb_c_bezel();
+color("#d1c8a5") translate([case_wall, case_wall, plate_z]) top_plate();
+// keycap_frames() is intentionally not included in the raw export. The STL
+// should show printable/cut geometry only, not decorative keycap previews.

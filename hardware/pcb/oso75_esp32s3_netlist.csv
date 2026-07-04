@@ -1,0 +1,75 @@
+ref,pin,net,notes
+J1,A1/B1/A12/B12,GND,USB-C shell and ground pins
+J1,A4/B4/A9/B9,VBUS,USB 5 V input
+J1,CC1,USB_CC1,To R1 5.1k pulldown
+J1,CC2,USB_CC2,To R2 5.1k pulldown
+J1,A6/B6,USB_DP_CONN,To R3 USB D+ series resistor
+J1,A7/B7,USB_DM_CONN,To R4 USB D- series resistor
+R1,1,USB_CC1,USB-C device advertise
+R1,2,GND,5.1k pulldown
+R2,1,USB_CC2,USB-C device advertise
+R2,2,GND,5.1k pulldown
+R3,1,USB_DP_CONN,USB series resistor
+R3,2,USB_DP,ESP32-S3 GPIO20 native USB D+
+R4,1,USB_DM_CONN,USB series resistor
+R4,2,USB_DM,ESP32-S3 GPIO19 native USB D-
+U3,IN,VBUS,5 V from USB
+U3,OUT,+3V3,Main 3.3 V rail
+U3,GND,GND,Power ground
+C1,1,VBUS,LDO input cap
+C1,2,GND,LDO input cap
+C2,1,+3V3,LDO output cap
+C2,2,GND,LDO output cap
+U1,GPIO20,USB_DP,Native USB D+
+U1,GPIO19,USB_DM,Native USB D-
+U1,3V3,+3V3,ESP32-S3-WROOM-1U module power
+U1,GND,GND,Module ground pins and thermal pads
+U1,EN,ESP_EN,"Pull up to 3V3, SW_RESET pulls low"
+SW_RESET,1,ESP_EN,Reset button
+SW_RESET,2,GND,Reset button
+C_EN,1,ESP_EN,ESP32-S3 EN power-on reset delay
+C_EN,2,GND,ESP32-S3 EN power-on reset delay
+U1,GPIO0,BOOT_IO0,ROM download boot strap
+SW_BOOT,1,BOOT_IO0,Boot button
+SW_BOOT,2,GND,Hold low while resetting for serial/USB download mode
+F1,1,VBUS,Module bay input power
+F1,2,VBUS_FUSED,Current-limited optional 5 V for modules
+J3,1,GND,OSO module bay ground
+J3,2,+3V3,OSO module bay 3.3 V power
+J3,3,VBUS_FUSED,OSO module bay optional 5 V power
+J3,4,I2C_SDA,OSO module bay I2C data
+J3,5,I2C_SCL,OSO module bay I2C clock
+J3,6,MOD_A,OSO module bay GPIO / encoder A
+J3,7,MOD_B,OSO module bay GPIO / encoder B
+J3,8,MOD_INT,OSO module bay interrupt or present detect
+J3,9,ESP_EN,OSO module bay reset/programming signal
+J3,10,GND,OSO module bay ground
+R10,1,MOD_INT,Module interrupt/present pullup
+R10,2,+3V3,Module interrupt/present pullup
+U1,GPIO1,ROW0,Keyboard matrix row 0
+U1,GPIO2,ROW1,Keyboard matrix row 1
+U1,GPIO4,ROW2,Keyboard matrix row 2
+U1,GPIO5,ROW3,Keyboard matrix row 3
+U1,GPIO6,ROW4,Keyboard matrix row 4
+U1,GPIO7,ROW5,Keyboard matrix row 5
+U1,GPIO8,COL0,Keyboard matrix column 0
+U1,GPIO9,COL1,Keyboard matrix column 1
+U1,GPIO10,COL2,Keyboard matrix column 2
+U1,GPIO11,COL3,Keyboard matrix column 3
+U1,GPIO12,COL4,Keyboard matrix column 4
+U1,GPIO13,COL5,Keyboard matrix column 5
+U1,GPIO14,COL6,Keyboard matrix column 6
+U1,GPIO15,COL7,Keyboard matrix column 7
+U1,GPIO16,COL8,Keyboard matrix column 8
+U1,GPIO17,COL9,Keyboard matrix column 9
+U1,GPIO18,COL10,Keyboard matrix column 10
+U1,GPIO21,COL11,Keyboard matrix column 11
+U1,GPIO35,COL12,Keyboard matrix column 12
+U1,GPIO36,COL13,Keyboard matrix column 13
+U1,GPIO37,COL14,Keyboard matrix column 14
+U1,GPIO38,COL15,Keyboard matrix column 15
+U1,GPIO39,MOD_A,OSO module bay GPIO / encoder A
+U1,GPIO40,MOD_B,OSO module bay GPIO / encoder B
+U1,GPIO41,I2C_SDA,OSO module bay I2C SDA
+U1,GPIO42,I2C_SCL,OSO module bay I2C SCL
+U1,GPIO47,MOD_INT,OSO module interrupt/present detect

@@ -4,11 +4,20 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "generate": "node scripts/generate.mjs && node scripts/generate-kicad.mjs",
+    "generate": "node scripts/generate.mjs",
+    "generate:kicad:starter": "node scripts/generate-kicad.mjs --force",
+    "simulate:esp32": "node scripts/sim-esp32s3.mjs",
+    "simulate:system": "node scripts/sim-esp32s3.mjs",
+    "simulate:system:strict": "node scripts/sim-esp32s3.mjs --strict-power",
+    "firmware:esp32s3:build": "bash -lc 'export IDF_PYTHON_ENV_PATH=/Users/vamshikrishnaramasamy/.espressif/python_env/idf6.2_py3.10_env; source /Users/vamshikrishnaramasamy/esp/esp-idf/export.sh >/dev/null && cd firmware/esp32s3-sim && idf.py -B build-esp32s3 set-target esp32s3 build'",
+    "firmware:esp32s3:qemu": "bash scripts/run-esp32s3-qemu.sh",
+    "wokwi:lint": "cd hardware/sim/wokwi && /Users/vamshikrishnaramasamy/.wokwi/bin/wokwi-cli lint",
+    "wokwi:run": "cd hardware/sim/wokwi && /Users/vamshikrishnaramasamy/.wokwi/bin/wokwi-cli --timeout 10000 .",
+    "cad:stl": "openscad -o hardware/cad/generated/oso75_case_plate.stl hardware/cad/generated/oso75_case_plate.scad",
     "validate": "node scripts/validate.mjs",
     "viewer:assets": "node scripts/sync-viewer-assets.mjs",
-    "viewer": "npm run generate && npm run viewer:assets && vite web --host 127.0.0.1",
-    "viewer:build": "npm run generate && npm run viewer:assets && vite build web --base /oso-keyboard/"
+    "viewer": "npm run generate && npm run cad:stl && npm run viewer:assets && vite web --host 127.0.0.1",
+    "viewer:build": "npm run generate && npm run cad:stl && npm run viewer:assets && vite build web --base /oso-keyboard/"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^5.1.1",

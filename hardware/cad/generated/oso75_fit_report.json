@@ -1,0 +1,55 @@
+{
+  "status": "fits",
+  "generated_from": "hardware/layout/oso75.layout.json",
+  "pcb": {
+    "width_mm": 337.088,
+    "height_mm": 150.063,
+    "thickness_mm": 1.6,
+    "z_bottom_mm": 9.5,
+    "z_top_mm": 11.1
+  },
+  "tray_cavity": {
+    "width_mm": 337.888,
+    "height_mm": 150.863,
+    "clearance_total_mm": 0.8,
+    "clearance_each_side_mm": 0.4,
+    "floor_z_mm": 3
+  },
+  "plate_to_pcb": {
+    "plate_z_bottom_mm": 14.5,
+    "plate_z_top_mm": 16.1,
+    "pcb_top_to_plate_top_gap_mm": 5
+  },
+  "usb_c": {
+    "pcb_connector_center_x_mm": 168.54,
+    "pcb_connector_center_y_mm": 147.66,
+    "cad_slot_center_x_mm": 172.544,
+    "cad_slot_wall": "back (high y)",
+    "cad_slot_center_z_mm": 12.7,
+    "cad_to_pcb_x_error_mm": 0.004
+  },
+  "module_bay": {
+    "cad_rect_mm": {
+      "x": 11,
+      "y": 107.063,
+      "w": 54,
+      "h": 25
+    },
+    "pcb_j3_center_mm": {
+      "x": 38,
+      "y": 119.563
+    },
+    "cad_center_to_j3_error_mm": 0.001
+  },
+  "switch_alignment": {
+    "physical_keys": 82,
+    "max_center_error_mm": 0
+  },
+  "notes": [
+    "PCB outline matches the KiCad board dimensions exactly.",
+    "Tray cavity includes clearance so the PCB is not a friction fit.",
+    "CAD includes the PCB slab, switch drill holes, module bay contacts, retention holes, and USB-C body.",
+    "Switch centers, J1 and J3 positions are read from the routed KiCad board, not assumed.",
+    "USB-C exits through the back wall; J3 module bay sits at the back-left (Esc/F1 corner)."
+  ]
+}

@@ -1,3 +1,5 @@
 (fp_lib_table
   (lib (name "OSO75")(type "KiCad")(uri "${KIPRJMOD}/OSO75.pretty")(options "")(descr "OSO75 local footprints"))
+  (lib (name "Switch_MX_Hotswap")(type "KiCad")(uri "${KIPRJMOD}/Switch_MX_Hotswap.pretty")(options "")(descr "Local MX hotswap footprints"))
+  (lib (name "Stabilizer_MX")(type "KiCad")(uri "${KIPRJMOD}/Stabilizer_MX.pretty")(options "")(descr "Local MX stabilizer footprints"))
 )

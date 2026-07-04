@@ -1,0 +1,579 @@
+** Drc report for oso75.kicad_pcb **
+** Created on 2026-06-10T13:13:35 **
+** Report includes: Errors, Warnings **
+
+** Found 187 DRC violations **
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(25.0250 mm, 101.2250 mm): Footprint D12
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(178.0000 mm, 130.5000 mm): Footprint C3
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(18.5250 mm, 94.7250 mm): Footprint SW12
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(139.9690 mm, 18.5250 mm): Footprint SW68
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(318.5630 mm, 94.7250 mm): Footprint SW74
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(209.0250 mm, 94.7250 mm): Footprint SW22
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(92.6000 mm, 141.0000 mm): Footprint C_EN
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(237.6000 mm, 75.6750 mm): Footprint SW37
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(175.6880 mm, 37.5750 mm): Footprint SW60
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(256.6500 mm, 75.6750 mm): Footprint SW38
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(306.0120 mm, 82.1750 mm): Footprint D75
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(72.6500 mm, 82.1750 mm): Footprint D28
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(93.5000 mm, 138.0000 mm): Footprint SW_RESET
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(63.1250 mm, 101.2250 mm): Footprint D14
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(30.4310 mm, 37.5750 mm): Footprint SW53
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(113.7750 mm, 94.7250 mm): Footprint SW17
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(109.0130 mm, 56.6250 mm): Footprint SW44
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(318.5630 mm, 18.5250 mm): Footprint SW82
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(282.2000 mm, 101.2250 mm): Footprint D25
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(27.4060 mm, 25.0250 mm): Footprint D65
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(244.1000 mm, 82.1750 mm): Footprint D37
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(286.9630 mm, 25.0250 mm): Footprint D80
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(104.2500 mm, 75.6750 mm): Footprint SW30
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(194.7380 mm, 37.5750 mm): Footprint SW61
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(168.5400 mm, 147.6600 mm): Footprint J1
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(318.5630 mm, 56.6250 mm): Footprint SW78
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(186.9500 mm, 125.0370 mm): Footprint D6
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(132.8250 mm, 94.7250 mm): Footprint SW18
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(118.5380 mm, 37.5750 mm): Footprint SW57
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(23.2880 mm, 75.6750 mm): Footprint SW26
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(29.7880 mm, 82.1750 mm): Footprint D26
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(134.5630 mm, 63.1250 mm): Footprint D45
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(179.5000 mm, 144.0000 mm): Footprint R2
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(215.5250 mm, 101.2250 mm): Footprint D22
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(196.4750 mm, 101.2250 mm): Footprint D21
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(123.3000 mm, 75.6750 mm): Footprint SW31
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(86.9380 mm, 44.0750 mm): Footprint D55
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(167.9000 mm, 82.1750 mm): Footprint D33
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(266.1750 mm, 118.5370 mm): Footprint SW10
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(94.7250 mm, 94.7250 mm): Footprint SW16
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(157.5000 mm, 141.5000 mm): Footprint R4
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(247.1250 mm, 118.5370 mm): Footprint SW9
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(144.0880 mm, 44.0750 mm): Footprint D58
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(242.3630 mm, 56.6250 mm): Footprint SW51
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(113.7750 mm, 118.5370 mm): Footprint SW3
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(129.8000 mm, 82.1750 mm): Footprint D31
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(259.0310 mm, 37.5750 mm): Footprint SW64
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(94.7250 mm, 118.5370 mm): Footprint SW2
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(68.5310 mm, 18.5250 mm): Footprint SW67
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(101.5000 mm, 138.0000 mm): Footprint SW_BOOT
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(181.0000 mm, 142.5000 mm): Footprint C4
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(147.0000 mm, 144.5000 mm): Footprint U3
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(229.8130 mm, 63.1250 mm): Footprint D50
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(228.0750 mm, 118.5370 mm): Footprint SW8
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(196.0000 mm, 138.8000 mm): Footprint U1
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(47.1000 mm, 75.6750 mm): Footprint SW27
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(161.4000 mm, 75.6750 mm): Footprint SW33
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(161.4000 mm, 118.5370 mm): Footprint SW5
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(82.1750 mm, 125.0370 mm): Footprint D1
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(75.0310 mm, 25.0250 mm): Footprint D67
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(20.9060 mm, 18.5250 mm): Footprint SW65
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(85.2000 mm, 75.6750 mm): Footprint SW29
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(185.2130 mm, 56.6250 mm): Footprint SW48
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(158.3750 mm, 101.2250 mm): Footprint D19
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(239.3380 mm, 44.0750 mm): Footprint D63
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(225.0500 mm, 82.1750 mm): Footprint D36
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(206.0000 mm, 125.0370 mm): Footprint D7
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(30.4310 mm, 37.5750 mm): Footprint ST3
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(189.9750 mm, 94.7250 mm): Footprint SW21
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(146.4690 mm, 25.0250 mm): Footprint D68
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(163.1380 mm, 44.0750 mm): Footprint D59
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(275.7000 mm, 94.7250 mm): Footprint ST1
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(172.6620 mm, 63.1250 mm): Footprint D47
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(253.6250 mm, 125.0370 mm): Footprint D9
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(139.9690 mm, 18.5250 mm): Footprint ST4
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(273.3190 mm, 56.6250 mm): Footprint SW52
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(291.7250 mm, 125.0370 mm): Footprint D11
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(38.0000 mm, 119.5630 mm): Footprint J3
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(139.3250 mm, 101.2250 mm): Footprint D18
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(44.7190 mm, 18.5250 mm): Footprint SW66
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(325.0630 mm, 125.0370 mm): Footprint D72
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(325.0630 mm, 82.1750 mm): Footprint D76
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(137.5880 mm, 37.5750 mm): Footprint SW58
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(206.0000 mm, 82.1750 mm): Footprint D35
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(167.9000 mm, 125.0370 mm): Footprint D5
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(234.5750 mm, 125.0370 mm): Footprint D8
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(299.5120 mm, 75.6750 mm): Footprint SW75
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(318.5630 mm, 118.5370 mm): Footprint SW72
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(148.8500 mm, 82.1750 mm): Footprint D32
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(280.4630 mm, 18.5250 mm): Footprint SW80
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(299.5120 mm, 18.5250 mm): Footprint SW81
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(228.0750 mm, 94.7250 mm): Footprint SW23
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(70.9120 mm, 56.6250 mm): Footprint SW42
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(120.2750 mm, 125.0370 mm): Footprint D3
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(265.5310 mm, 25.0250 mm): Footprint D71
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(180.4500 mm, 75.6750 mm): Footprint SW34
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(51.2190 mm, 25.0250 mm): Footprint D66
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(142.3500 mm, 118.5370 mm): Footprint SW4
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(213.7870 mm, 37.5750 mm): Footprint SW62
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(299.5120 mm, 94.7250 mm): Footprint SW73
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(191.7130 mm, 63.1250 mm): Footprint D48
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(204.2630 mm, 56.6250 mm): Footprint SW49
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(141.5000 mm, 144.5000 mm): Footprint C2
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(67.8880 mm, 44.0750 mm): Footprint D54
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(318.5630 mm, 75.6750 mm): Footprint SW76
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(115.5130 mm, 63.1250 mm): Footprint D44
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(166.1620 mm, 56.6250 mm): Footprint SW47
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(124.5000 mm, 138.0000 mm): Footprint R5
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(218.5500 mm, 75.6750 mm): Footprint SW36
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(234.5750 mm, 101.2250 mm): Footprint D23
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(201.2380 mm, 44.0750 mm): Footprint D61
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(280.4630 mm, 75.6750 mm): Footprint SW39
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(199.5000 mm, 75.6750 mm): Footprint SW35
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(53.6000 mm, 82.1750 mm): Footprint D27
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(182.1880 mm, 44.0750 mm): Footprint D60
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(259.0310 mm, 18.5250 mm): Footprint SW71
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(147.1130 mm, 56.6250 mm): Footprint SW46
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(217.9060 mm, 25.0250 mm): Footprint D69
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(117.0000 mm, 138.0000 mm): Footprint F1
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(148.8500 mm, 125.0370 mm): Footprint D4
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(120.2750 mm, 101.2250 mm): Footprint D17
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(75.6750 mm, 94.7250 mm): Footprint SW15
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(186.9500 mm, 82.1750 mm): Footprint D34
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(299.5120 mm, 37.5750 mm): Footprint SW79
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(77.4120 mm, 63.1250 mm): Footprint D42
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(66.1500 mm, 75.6750 mm): Footprint SW28
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(89.9630 mm, 56.6250 mm): Footprint SW43
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(263.1500 mm, 82.1750 mm): Footprint D38
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(36.9310 mm, 44.0750 mm): Footprint D53
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(131.5000 mm, 138.0000 mm): Footprint R6
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(105.9870 mm, 44.0750 mm): Footprint D56
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(210.7630 mm, 63.1250 mm): Footprint D49
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(179.5000 mm, 147.0000 mm): Footprint R1
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(96.4630 mm, 63.1250 mm): Footprint D43
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(142.3500 mm, 75.6750 mm): Footprint SW32
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(151.8750 mm, 94.7250 mm): Footprint SW19
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(109.5000 mm, 138.0000 mm): Footprint R10
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(286.9630 mm, 82.1750 mm): Footprint D39
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(306.0120 mm, 63.1250 mm): Footprint D77
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(110.7500 mm, 82.1750 mm): Footprint D30
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(285.2250 mm, 118.5370 mm): Footprint SW11
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(101.2250 mm, 101.2250 mm): Footprint D16
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(37.5750 mm, 94.7250 mm): Footprint SW13
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(211.4060 mm, 18.5250 mm): Footprint SW69
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(80.4380 mm, 37.5750 mm): Footprint SW55
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(306.0120 mm, 44.0750 mm): Footprint D79
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(152.5000 mm, 144.5000 mm): Footprint C1
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(306.0120 mm, 101.2250 mm): Footprint D73
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(223.3130 mm, 56.6250 mm): Footprint SW50
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(199.5000 mm, 118.5370 mm): Footprint SW7
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(170.9250 mm, 94.7250 mm): Footprint SW20
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(101.2250 mm, 125.0370 mm): Footprint D2
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(157.5000 mm, 145.0000 mm): Footprint R3
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(61.3880 mm, 37.5750 mm): Footprint SW54
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(325.0630 mm, 25.0250 mm): Footprint D82
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(248.8630 mm, 63.1250 mm): Footprint D51
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(241.7190 mm, 25.0250 mm): Footprint D70
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(325.0630 mm, 63.1250 mm): Footprint D78
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(32.1690 mm, 63.1250 mm): Footprint D40
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(156.6380 mm, 37.5750 mm): Footprint SW59
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(99.4870 mm, 37.5750 mm): Footprint SW56
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(325.0630 mm, 101.2250 mm): Footprint D74
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(235.2190 mm, 18.5250 mm): Footprint SW70
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(232.8380 mm, 37.5750 mm): Footprint SW63
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(299.5120 mm, 56.6250 mm): Footprint SW77
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(272.6750 mm, 125.0370 mm): Footprint D10
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(82.1750 mm, 101.2250 mm): Footprint D15
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(273.3190 mm, 56.6250 mm): Footprint ST2
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(177.4250 mm, 101.2250 mm): Footprint D20
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(306.0120 mm, 25.0250 mm): Footprint D81
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(247.1250 mm, 94.7250 mm): Footprint SW24
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(25.6690 mm, 56.6250 mm): Footprint SW40
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(44.0750 mm, 101.2250 mm): Footprint D13
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(220.2870 mm, 44.0750 mm): Footprint D62
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(91.7000 mm, 82.1750 mm): Footprint D29
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(51.8630 mm, 56.6250 mm): Footprint SW41
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(265.5310 mm, 44.0750 mm): Footprint D64
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(279.8190 mm, 63.1250 mm): Footprint D52
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(75.6750 mm, 118.5370 mm): Footprint SW1
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(125.0380 mm, 44.0750 mm): Footprint D57
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(253.6250 mm, 101.2250 mm): Footprint D24
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(180.4500 mm, 118.5370 mm): Footprint SW6
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(58.3630 mm, 63.1250 mm): Footprint D41
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(56.6250 mm, 94.7250 mm): Footprint SW14
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(153.6130 mm, 63.1250 mm): Footprint D46
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(275.7000 mm, 94.7250 mm): Footprint SW25
+[lib_footprint_issues]: The footprint library 'OSO75' is not enabled in the current configuration
+    Local override; warning
+    @(128.0630 mm, 56.6250 mm): Footprint SW45
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

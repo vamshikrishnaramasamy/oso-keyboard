@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>OSO75 LCSC Parts List</title>
+    <style>
+      body {
+        margin: 0;
+        background: #f7f2e8;
+        color: #2f281f;
+        font: 18px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      main {
+        width: 1320px;
+        padding: 46px 56px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 38px;
+      }
+
+      .sub {
+        margin: 0 0 28px;
+        color: #665948;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fffaf1;
+        border: 2px solid #47392b;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid #d8c7ad;
+        padding: 12px 14px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        background: #513f2d;
+        color: #fff8e8;
+        font-size: 15px;
+        text-transform: uppercase;
+      }
+
+      td:nth-child(2),
+      td:nth-child(5),
+      td:nth-child(6) {
+        text-align: right;
+        white-space: nowrap;
+      }
+
+      .total {
+        margin-top: 24px;
+        padding: 18px 22px;
+        display: inline-block;
+        background: #2f6f49;
+        color: white;
+        font-size: 28px;
+        font-weight: 800;
+      }
+
+      .notes {
+        margin-top: 22px;
+        color: #594b3b;
+        font-size: 16px;
+      }
+
+      .notes strong {
+        color: #2f281f;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>OSO75 LCSC Electronics Parts List</h1>
+      <p class="sub">Pricing checked June 23, 2026. LCSC/JLCPCB-friendly replacements for the earlier Amazon-heavy evidence.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Qty</th>
+            <th>LCSC Part</th>
+            <th>MPN / Match</th>
+            <th>Unit</th>
+            <th>Extended</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>ESP32-S3-WROOM-1U-N16 module</td><td>1</td><td>C2980298</td><td>ESP32-S3-WROOM-1U-N16</td><td>$4.1237</td><td>$4.12</td></tr>
+          <tr><td>Kailh MX hotswap socket</td><td>82</td><td>C5156480</td><td>CPG151101S11-16</td><td>$0.0664</td><td>$5.44</td></tr>
+          <tr><td>USB-C receptacle</td><td>1</td><td>C165948</td><td>TYPE-C-31-M-12</td><td>$0.0960</td><td>$0.10</td></tr>
+          <tr><td>3.3 V LDO</td><td>1</td><td>C51118</td><td>AP2112K-3.3TRG1</td><td>$0.0834</td><td>$0.08</td></tr>
+          <tr><td>500 mA resettable fuse</td><td>1</td><td>C207014</td><td>0603L050SLYR</td><td>$0.2666</td><td>$0.27</td></tr>
+          <tr><td>Boot/reset tactile switches</td><td>2</td><td>C139797</td><td>SKRPACE010</td><td>$0.0623</td><td>$0.12</td></tr>
+          <tr><td>Matrix diodes</td><td>82</td><td>C81598</td><td>1N4148W SOD-123</td><td>$0.0113</td><td>$0.93</td></tr>
+          <tr><td>0603 resistors, capacitors, pullups</td><td>13</td><td>LCSC generic 0603 passives</td><td>5.1k, 27R, 10k, 10uF, 100nF, 1uF</td><td>$0.0100</td><td>$0.13</td></tr>
+        </tbody>
+      </table>
+
+      <div class="total">Estimated LCSC electronics subtotal: $11.19</div>
+
+      <p class="notes">
+        <strong>Repo evidence:</strong>
+        KiCad PCB/schematic in hardware/kicad/oso75, CAD source in hardware/cad/build123d/oso75_case.py,
+        split top/bottom STEP/STL exports in hardware/cad/build123d. J3 module bay is PCB copper only.
+      </p>
+    </main>
+  </body>
+</html>
