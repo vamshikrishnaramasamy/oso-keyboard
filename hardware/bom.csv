@@ -1,0 +1,24 @@
+category,quantity,part,mpn_or_spec,supplier,purchase_url,notes
+PCB factory assembly,1,ESP32-S3-WROOM-1U-N16 module,ESP32-S3-WROOM-1U-N16,LCSC,https://www.lcsc.com/search?q=C2980298,Main MCU module with native USB Wi-Fi BLE 16 MB flash and external IPEX antenna connector
+PCB factory assembly,1,2.4 GHz IPEX/u.FL antenna,2.4 GHz IPEX/u.FL antenna,LCSC,https://www.lcsc.com/search?q=ipex%202.4ghz%20antenna,Required only for BLE/Wi-Fi range; wired USB works without it
+PCB factory assembly,82,1N4148W SOD-123 diode,1N4148W,LCSC,https://www.lcsc.com/search?q=C81598,One diode per switch; cathode band faces ROW net
+PCB factory assembly,1,USB-C receptacle,HRO TYPE-C-31-M-12,LCSC,https://www.lcsc.com/search?q=C165948,USB 2.0 device connector
+PCB factory assembly,1,OSO module bay exposed pads,DNP PCB copper only,JLCPCB,https://jlcpcb.com/,Exposed ENIG PCB pads only; no placed component or paste
+PCB factory assembly,1,500 mA resettable fuse,Littelfuse 0603L050SLYR,LCSC,https://www.lcsc.com/search?q=C207014,Protects optional 5 V module bay rail
+PCB factory assembly,2,5.1k 0603 resistor,5.1k 0603,LCSC,https://www.lcsc.com/search?q=5.1k%200603%20resistor,USB-C CC pulldowns
+PCB factory assembly,2,27R 0603 resistor,27R 0603,LCSC,https://www.lcsc.com/search?q=27R%200603%20resistor,USB D+ and D- series resistors
+PCB factory assembly,3,10k 0603 resistor,10k 0603,LCSC,https://www.lcsc.com/search?q=10k%200603%20resistor,EN BOOT and module interrupt/present pullups
+PCB factory assembly,2,10uF 10V 0603 capacitor,10uF 10V 0603,LCSC,https://www.lcsc.com/search?q=10uF%2010V%200603%20capacitor,LDO input/output bulk capacitors
+PCB factory assembly,2,100nF 0603 capacitor,100nF 0603,LCSC,https://www.lcsc.com/search?q=100nF%200603%20capacitor,ESP32 local decoupling
+PCB factory assembly,1,1uF 0603 capacitor,1uF 0603,LCSC,https://www.lcsc.com/search?q=1uF%200603%20capacitor,ESP_EN reset delay capacitor
+PCB factory assembly,1,Reset tactile switch,SKRPACE010,LCSC,https://www.lcsc.com/search?q=C139797,Pulls EN low
+PCB factory assembly,1,Boot tactile switch,SKRPACE010,LCSC,https://www.lcsc.com/search?q=C139797,Pulls GPIO0 low for ROM download mode
+Builder assembly,82,MX mechanical switch,Gateron Milky Yellow Pro V3 or compatible,AliExpress,https://www.aliexpress.com/wholesale?SearchText=Gateron+Milky+Yellow+Pro+V3,Builder-installed switches
+Builder assembly,82,Kailh MX hotswap socket,CPG151101S11-16,LCSC,https://www.lcsc.com/search?q=C5156480,Only needed if sockets are not factory assembled
+Builder assembly,1,PCB screw-in stabilizer set,6.25u + 2u set,AliExpress,https://www.aliexpress.com/wholesale?SearchText=PCB+screw+in+stabilizer+6.25u,Backspace Enter LShift and Space stabilizers
+Builder assembly,1,Switch plate,1.5 mm plate from OSO75 STEP/STL,JLCPCB,https://jlcpcb.com/3d-printing,Use hardware/cad/build123d/oso75_plate.step or .stl
+Builder assembly,1,Case bottom,OSO75 case bottom STEP/STL,JLCPCB,https://jlcpcb.com/3d-printing,Use hardware/cad/build123d/oso75_case_bottom.step or .stl
+Builder assembly,1,Case bezel,OSO75 case bezel STEP/STL,JLCPCB,https://jlcpcb.com/3d-printing,Use hardware/cad/build123d/oso75_case_bezel.step or .stl
+Builder assembly,1,USB-C cable,USB-C data cable,Amazon,https://www.amazon.com/s?k=usb+c+data+cable,Data-capable cable for firmware and keyboard use
+Optional module,1,Rotary encoder module parts,EC11 encoder + knob + small PCB,LCSC,https://www.lcsc.com/search?q=EC11%20rotary%20encoder,Optional OSO module bay accessory
+Optional module,1,I2C OLED module,0.91-1.3 inch I2C OLED,LCSC,https://www.lcsc.com/search?q=I2C%20OLED,Optional OSO module bay accessory

@@ -40,6 +40,7 @@ PCB source files:
 - KiCad schematic: `hardware/kicad/oso75/oso75.kicad_sch`
 - KiCad PCB: `hardware/kicad/oso75/oso75.kicad_pcb`
 - Order-ready Gerbers/BOM/CPL: `hardware/kicad/oso75/fab/`
+- Reviewer BOM with purchase links: `hardware/bom.csv`
 
 CAD source and exports:
 
